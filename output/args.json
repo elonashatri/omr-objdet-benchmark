@@ -1,0 +1,19 @@
+{
+    "data_dir": "data/images",
+    "annotation_dir": "data/annotations",
+    "class_mapping": "data/class_mapping.json",
+    "output_dir": "output",
+    "min_box_size": 5,
+    "val_ratio": 0.2,
+    "model": "yolov8s.pt",
+    "batch_size": 16,
+    "epochs": 30,
+    "img_size": 640,
+    "conf_threshold": 0.001,
+    "workers": 8,
+    "gpu_id": 0,
+    "skip_preprocessing": false,
+    "debug": false,
+    "verbose": false,
+    "analyze_only": true
+}
