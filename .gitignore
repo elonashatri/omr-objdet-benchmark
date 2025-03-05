@@ -3,3 +3,4 @@
 nohup.out
 *.txt
 events.out.*
+*.pt
