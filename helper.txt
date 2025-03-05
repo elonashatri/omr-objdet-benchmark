@@ -1,14 +1,6 @@
 module load miniconda/4.7.12
 module load cuda/12.1  # Using CUDA 12.1 for compatibility with recent PyTorch
-
-
-
 conda activate omr_benchmark
-
-
-
-
-
 
 
 
@@ -36,17 +28,6 @@ nohup python /homes/es314/omr-objdet-benchmark/scripts/faster_rccn_training.py \
     --gpu_id 1
 
 
-nohup python scripts/yolo_training.py \
-    --data_dir data/images \
-    --annotation_dir data/annotations \
-    --class_mapping data/class_mapping.json \
-    --output_dir results/yolov8 \
-    --model yolov8s.pt \
-    --batch_size 16 \
-    --epochs 30 \
-    --gpu_id 2 > yolo_training.txt
-
-
 
 python scripts/yolo_training.py \
     --data_dir data/images \
@@ -55,28 +36,98 @@ python scripts/yolo_training.py \
     --analyze_only
 
 
-nohup scripts/yolo_training.py \
+
+
+python scripts/detect_notation.py \
+    --model /homes/es314/omr-objdet-benchmark/results/yolov8/yolo_train/weights/best.pt \
+    --image /homes/es314/omr-objdet-benchmark/data/test/splash_20231016T185758.png \
+    --class_mapping data/class_mapping.json \
+    --output_dir results/detections \
+    --conf 0.25 \
+    --max_detections 300
+
+
+nohup python scripts/robust_yolo_training.py \
     --data_dir data/images \
     --annotation_dir data/annotations \
     --class_mapping data/class_mapping.json \
-    --output_dir results/yolov8 \
-    --model yolov8n.pt \
-    --batch_size 8 \
-    --epochs 30 \
-    --min_box_size 10 \
-    --conf_threshold 0.001 \
-    --gpu_id 1 \
-    --debug > yolo_training_1.txt
-
-
-python scripts/yolo_training.py \
-    --data_dir data/images \
-    --annotation_dir data/annotations \
-    --class_mapping data/class_mapping.json \
-    --output_dir results/yolov8 \
-    --model yolov8s.pt \  # Using small model instead of nano for better accuracy
+    --output_dir results/yolov8_robust \
+    --model yolov8s.pt \
     --batch_size 32 \
-    --epochs 50 \  # More epochs for better convergence
-    --conf_threshold 0.001 \  # Keep low confidence threshold
+    --epochs 500 \
+    --conf_threshold 0.001 \
     --gpu_id 2 \
-    --workers 4  > yolo_training_1.txt
+    --workers 4 \
+    --yaml_path results/yolo_fixed/dataset.yaml > robust_yolo_training.txt
+
+
+
+    # DETR 
+
+    nohup python scripts/detr_training.py \
+    --data_dir data/images \
+    --train_annotation_dir data/annotations \
+    --val_annotation_dir data/val_annotations \
+    --class_mapping data/class_mapping.json \
+    --output_dir results/detr \
+    --batch_size 4 \
+    --epochs 100 \
+    --lr 1e-4 \
+    --world_size 1 > detr-training.txt
+
+
+
+    first run minimal_yolo_convereter then simple_yolo_train
+
+python old_doremi_minimal_yolo_converter.py \
+  --data_dir /homes/es314/DOREMI/data/old_data_72_classes/images \
+  --annotation_dir /homes/es314/DOREMI/data/old_data_72_classes/page_annotations \
+  --output_dir /homes/es314/omr-objdet-benchmark/old_doremi_72 \
+  --class_mapping /homes/es314/DOREMI/data/old_data_72_classes/train_validation_test_records/mapping.json
+
+
+nohup python 72_doremi_simple_yolo_train_8vx.py     --yaml /homes/es314/omr-objdet-benchmark/old_doremi_72/dataset.yaml     --model yolov8x.pt     --epochs 200     --batch 4     --device 1 > 72_doremi_simple_yolo_train_8vx.txt
+
+
+
+inference:
+/homes/es314/omr-objdet-benchmark/scripts/detect_notation.py
+
+python scripts/detect_notation.py \
+    --model /homes/es314/runs/detect/train11/weights/best.pt \
+    --image /homes/es314/omr-objdet-benchmark/old_doremi_72/24_Etudes_progressives_pour_la_guitare_Op.100_-_Mauro_Giuliani_1781_-_1829-028.png\
+    --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json \
+    --output_dir results/detections \
+    --conf 0.25 \
+    --max_detections 300
+
+
+    staffline focus:
+    
+    nohup python /homes/es314/omr-objdet-benchmark/scripts/staffline-recognition/yolo-converter.py \
+    --yaml results/yolo_fixed/dataset.yaml \
+    --model yolov8x.pt \
+    --epochs 200 \
+    --batch 4 \
+    --device 2 \
+    --staffline_class_id 3 > staffline-focus.txt
+
+
+
+    inference on staffline focused model
+    /homes/es314/omr-objdet-benchmark/runs/train/phase12/weights/best.pt
+
+    python scripts/detect_notation.py \
+    --model /homes/es314/omr-objdet-benchmark/runs/train/phase12/weights/best.pt \
+    --image /homes/es314/omr-objdet-benchmark/2-solo-Christmas_Greeting-003.png \
+    --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json \
+    --output_dir results/detections \
+    --conf 0.25 \
+    --max_detections 300
+
+
+
+
+tensorboard --logdir /homes/es314/runs
+
+tensorboard --logdir /homes/es314/runs
