@@ -2,3 +2,4 @@
 /results*.pt
 nohup.out
 *.txt
+events.out.*
