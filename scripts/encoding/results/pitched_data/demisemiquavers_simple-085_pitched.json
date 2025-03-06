@@ -1,0 +1,2547 @@
+{
+  "symbols": [
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 299.0,
+        "y1": 443.0,
+        "x2": 2299.0,
+        "y2": 445.0,
+        "width": 2000.0,
+        "height": 3.0,
+        "center_x": 1299.0,
+        "center_y": 444.0
+      },
+      "staff_system": 0,
+      "line_number": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 184.0,
+        "y1": 464.0,
+        "x2": 2299.0,
+        "y2": 466.0,
+        "width": 2115.0,
+        "height": 3.0,
+        "center_x": 1241.5,
+        "center_y": 465.0
+      },
+      "staff_system": 0,
+      "line_number": 1
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 300.0,
+        "y1": 484.0,
+        "x2": 2299.0,
+        "y2": 486.0,
+        "width": 1999.0,
+        "height": 3.0,
+        "center_x": 1299.5,
+        "center_y": 485.0
+      },
+      "staff_system": 0,
+      "line_number": 2
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 299.0,
+        "y1": 505.0,
+        "x2": 2299.0,
+        "y2": 507.0,
+        "width": 2000.0,
+        "height": 3.0,
+        "center_x": 1299.0,
+        "center_y": 506.0
+      },
+      "staff_system": 0,
+      "line_number": 3
+    },
+    {
+      "class_id": 14,
+      "class_name": "gClef",
+      "confidence": 0.9591460824012756,
+      "bbox": {
+        "x1": 308.82171630859375,
+        "y1": 395.6915588378906,
+        "x2": 364.669189453125,
+        "y2": 542.8527221679688,
+        "width": 55.84747314453125,
+        "height": 147.16116333007812,
+        "center_x": 336.7454528808594,
+        "center_y": 469.2721405029297
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9546911716461182,
+      "bbox": {
+        "x1": 535.4212646484375,
+        "y1": 465.92816162109375,
+        "x2": 563.3765258789062,
+        "y2": 489.7907409667969,
+        "width": 27.95526123046875,
+        "height": 23.862579345703125,
+        "center_x": 549.3988952636719,
+        "center_y": 477.8594512939453
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9540157318115234,
+      "bbox": {
+        "x1": 1752.8033447265625,
+        "y1": 465.9283752441406,
+        "x2": 1780.8861083984375,
+        "y2": 489.8564453125,
+        "width": 28.082763671875,
+        "height": 23.928070068359375,
+        "center_x": 1766.8447265625,
+        "center_y": 477.8924102783203
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9538434743881226,
+      "bbox": {
+        "x1": 658.9730834960938,
+        "y1": 465.9515075683594,
+        "x2": 687.1465454101562,
+        "y2": 489.9454040527344,
+        "width": 28.1734619140625,
+        "height": 23.993896484375,
+        "center_x": 673.059814453125,
+        "center_y": 477.9484558105469
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_0",
+          "beam_id": 18
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9538112878799438,
+      "bbox": {
+        "x1": 1174.9176025390625,
+        "y1": 465.937744140625,
+        "x2": 1202.935546875,
+        "y2": 489.9388122558594,
+        "width": 28.0179443359375,
+        "height": 24.001068115234375,
+        "center_x": 1188.9265747070312,
+        "center_y": 477.9382781982422
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_1",
+          "beam_id": 25
+        }
+      ]
+    },
+    {
+      "class_id": 30,
+      "class_name": "flag32ndUp",
+      "confidence": 0.9517988562583923,
+      "bbox": {
+        "x1": 436.9072570800781,
+        "y1": 392.13800048828125,
+        "x2": 458.6068420410156,
+        "y2": 473.0822448730469,
+        "width": 21.6995849609375,
+        "height": 80.94424438476562,
+        "center_x": 447.7570495605469,
+        "center_y": 432.61012268066406
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9514931440353394,
+      "bbox": {
+        "x1": 1690.5272216796875,
+        "y1": 465.912841796875,
+        "x2": 1718.7950439453125,
+        "y2": 490.13629150390625,
+        "width": 28.267822265625,
+        "height": 24.22344970703125,
+        "center_x": 1704.6611328125,
+        "center_y": 478.0245666503906
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.951368510723114,
+      "bbox": {
+        "x1": 844.5877685546875,
+        "y1": 466.0216064453125,
+        "x2": 872.8222045898438,
+        "y2": 490.0396423339844,
+        "width": 28.23443603515625,
+        "height": 24.018035888671875,
+        "center_x": 858.7049865722656,
+        "center_y": 478.03062438964844
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_0",
+          "beam_id": 18
+        }
+      ]
+    },
+    {
+      "class_id": 25,
+      "class_name": "rest32nd",
+      "confidence": 0.9512919783592224,
+      "bbox": {
+        "x1": 473.5870056152344,
+        "y1": 430.7846374511719,
+        "x2": 504.53375244140625,
+        "y2": 508.8647155761719,
+        "width": 30.946746826171875,
+        "height": 78.080078125,
+        "center_x": 489.0603790283203,
+        "center_y": 469.8246765136719
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9508419036865234,
+      "bbox": {
+        "x1": 2061.79248046875,
+        "y1": 465.69854736328125,
+        "x2": 2089.865966796875,
+        "y2": 489.9705505371094,
+        "width": 28.073486328125,
+        "height": 24.272003173828125,
+        "center_x": 2075.8292236328125,
+        "center_y": 477.8345489501953
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9508113265037537,
+      "bbox": {
+        "x1": 1875.938720703125,
+        "y1": 466.076171875,
+        "x2": 1903.763427734375,
+        "y2": 489.9773254394531,
+        "width": 27.82470703125,
+        "height": 23.901153564453125,
+        "center_x": 1889.85107421875,
+        "center_y": 478.02674865722656
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9506108164787292,
+      "bbox": {
+        "x1": 1360.60400390625,
+        "y1": 465.838134765625,
+        "x2": 1388.587158203125,
+        "y2": 489.9566955566406,
+        "width": 27.983154296875,
+        "height": 24.118560791015625,
+        "center_x": 1374.5955810546875,
+        "center_y": 477.8974151611328
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_1",
+          "beam_id": 25
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9485644698143005,
+      "bbox": {
+        "x1": 1937.9403076171875,
+        "y1": 465.9176025390625,
+        "x2": 1966.0865478515625,
+        "y2": 490.02703857421875,
+        "width": 28.146240234375,
+        "height": 24.10943603515625,
+        "center_x": 1952.013427734375,
+        "center_y": 477.9723205566406
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9478418827056885,
+      "bbox": {
+        "x1": 1236.780029296875,
+        "y1": 465.8905334472656,
+        "x2": 1265.1246337890625,
+        "y2": 490.1037902832031,
+        "width": 28.3446044921875,
+        "height": 24.2132568359375,
+        "center_x": 1250.9523315429688,
+        "center_y": 477.9971618652344
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_1",
+          "beam_id": 25
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9471911191940308,
+      "bbox": {
+        "x1": 1298.5640869140625,
+        "y1": 465.9992980957031,
+        "x2": 1326.7354736328125,
+        "y2": 490.0982971191406,
+        "width": 28.17138671875,
+        "height": 24.0989990234375,
+        "center_x": 1312.6497802734375,
+        "center_y": 478.0487976074219
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_1",
+          "beam_id": 25
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9471710324287415,
+      "bbox": {
+        "x1": 596.8845825195312,
+        "y1": 466.03790283203125,
+        "x2": 624.9296264648438,
+        "y2": 489.99652099609375,
+        "width": 28.0450439453125,
+        "height": 23.9586181640625,
+        "center_x": 610.9071044921875,
+        "center_y": 478.0172119140625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_0",
+          "beam_id": 18
+        }
+      ]
+    },
+    {
+      "class_id": 25,
+      "class_name": "rest32nd",
+      "confidence": 0.9470177292823792,
+      "bbox": {
+        "x1": 1050.7166748046875,
+        "y1": 430.8780517578125,
+        "x2": 1082.187255859375,
+        "y2": 509.05487060546875,
+        "width": 31.4705810546875,
+        "height": 78.17681884765625,
+        "center_x": 1066.4519653320312,
+        "center_y": 469.9664611816406
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9467572569847107,
+      "bbox": {
+        "x1": 1999.758056640625,
+        "y1": 465.90087890625,
+        "x2": 2027.9658203125,
+        "y2": 489.9881896972656,
+        "width": 28.207763671875,
+        "height": 24.087310791015625,
+        "center_x": 2013.8619384765625,
+        "center_y": 477.9445343017578
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ]
+    },
+    {
+      "class_id": 4,
+      "class_name": "beam",
+      "confidence": 0.9463513493537903,
+      "bbox": {
+        "x1": 560.935791015625,
+        "y1": 388.7904968261719,
+        "x2": 873.0158081054688,
+        "y2": 431.09625244140625,
+        "width": 312.08001708984375,
+        "height": 42.305755615234375,
+        "center_x": 716.9757995605469,
+        "center_y": 409.94337463378906
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "connects_notehead",
+          "id": 3
+        },
+        {
+          "type": "connects_notehead",
+          "id": 7
+        },
+        {
+          "type": "connects_notehead",
+          "id": 15
+        },
+        {
+          "type": "connects_notehead",
+          "id": 24
+        },
+        {
+          "type": "connects_notehead",
+          "id": 29
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9451100826263428,
+      "bbox": {
+        "x1": 411.9235534667969,
+        "y1": 466.079833984375,
+        "x2": 439.626708984375,
+        "y2": 490.0754089355469,
+        "width": 27.703155517578125,
+        "height": 23.995574951171875,
+        "center_x": 425.77513122558594,
+        "center_y": 478.07762145996094
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 8,
+      "class_name": "rest8th",
+      "confidence": 0.9442431330680847,
+      "bbox": {
+        "x1": 2185.951416015625,
+        "y1": 451.79852294921875,
+        "x2": 2206.72802734375,
+        "y2": 487.9231872558594,
+        "width": 20.776611328125,
+        "height": 36.124664306640625,
+        "center_x": 2196.3397216796875,
+        "center_y": 469.86085510253906
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 8,
+      "class_name": "rest8th",
+      "confidence": 0.9433321952819824,
+      "bbox": {
+        "x1": 906.4093627929688,
+        "y1": 451.9329833984375,
+        "x2": 927.8209838867188,
+        "y2": 488.06793212890625,
+        "width": 21.41162109375,
+        "height": 36.13494873046875,
+        "center_x": 917.1151733398438,
+        "center_y": 470.0004577636719
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 8,
+      "class_name": "rest8th",
+      "confidence": 0.9432453513145447,
+      "bbox": {
+        "x1": 1545.665771484375,
+        "y1": 451.707763671875,
+        "x2": 1566.926513671875,
+        "y2": 488.05914306640625,
+        "width": 21.2607421875,
+        "height": 36.35137939453125,
+        "center_x": 1556.296142578125,
+        "center_y": 469.8834533691406
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9420390129089355,
+      "bbox": {
+        "x1": 1483.73193359375,
+        "y1": 465.9996337890625,
+        "x2": 1511.9056396484375,
+        "y2": 490.0960388183594,
+        "width": 28.1737060546875,
+        "height": 24.096405029296875,
+        "center_x": 1497.8187866210938,
+        "center_y": 478.04783630371094
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_1",
+          "beam_id": 25
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9417998790740967,
+      "bbox": {
+        "x1": 782.6844482421875,
+        "y1": 465.8559875488281,
+        "x2": 810.9197998046875,
+        "y2": 490.0502014160156,
+        "width": 28.2353515625,
+        "height": 24.1942138671875,
+        "center_x": 796.8021240234375,
+        "center_y": 477.9530944824219
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_0",
+          "beam_id": 18
+        }
+      ]
+    },
+    {
+      "class_id": 4,
+      "class_name": "beam",
+      "confidence": 0.9414627552032471,
+      "bbox": {
+        "x1": 1137.6331787109375,
+        "y1": 388.9031066894531,
+        "x2": 1512.6954345703125,
+        "y2": 430.88482666015625,
+        "width": 375.062255859375,
+        "height": 41.981719970703125,
+        "center_x": 1325.164306640625,
+        "center_y": 409.8939666748047
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "connects_notehead",
+          "id": 4
+        },
+        {
+          "type": "connects_notehead",
+          "id": 11
+        },
+        {
+          "type": "connects_notehead",
+          "id": 13
+        },
+        {
+          "type": "connects_notehead",
+          "id": 14
+        },
+        {
+          "type": "connects_notehead",
+          "id": 23
+        },
+        {
+          "type": "connects_notehead",
+          "id": 26
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9402822852134705,
+      "bbox": {
+        "x1": 1422.1539306640625,
+        "y1": 465.8666076660156,
+        "x2": 1450.0953369140625,
+        "y2": 489.8550720214844,
+        "width": 27.94140625,
+        "height": 23.98846435546875,
+        "center_x": 1436.1246337890625,
+        "center_y": 477.86083984375
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_1",
+          "beam_id": 25
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9399712681770325,
+      "bbox": {
+        "x1": 1112.9237060546875,
+        "y1": 465.9508972167969,
+        "x2": 1141.226318359375,
+        "y2": 490.00634765625,
+        "width": 28.3026123046875,
+        "height": 24.055450439453125,
+        "center_x": 1127.0750122070312,
+        "center_y": 477.97862243652344
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9390753507614136,
+      "bbox": {
+        "x1": 2123.60009765625,
+        "y1": 466.03289794921875,
+        "x2": 2151.934326171875,
+        "y2": 490.02935791015625,
+        "width": 28.334228515625,
+        "height": 23.9964599609375,
+        "center_x": 2137.7672119140625,
+        "center_y": 478.0311279296875
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9382798075675964,
+      "bbox": {
+        "x1": 720.9354248046875,
+        "y1": 465.9734802246094,
+        "x2": 748.9530029296875,
+        "y2": 489.8677062988281,
+        "width": 28.017578125,
+        "height": 23.89422607421875,
+        "center_x": 734.9442138671875,
+        "center_y": 477.92059326171875
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_0",
+          "beam_id": 18
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9350681900978088,
+      "bbox": {
+        "x1": 1814.2255859375,
+        "y1": 465.9974670410156,
+        "x2": 1842.4888916015625,
+        "y2": 490.07806396484375,
+        "width": 28.2633056640625,
+        "height": 24.080596923828125,
+        "center_x": 1828.3572387695312,
+        "center_y": 478.0377655029297
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ]
+    },
+    {
+      "class_id": 4,
+      "class_name": "beam",
+      "confidence": 0.9319080114364624,
+      "bbox": {
+        "x1": 1713.95361328125,
+        "y1": 388.97772216796875,
+        "x2": 2152.597900390625,
+        "y2": 430.97503662109375,
+        "width": 438.644287109375,
+        "height": 41.997314453125,
+        "center_x": 1933.2757568359375,
+        "center_y": 409.97637939453125
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "connects_notehead",
+          "id": 2
+        },
+        {
+          "type": "connects_notehead",
+          "id": 9
+        },
+        {
+          "type": "connects_notehead",
+          "id": 10
+        },
+        {
+          "type": "connects_notehead",
+          "id": 12
+        },
+        {
+          "type": "connects_notehead",
+          "id": 17
+        },
+        {
+          "type": "connects_notehead",
+          "id": 28
+        },
+        {
+          "type": "connects_notehead",
+          "id": 30
+        }
+      ]
+    }
+  ],
+  "staff_systems": [
+    {
+      "id": "staff_0",
+      "symbols": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "groupings": {
+    "staff_0": [
+      {
+        "class_id": 14,
+        "class_name": "gClef",
+        "confidence": 0.9591460824012756,
+        "bbox": {
+          "x1": 308.82171630859375,
+          "y1": 395.6915588378906,
+          "x2": 364.669189453125,
+          "y2": 542.8527221679688,
+          "width": 55.84747314453125,
+          "height": 147.16116333007812,
+          "center_x": 336.7454528808594,
+          "center_y": 469.2721405029297
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9546911716461182,
+        "bbox": {
+          "x1": 535.4212646484375,
+          "y1": 465.92816162109375,
+          "x2": 563.3765258789062,
+          "y2": 489.7907409667969,
+          "width": 27.95526123046875,
+          "height": 23.862579345703125,
+          "center_x": 549.3988952636719,
+          "center_y": 477.8594512939453
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9540157318115234,
+        "bbox": {
+          "x1": 1752.8033447265625,
+          "y1": 465.9283752441406,
+          "x2": 1780.8861083984375,
+          "y2": 489.8564453125,
+          "width": 28.082763671875,
+          "height": 23.928070068359375,
+          "center_x": 1766.8447265625,
+          "center_y": 477.8924102783203
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_2",
+            "beam_id": 31
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9538434743881226,
+        "bbox": {
+          "x1": 658.9730834960938,
+          "y1": 465.9515075683594,
+          "x2": 687.1465454101562,
+          "y2": 489.9454040527344,
+          "width": 28.1734619140625,
+          "height": 23.993896484375,
+          "center_x": 673.059814453125,
+          "center_y": 477.9484558105469
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_0",
+            "beam_id": 18
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9538112878799438,
+        "bbox": {
+          "x1": 1174.9176025390625,
+          "y1": 465.937744140625,
+          "x2": 1202.935546875,
+          "y2": 489.9388122558594,
+          "width": 28.0179443359375,
+          "height": 24.001068115234375,
+          "center_x": 1188.9265747070312,
+          "center_y": 477.9382781982422
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_1",
+            "beam_id": 25
+          }
+        ]
+      },
+      {
+        "class_id": 30,
+        "class_name": "flag32ndUp",
+        "confidence": 0.9517988562583923,
+        "bbox": {
+          "x1": 436.9072570800781,
+          "y1": 392.13800048828125,
+          "x2": 458.6068420410156,
+          "y2": 473.0822448730469,
+          "width": 21.6995849609375,
+          "height": 80.94424438476562,
+          "center_x": 447.7570495605469,
+          "center_y": 432.61012268066406
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9514931440353394,
+        "bbox": {
+          "x1": 1690.5272216796875,
+          "y1": 465.912841796875,
+          "x2": 1718.7950439453125,
+          "y2": 490.13629150390625,
+          "width": 28.267822265625,
+          "height": 24.22344970703125,
+          "center_x": 1704.6611328125,
+          "center_y": 478.0245666503906
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.951368510723114,
+        "bbox": {
+          "x1": 844.5877685546875,
+          "y1": 466.0216064453125,
+          "x2": 872.8222045898438,
+          "y2": 490.0396423339844,
+          "width": 28.23443603515625,
+          "height": 24.018035888671875,
+          "center_x": 858.7049865722656,
+          "center_y": 478.03062438964844
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_0",
+            "beam_id": 18
+          }
+        ]
+      },
+      {
+        "class_id": 25,
+        "class_name": "rest32nd",
+        "confidence": 0.9512919783592224,
+        "bbox": {
+          "x1": 473.5870056152344,
+          "y1": 430.7846374511719,
+          "x2": 504.53375244140625,
+          "y2": 508.8647155761719,
+          "width": 30.946746826171875,
+          "height": 78.080078125,
+          "center_x": 489.0603790283203,
+          "center_y": 469.8246765136719
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9508419036865234,
+        "bbox": {
+          "x1": 2061.79248046875,
+          "y1": 465.69854736328125,
+          "x2": 2089.865966796875,
+          "y2": 489.9705505371094,
+          "width": 28.073486328125,
+          "height": 24.272003173828125,
+          "center_x": 2075.8292236328125,
+          "center_y": 477.8345489501953
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_2",
+            "beam_id": 31
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9508113265037537,
+        "bbox": {
+          "x1": 1875.938720703125,
+          "y1": 466.076171875,
+          "x2": 1903.763427734375,
+          "y2": 489.9773254394531,
+          "width": 27.82470703125,
+          "height": 23.901153564453125,
+          "center_x": 1889.85107421875,
+          "center_y": 478.02674865722656
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_2",
+            "beam_id": 31
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9506108164787292,
+        "bbox": {
+          "x1": 1360.60400390625,
+          "y1": 465.838134765625,
+          "x2": 1388.587158203125,
+          "y2": 489.9566955566406,
+          "width": 27.983154296875,
+          "height": 24.118560791015625,
+          "center_x": 1374.5955810546875,
+          "center_y": 477.8974151611328
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_1",
+            "beam_id": 25
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9485644698143005,
+        "bbox": {
+          "x1": 1937.9403076171875,
+          "y1": 465.9176025390625,
+          "x2": 1966.0865478515625,
+          "y2": 490.02703857421875,
+          "width": 28.146240234375,
+          "height": 24.10943603515625,
+          "center_x": 1952.013427734375,
+          "center_y": 477.9723205566406
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_2",
+            "beam_id": 31
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9478418827056885,
+        "bbox": {
+          "x1": 1236.780029296875,
+          "y1": 465.8905334472656,
+          "x2": 1265.1246337890625,
+          "y2": 490.1037902832031,
+          "width": 28.3446044921875,
+          "height": 24.2132568359375,
+          "center_x": 1250.9523315429688,
+          "center_y": 477.9971618652344
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_1",
+            "beam_id": 25
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9471911191940308,
+        "bbox": {
+          "x1": 1298.5640869140625,
+          "y1": 465.9992980957031,
+          "x2": 1326.7354736328125,
+          "y2": 490.0982971191406,
+          "width": 28.17138671875,
+          "height": 24.0989990234375,
+          "center_x": 1312.6497802734375,
+          "center_y": 478.0487976074219
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_1",
+            "beam_id": 25
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9471710324287415,
+        "bbox": {
+          "x1": 596.8845825195312,
+          "y1": 466.03790283203125,
+          "x2": 624.9296264648438,
+          "y2": 489.99652099609375,
+          "width": 28.0450439453125,
+          "height": 23.9586181640625,
+          "center_x": 610.9071044921875,
+          "center_y": 478.0172119140625
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_0",
+            "beam_id": 18
+          }
+        ]
+      },
+      {
+        "class_id": 25,
+        "class_name": "rest32nd",
+        "confidence": 0.9470177292823792,
+        "bbox": {
+          "x1": 1050.7166748046875,
+          "y1": 430.8780517578125,
+          "x2": 1082.187255859375,
+          "y2": 509.05487060546875,
+          "width": 31.4705810546875,
+          "height": 78.17681884765625,
+          "center_x": 1066.4519653320312,
+          "center_y": 469.9664611816406
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9467572569847107,
+        "bbox": {
+          "x1": 1999.758056640625,
+          "y1": 465.90087890625,
+          "x2": 2027.9658203125,
+          "y2": 489.9881896972656,
+          "width": 28.207763671875,
+          "height": 24.087310791015625,
+          "center_x": 2013.8619384765625,
+          "center_y": 477.9445343017578
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_2",
+            "beam_id": 31
+          }
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "beam",
+        "confidence": 0.9463513493537903,
+        "bbox": {
+          "x1": 560.935791015625,
+          "y1": 388.7904968261719,
+          "x2": 873.0158081054688,
+          "y2": 431.09625244140625,
+          "width": 312.08001708984375,
+          "height": 42.305755615234375,
+          "center_x": 716.9757995605469,
+          "center_y": 409.94337463378906
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "connects_notehead",
+            "id": 3
+          },
+          {
+            "type": "connects_notehead",
+            "id": 7
+          },
+          {
+            "type": "connects_notehead",
+            "id": 15
+          },
+          {
+            "type": "connects_notehead",
+            "id": 24
+          },
+          {
+            "type": "connects_notehead",
+            "id": 29
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9451100826263428,
+        "bbox": {
+          "x1": 411.9235534667969,
+          "y1": 466.079833984375,
+          "x2": 439.626708984375,
+          "y2": 490.0754089355469,
+          "width": 27.703155517578125,
+          "height": 23.995574951171875,
+          "center_x": 425.77513122558594,
+          "center_y": 478.07762145996094
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 8,
+        "class_name": "rest8th",
+        "confidence": 0.9442431330680847,
+        "bbox": {
+          "x1": 2185.951416015625,
+          "y1": 451.79852294921875,
+          "x2": 2206.72802734375,
+          "y2": 487.9231872558594,
+          "width": 20.776611328125,
+          "height": 36.124664306640625,
+          "center_x": 2196.3397216796875,
+          "center_y": 469.86085510253906
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 8,
+        "class_name": "rest8th",
+        "confidence": 0.9433321952819824,
+        "bbox": {
+          "x1": 906.4093627929688,
+          "y1": 451.9329833984375,
+          "x2": 927.8209838867188,
+          "y2": 488.06793212890625,
+          "width": 21.41162109375,
+          "height": 36.13494873046875,
+          "center_x": 917.1151733398438,
+          "center_y": 470.0004577636719
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 8,
+        "class_name": "rest8th",
+        "confidence": 0.9432453513145447,
+        "bbox": {
+          "x1": 1545.665771484375,
+          "y1": 451.707763671875,
+          "x2": 1566.926513671875,
+          "y2": 488.05914306640625,
+          "width": 21.2607421875,
+          "height": 36.35137939453125,
+          "center_x": 1556.296142578125,
+          "center_y": 469.8834533691406
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9420390129089355,
+        "bbox": {
+          "x1": 1483.73193359375,
+          "y1": 465.9996337890625,
+          "x2": 1511.9056396484375,
+          "y2": 490.0960388183594,
+          "width": 28.1737060546875,
+          "height": 24.096405029296875,
+          "center_x": 1497.8187866210938,
+          "center_y": 478.04783630371094
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_1",
+            "beam_id": 25
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9417998790740967,
+        "bbox": {
+          "x1": 782.6844482421875,
+          "y1": 465.8559875488281,
+          "x2": 810.9197998046875,
+          "y2": 490.0502014160156,
+          "width": 28.2353515625,
+          "height": 24.1942138671875,
+          "center_x": 796.8021240234375,
+          "center_y": 477.9530944824219
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_0",
+            "beam_id": 18
+          }
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "beam",
+        "confidence": 0.9414627552032471,
+        "bbox": {
+          "x1": 1137.6331787109375,
+          "y1": 388.9031066894531,
+          "x2": 1512.6954345703125,
+          "y2": 430.88482666015625,
+          "width": 375.062255859375,
+          "height": 41.981719970703125,
+          "center_x": 1325.164306640625,
+          "center_y": 409.8939666748047
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "connects_notehead",
+            "id": 4
+          },
+          {
+            "type": "connects_notehead",
+            "id": 11
+          },
+          {
+            "type": "connects_notehead",
+            "id": 13
+          },
+          {
+            "type": "connects_notehead",
+            "id": 14
+          },
+          {
+            "type": "connects_notehead",
+            "id": 23
+          },
+          {
+            "type": "connects_notehead",
+            "id": 26
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9402822852134705,
+        "bbox": {
+          "x1": 1422.1539306640625,
+          "y1": 465.8666076660156,
+          "x2": 1450.0953369140625,
+          "y2": 489.8550720214844,
+          "width": 27.94140625,
+          "height": 23.98846435546875,
+          "center_x": 1436.1246337890625,
+          "center_y": 477.86083984375
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_1",
+            "beam_id": 25
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9399712681770325,
+        "bbox": {
+          "x1": 1112.9237060546875,
+          "y1": 465.9508972167969,
+          "x2": 1141.226318359375,
+          "y2": 490.00634765625,
+          "width": 28.3026123046875,
+          "height": 24.055450439453125,
+          "center_x": 1127.0750122070312,
+          "center_y": 477.97862243652344
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9390753507614136,
+        "bbox": {
+          "x1": 2123.60009765625,
+          "y1": 466.03289794921875,
+          "x2": 2151.934326171875,
+          "y2": 490.02935791015625,
+          "width": 28.334228515625,
+          "height": 23.9964599609375,
+          "center_x": 2137.7672119140625,
+          "center_y": 478.0311279296875
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_2",
+            "beam_id": 31
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9382798075675964,
+        "bbox": {
+          "x1": 720.9354248046875,
+          "y1": 465.9734802246094,
+          "x2": 748.9530029296875,
+          "y2": 489.8677062988281,
+          "width": 28.017578125,
+          "height": 23.89422607421875,
+          "center_x": 734.9442138671875,
+          "center_y": 477.92059326171875
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_0",
+            "beam_id": 18
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9350681900978088,
+        "bbox": {
+          "x1": 1814.2255859375,
+          "y1": 465.9974670410156,
+          "x2": 1842.4888916015625,
+          "y2": 490.07806396484375,
+          "width": 28.2633056640625,
+          "height": 24.080596923828125,
+          "center_x": 1828.3572387695312,
+          "center_y": 478.0377655029297
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "part_of_beamed_group",
+            "id": "beamed_group_staff_0_2",
+            "beam_id": 31
+          }
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "beam",
+        "confidence": 0.9319080114364624,
+        "bbox": {
+          "x1": 1713.95361328125,
+          "y1": 388.97772216796875,
+          "x2": 2152.597900390625,
+          "y2": 430.97503662109375,
+          "width": 438.644287109375,
+          "height": 41.997314453125,
+          "center_x": 1933.2757568359375,
+          "center_y": 409.97637939453125
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "type": "connects_notehead",
+            "id": 2
+          },
+          {
+            "type": "connects_notehead",
+            "id": 9
+          },
+          {
+            "type": "connects_notehead",
+            "id": 10
+          },
+          {
+            "type": "connects_notehead",
+            "id": 12
+          },
+          {
+            "type": "connects_notehead",
+            "id": 17
+          },
+          {
+            "type": "connects_notehead",
+            "id": 28
+          },
+          {
+            "type": "connects_notehead",
+            "id": 30
+          }
+        ]
+      }
+    ]
+  },
+  "detections": [
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 299.0,
+        "y1": 443.0,
+        "x2": 2299.0,
+        "y2": 445.0,
+        "width": 2000.0,
+        "height": 3.0,
+        "center_x": 1299.0,
+        "center_y": 444.0
+      },
+      "staff_system": 0,
+      "line_number": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 184.0,
+        "y1": 464.0,
+        "x2": 2299.0,
+        "y2": 466.0,
+        "width": 2115.0,
+        "height": 3.0,
+        "center_x": 1241.5,
+        "center_y": 465.0
+      },
+      "staff_system": 0,
+      "line_number": 1
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 300.0,
+        "y1": 484.0,
+        "x2": 2299.0,
+        "y2": 486.0,
+        "width": 1999.0,
+        "height": 3.0,
+        "center_x": 1299.5,
+        "center_y": 485.0
+      },
+      "staff_system": 0,
+      "line_number": 2
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 299.0,
+        "y1": 505.0,
+        "x2": 2299.0,
+        "y2": 507.0,
+        "width": 2000.0,
+        "height": 3.0,
+        "center_x": 1299.0,
+        "center_y": 506.0
+      },
+      "staff_system": 0,
+      "line_number": 3
+    },
+    {
+      "class_id": 14,
+      "class_name": "gClef",
+      "confidence": 0.9591460824012756,
+      "bbox": {
+        "x1": 308.82171630859375,
+        "y1": 395.6915588378906,
+        "x2": 364.669189453125,
+        "y2": 542.8527221679688,
+        "width": 55.84747314453125,
+        "height": 147.16116333007812,
+        "center_x": 336.7454528808594,
+        "center_y": 469.2721405029297
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9546911716461182,
+      "bbox": {
+        "x1": 535.4212646484375,
+        "y1": 465.92816162109375,
+        "x2": 563.3765258789062,
+        "y2": 489.7907409667969,
+        "width": 27.95526123046875,
+        "height": 23.862579345703125,
+        "center_x": 549.3988952636719,
+        "center_y": 477.8594512939453
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9540157318115234,
+      "bbox": {
+        "x1": 1752.8033447265625,
+        "y1": 465.9283752441406,
+        "x2": 1780.8861083984375,
+        "y2": 489.8564453125,
+        "width": 28.082763671875,
+        "height": 23.928070068359375,
+        "center_x": 1766.8447265625,
+        "center_y": 477.8924102783203
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9538434743881226,
+      "bbox": {
+        "x1": 658.9730834960938,
+        "y1": 465.9515075683594,
+        "x2": 687.1465454101562,
+        "y2": 489.9454040527344,
+        "width": 28.1734619140625,
+        "height": 23.993896484375,
+        "center_x": 673.059814453125,
+        "center_y": 477.9484558105469
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_0",
+          "beam_id": 18
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9538112878799438,
+      "bbox": {
+        "x1": 1174.9176025390625,
+        "y1": 465.937744140625,
+        "x2": 1202.935546875,
+        "y2": 489.9388122558594,
+        "width": 28.0179443359375,
+        "height": 24.001068115234375,
+        "center_x": 1188.9265747070312,
+        "center_y": 477.9382781982422
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_1",
+          "beam_id": 25
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 30,
+      "class_name": "flag32ndUp",
+      "confidence": 0.9517988562583923,
+      "bbox": {
+        "x1": 436.9072570800781,
+        "y1": 392.13800048828125,
+        "x2": 458.6068420410156,
+        "y2": 473.0822448730469,
+        "width": 21.6995849609375,
+        "height": 80.94424438476562,
+        "center_x": 447.7570495605469,
+        "center_y": 432.61012268066406
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9514931440353394,
+      "bbox": {
+        "x1": 1690.5272216796875,
+        "y1": 465.912841796875,
+        "x2": 1718.7950439453125,
+        "y2": 490.13629150390625,
+        "width": 28.267822265625,
+        "height": 24.22344970703125,
+        "center_x": 1704.6611328125,
+        "center_y": 478.0245666503906
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.951368510723114,
+      "bbox": {
+        "x1": 844.5877685546875,
+        "y1": 466.0216064453125,
+        "x2": 872.8222045898438,
+        "y2": 490.0396423339844,
+        "width": 28.23443603515625,
+        "height": 24.018035888671875,
+        "center_x": 858.7049865722656,
+        "center_y": 478.03062438964844
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_0",
+          "beam_id": 18
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 25,
+      "class_name": "rest32nd",
+      "confidence": 0.9512919783592224,
+      "bbox": {
+        "x1": 473.5870056152344,
+        "y1": 430.7846374511719,
+        "x2": 504.53375244140625,
+        "y2": 508.8647155761719,
+        "width": 30.946746826171875,
+        "height": 78.080078125,
+        "center_x": 489.0603790283203,
+        "center_y": 469.8246765136719
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9508419036865234,
+      "bbox": {
+        "x1": 2061.79248046875,
+        "y1": 465.69854736328125,
+        "x2": 2089.865966796875,
+        "y2": 489.9705505371094,
+        "width": 28.073486328125,
+        "height": 24.272003173828125,
+        "center_x": 2075.8292236328125,
+        "center_y": 477.8345489501953
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9508113265037537,
+      "bbox": {
+        "x1": 1875.938720703125,
+        "y1": 466.076171875,
+        "x2": 1903.763427734375,
+        "y2": 489.9773254394531,
+        "width": 27.82470703125,
+        "height": 23.901153564453125,
+        "center_x": 1889.85107421875,
+        "center_y": 478.02674865722656
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9506108164787292,
+      "bbox": {
+        "x1": 1360.60400390625,
+        "y1": 465.838134765625,
+        "x2": 1388.587158203125,
+        "y2": 489.9566955566406,
+        "width": 27.983154296875,
+        "height": 24.118560791015625,
+        "center_x": 1374.5955810546875,
+        "center_y": 477.8974151611328
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_1",
+          "beam_id": 25
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9485644698143005,
+      "bbox": {
+        "x1": 1937.9403076171875,
+        "y1": 465.9176025390625,
+        "x2": 1966.0865478515625,
+        "y2": 490.02703857421875,
+        "width": 28.146240234375,
+        "height": 24.10943603515625,
+        "center_x": 1952.013427734375,
+        "center_y": 477.9723205566406
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9478418827056885,
+      "bbox": {
+        "x1": 1236.780029296875,
+        "y1": 465.8905334472656,
+        "x2": 1265.1246337890625,
+        "y2": 490.1037902832031,
+        "width": 28.3446044921875,
+        "height": 24.2132568359375,
+        "center_x": 1250.9523315429688,
+        "center_y": 477.9971618652344
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_1",
+          "beam_id": 25
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9471911191940308,
+      "bbox": {
+        "x1": 1298.5640869140625,
+        "y1": 465.9992980957031,
+        "x2": 1326.7354736328125,
+        "y2": 490.0982971191406,
+        "width": 28.17138671875,
+        "height": 24.0989990234375,
+        "center_x": 1312.6497802734375,
+        "center_y": 478.0487976074219
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_1",
+          "beam_id": 25
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9471710324287415,
+      "bbox": {
+        "x1": 596.8845825195312,
+        "y1": 466.03790283203125,
+        "x2": 624.9296264648438,
+        "y2": 489.99652099609375,
+        "width": 28.0450439453125,
+        "height": 23.9586181640625,
+        "center_x": 610.9071044921875,
+        "center_y": 478.0172119140625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_0",
+          "beam_id": 18
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 25,
+      "class_name": "rest32nd",
+      "confidence": 0.9470177292823792,
+      "bbox": {
+        "x1": 1050.7166748046875,
+        "y1": 430.8780517578125,
+        "x2": 1082.187255859375,
+        "y2": 509.05487060546875,
+        "width": 31.4705810546875,
+        "height": 78.17681884765625,
+        "center_x": 1066.4519653320312,
+        "center_y": 469.9664611816406
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9467572569847107,
+      "bbox": {
+        "x1": 1999.758056640625,
+        "y1": 465.90087890625,
+        "x2": 2027.9658203125,
+        "y2": 489.9881896972656,
+        "width": 28.207763671875,
+        "height": 24.087310791015625,
+        "center_x": 2013.8619384765625,
+        "center_y": 477.9445343017578
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 4,
+      "class_name": "beam",
+      "confidence": 0.9463513493537903,
+      "bbox": {
+        "x1": 560.935791015625,
+        "y1": 388.7904968261719,
+        "x2": 873.0158081054688,
+        "y2": 431.09625244140625,
+        "width": 312.08001708984375,
+        "height": 42.305755615234375,
+        "center_x": 716.9757995605469,
+        "center_y": 409.94337463378906
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "connects_notehead",
+          "id": 3
+        },
+        {
+          "type": "connects_notehead",
+          "id": 7
+        },
+        {
+          "type": "connects_notehead",
+          "id": 15
+        },
+        {
+          "type": "connects_notehead",
+          "id": 24
+        },
+        {
+          "type": "connects_notehead",
+          "id": 29
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9451100826263428,
+      "bbox": {
+        "x1": 411.9235534667969,
+        "y1": 466.079833984375,
+        "x2": 439.626708984375,
+        "y2": 490.0754089355469,
+        "width": 27.703155517578125,
+        "height": 23.995574951171875,
+        "center_x": 425.77513122558594,
+        "center_y": 478.07762145996094
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 8,
+      "class_name": "rest8th",
+      "confidence": 0.9442431330680847,
+      "bbox": {
+        "x1": 2185.951416015625,
+        "y1": 451.79852294921875,
+        "x2": 2206.72802734375,
+        "y2": 487.9231872558594,
+        "width": 20.776611328125,
+        "height": 36.124664306640625,
+        "center_x": 2196.3397216796875,
+        "center_y": 469.86085510253906
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 8,
+      "class_name": "rest8th",
+      "confidence": 0.9433321952819824,
+      "bbox": {
+        "x1": 906.4093627929688,
+        "y1": 451.9329833984375,
+        "x2": 927.8209838867188,
+        "y2": 488.06793212890625,
+        "width": 21.41162109375,
+        "height": 36.13494873046875,
+        "center_x": 917.1151733398438,
+        "center_y": 470.0004577636719
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 8,
+      "class_name": "rest8th",
+      "confidence": 0.9432453513145447,
+      "bbox": {
+        "x1": 1545.665771484375,
+        "y1": 451.707763671875,
+        "x2": 1566.926513671875,
+        "y2": 488.05914306640625,
+        "width": 21.2607421875,
+        "height": 36.35137939453125,
+        "center_x": 1556.296142578125,
+        "center_y": 469.8834533691406
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9420390129089355,
+      "bbox": {
+        "x1": 1483.73193359375,
+        "y1": 465.9996337890625,
+        "x2": 1511.9056396484375,
+        "y2": 490.0960388183594,
+        "width": 28.1737060546875,
+        "height": 24.096405029296875,
+        "center_x": 1497.8187866210938,
+        "center_y": 478.04783630371094
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_1",
+          "beam_id": 25
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9417998790740967,
+      "bbox": {
+        "x1": 782.6844482421875,
+        "y1": 465.8559875488281,
+        "x2": 810.9197998046875,
+        "y2": 490.0502014160156,
+        "width": 28.2353515625,
+        "height": 24.1942138671875,
+        "center_x": 796.8021240234375,
+        "center_y": 477.9530944824219
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_0",
+          "beam_id": 18
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 4,
+      "class_name": "beam",
+      "confidence": 0.9414627552032471,
+      "bbox": {
+        "x1": 1137.6331787109375,
+        "y1": 388.9031066894531,
+        "x2": 1512.6954345703125,
+        "y2": 430.88482666015625,
+        "width": 375.062255859375,
+        "height": 41.981719970703125,
+        "center_x": 1325.164306640625,
+        "center_y": 409.8939666748047
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "connects_notehead",
+          "id": 4
+        },
+        {
+          "type": "connects_notehead",
+          "id": 11
+        },
+        {
+          "type": "connects_notehead",
+          "id": 13
+        },
+        {
+          "type": "connects_notehead",
+          "id": 14
+        },
+        {
+          "type": "connects_notehead",
+          "id": 23
+        },
+        {
+          "type": "connects_notehead",
+          "id": 26
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9402822852134705,
+      "bbox": {
+        "x1": 1422.1539306640625,
+        "y1": 465.8666076660156,
+        "x2": 1450.0953369140625,
+        "y2": 489.8550720214844,
+        "width": 27.94140625,
+        "height": 23.98846435546875,
+        "center_x": 1436.1246337890625,
+        "center_y": 477.86083984375
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_1",
+          "beam_id": 25
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9399712681770325,
+      "bbox": {
+        "x1": 1112.9237060546875,
+        "y1": 465.9508972167969,
+        "x2": 1141.226318359375,
+        "y2": 490.00634765625,
+        "width": 28.3026123046875,
+        "height": 24.055450439453125,
+        "center_x": 1127.0750122070312,
+        "center_y": 477.97862243652344
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9390753507614136,
+      "bbox": {
+        "x1": 2123.60009765625,
+        "y1": 466.03289794921875,
+        "x2": 2151.934326171875,
+        "y2": 490.02935791015625,
+        "width": 28.334228515625,
+        "height": 23.9964599609375,
+        "center_x": 2137.7672119140625,
+        "center_y": 478.0311279296875
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9382798075675964,
+      "bbox": {
+        "x1": 720.9354248046875,
+        "y1": 465.9734802246094,
+        "x2": 748.9530029296875,
+        "y2": 489.8677062988281,
+        "width": 28.017578125,
+        "height": 23.89422607421875,
+        "center_x": 734.9442138671875,
+        "center_y": 477.92059326171875
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_0",
+          "beam_id": 18
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9350681900978088,
+      "bbox": {
+        "x1": 1814.2255859375,
+        "y1": 465.9974670410156,
+        "x2": 1842.4888916015625,
+        "y2": 490.07806396484375,
+        "width": 28.2633056640625,
+        "height": 24.080596923828125,
+        "center_x": 1828.3572387695312,
+        "center_y": 478.0377655029297
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "part_of_beamed_group",
+          "id": "beamed_group_staff_0_2",
+          "beam_id": 31
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 4,
+      "class_name": "beam",
+      "confidence": 0.9319080114364624,
+      "bbox": {
+        "x1": 1713.95361328125,
+        "y1": 388.97772216796875,
+        "x2": 2152.597900390625,
+        "y2": 430.97503662109375,
+        "width": 438.644287109375,
+        "height": 41.997314453125,
+        "center_x": 1933.2757568359375,
+        "center_y": 409.97637939453125
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "type": "connects_notehead",
+          "id": 2
+        },
+        {
+          "type": "connects_notehead",
+          "id": 9
+        },
+        {
+          "type": "connects_notehead",
+          "id": 10
+        },
+        {
+          "type": "connects_notehead",
+          "id": 12
+        },
+        {
+          "type": "connects_notehead",
+          "id": 17
+        },
+        {
+          "type": "connects_notehead",
+          "id": 28
+        },
+        {
+          "type": "connects_notehead",
+          "id": 30
+        }
+      ]
+    }
+  ]
+}

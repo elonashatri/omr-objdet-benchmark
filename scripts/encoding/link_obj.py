@@ -185,7 +185,79 @@ class MusicSymbolLinker:
                                 symbol['measure_assignment'] = measure_id
                                 # Add to linked symbols
                                 self.linked_symbols[measure_id].append(symbol)
-    
+                                
+    def link_accidentals_to_notes(self):
+        """
+        Link accidentals to their corresponding noteheads
+        """
+        print("Linking accidentals to notes...")
+        
+        # Process each measure
+        for measure_id, symbols in self.linked_symbols.items():
+            # Skip non-measure collections
+            if not isinstance(measure_id, str) or not measure_id.startswith("staff_"):
+                continue
+                
+            # Find accidentals and noteheads
+            accidentals = [s for s in symbols if "accidental" in s.get("class_name", "").lower()]
+            noteheads = [s for s in symbols if "notehead" in s.get("class_name", "").lower()]
+            
+            if not accidentals or not noteheads:
+                continue
+                
+            # For each accidental, find the closest notehead to the right
+            for accidental in accidentals:
+                # Get the bounding box keys for this accidental
+                bbox_keys = self.get_bbox_keys(accidental["bbox"])
+                
+                acc_x = accidental["bbox"]["center_x"]
+                acc_y = accidental["bbox"]["center_y"]
+                
+                # Find candidate noteheads (to the right of the accidental and at similar height)
+                candidates = []
+                vertical_tolerance = 30  # Adjust as needed
+                
+                for notehead in noteheads:
+                    nh_x = notehead["bbox"]["center_x"]
+                    nh_y = notehead["bbox"]["center_y"]
+                    
+                    # Check if notehead is to the right of the accidental
+                    if nh_x > acc_x:
+                        # Check if notehead is at similar vertical position
+                        if abs(nh_y - acc_y) < vertical_tolerance:
+                            # Calculate horizontal distance
+                            distance = nh_x - acc_x
+                            candidates.append((notehead, distance))
+                
+                # Sort candidates by distance (closest first)
+                candidates.sort(key=lambda x: x[1])
+                
+                # Link accidental to the closest notehead (if any)
+                if candidates:
+                    closest_notehead, _ = candidates[0]
+                    
+                    # Setup linked_symbols lists if they don't exist
+                    if "linked_symbols" not in accidental:
+                        accidental["linked_symbols"] = []
+                    if "linked_symbols" not in closest_notehead:
+                        closest_notehead["linked_symbols"] = []
+                    
+                    # Create bidirectional links
+                    accidental_id = accidental.get("id", symbols.index(accidental))
+                    notehead_id = closest_notehead.get("id", symbols.index(closest_notehead))
+                    
+                    accidental["linked_symbols"].append({
+                        "type": "modifies_note",
+                        "id": notehead_id
+                    })
+                    
+                    closest_notehead["linked_symbols"].append({
+                        "type": "has_accidental",
+                        "id": accidental_id
+                    })
+                    
+                    print(f"Linked accidental {accidental.get('class_name', 'unknown')} to notehead at position {closest_notehead['bbox']['center_x']:.1f}, {closest_notehead['bbox']['center_y']:.1f}")
+        
     def link_noteheads_to_stems(self):
         """Link noteheads to stems"""
         # Process each measure
@@ -325,109 +397,234 @@ class MusicSymbolLinker:
                             symbol['chord_assignment'] = chord_name
                             self.linked_symbols[chord_name].append(symbol)
     
+
+# 1. First, add this new method to the MusicSymbolLinker class:
+
+    def get_bbox_keys(self, bbox):
+        """
+        Determine the keys used in the bounding box dictionary
+        Different frameworks might use different key names (e.g., x_min vs x1)
+        
+        Args:
+            bbox: A bounding box dictionary to check
+            
+        Returns:
+            Dictionary mapping standardized key names to the actual keys in the data
+        """
+        # Check which format is being used
+        if "x_min" in bbox:
+            return {
+                "x_min": "x_min",
+                "y_min": "y_min",
+                "x_max": "x_max",
+                "y_max": "y_max"
+            }
+        elif "x1" in bbox:
+            return {
+                "x_min": "x1",
+                "y_min": "y1",
+                "x_max": "x2",
+                "y_max": "y2"
+            }
+        elif "xmin" in bbox:
+            return {
+                "x_min": "xmin",
+                "y_min": "ymin",
+                "x_max": "xmax",
+                "y_max": "ymax"
+            }
+        else:
+            # Default to most common format and print a warning
+            print("Warning: Unknown bounding box format. Using default keys.")
+            print(f"Available keys: {list(bbox.keys())}")
+            return {
+                "x_min": "x_min",
+                "y_min": "y_min",
+                "x_max": "x_max",
+                "y_max": "y_max"
+            }
+
+    # 2. Then, use the following updated identify_note_groups method:
+
     def identify_note_groups(self):
-        """Identify groups of notes connected by beams"""
-        # Process each measure
-        for measure_id, symbols in self.linked_symbols.items():
-            if not measure_id.startswith('staff_'):
-                continue  # Skip non-staff collections
+        """
+        Identify groups of notes (chords, beamed groups, etc.)
+        """
+        print("Identifying note groups...")
+        
+        # Create a copy of the dictionary keys to avoid the "dictionary changed size during iteration" error
+        measure_ids = list(self.linked_symbols.keys())
+        
+        # Now iterate through the copy of keys
+        for measure_id in measure_ids:
+            symbols = self.linked_symbols[measure_id]
             
-            # Build a graph of connected stems and beams
-            G = nx.Graph()
+            # Find noteheads
+            noteheads = [s for s in symbols if "notehead" in s.get("class_name", "").lower()]
             
-            # Add all stems and beams as nodes
-            for i, symbol in enumerate(symbols):
-                if 'stem' in symbol['class_name'].lower() or 'beam' in symbol['class_name'].lower():
-                    symbol_id = symbol.get('id', i)
-                    G.add_node(symbol_id, symbol=symbol)
-            
-            # Add edges for connections
-            for i, symbol in enumerate(symbols):
-                if 'linked_symbols' in symbol:
-                    symbol_id = symbol.get('id', i)
-                    for link in symbol['linked_symbols']:
-                        if link['type'] in ['connected_to_beam', 'connected_to_stem']:
-                            G.add_edge(symbol_id, link['id'])
-            
-            # Find connected components (groups of connected notes)
-            connected_components = list(nx.connected_components(G))
-            
-            # Assign symbols to note groups
-            for group_idx, component in enumerate(connected_components):
-                group_name = f"{measure_id}_group_{group_idx}"
+            if not noteheads:
+                continue
                 
-                # Get symbols in this component
-                for node_id in component:
-                    for symbol in symbols:
-                        symbol_id = symbol.get('id', symbols.index(symbol))
-                        if symbol_id == node_id:
-                            if 'note_group_assignment' not in symbol:
-                                symbol['note_group_assignment'] = group_name
-                                # Add to linked symbols
-                                self.linked_symbols[group_name].append(symbol)
-                                
-                                # Also add any connected noteheads
-                                if 'linked_symbols' in symbol and 'stem' in symbol['class_name'].lower():
-                                    for link in symbol['linked_symbols']:
-                                        if link['type'] == 'has_notehead':
-                                            for nh in symbols:
-                                                nh_id = nh.get('id', symbols.index(nh))
-                                                if nh_id == link['id']:
-                                                    if 'note_group_assignment' not in nh:
-                                                        nh['note_group_assignment'] = group_name
-                                                        self.linked_symbols[group_name].append(nh)
-    
-    def link_accidentals_to_notes(self):
-        """Link accidentals to their respective notes"""
-        # Process each measure
-        for measure_id, symbols in self.linked_symbols.items():
-            if not measure_id.startswith('staff_'):
-                continue  # Skip non-staff collections
-                
-            # Find accidentals and noteheads
-            accidentals = [s for s in symbols if 'accidental' in s['class_name'].lower()]
-            noteheads = [s for s in symbols if 'notehead' in s['class_name'].lower()]
+            # Group noteheads by their x-position (potential chords)
+            # Two noteheads are considered part of the same chord if they are within
+            # a small horizontal distance of each other
+            chord_groups = []
+            sorted_noteheads = sorted(noteheads, key=lambda x: x["bbox"]["center_x"])
             
-            # Sort by x-position
-            accidentals.sort(key=lambda x: x['bbox']['center_x'])
-            noteheads.sort(key=lambda x: x['bbox']['center_x'])
+            current_group = [sorted_noteheads[0]] if sorted_noteheads else []
             
-            # For each accidental, find the closest notehead to the right
-            for accidental in accidentals:
-                acc_x = accidental['bbox']['center_x']
-                acc_y = accidental['bbox']['center_y']
+            for i in range(1, len(sorted_noteheads)):
+                current = sorted_noteheads[i]
+                previous = sorted_noteheads[i-1]
                 
-                # Find noteheads to the right and at similar y-position
-                candidate_noteheads = [
-                    nh for nh in noteheads 
-                    if nh['bbox']['center_x'] > acc_x and 
-                    abs(nh['bbox']['center_y'] - acc_y) < self.staff_line_tolerance
-                ]
-                
-                if candidate_noteheads:
-                    # Find the closest one
-                    closest = min(candidate_noteheads, 
-                                 key=lambda nh: nh['bbox']['center_x'] - acc_x)
+                # Check if current notehead is horizontally close to previous
+                if abs(current["bbox"]["center_x"] - previous["bbox"]["center_x"]) < 20:  # Threshold for chord detection
+                    current_group.append(current)
+                else:
+                    # Start a new group
+                    if current_group:
+                        chord_groups.append(current_group)
+                    current_group = [current]
+            
+            # Add the last group if it exists
+            if current_group:
+                chord_groups.append(current_group)
+            
+            # Create chord objects
+            for group_idx, group in enumerate(chord_groups):
+                if len(group) > 1:
+                    # This is a chord (multiple noteheads vertically aligned)
+                    chord_id = f"chord_{measure_id}_{group_idx}"
                     
-                    # Link them if they're close enough
-                    if closest['bbox']['center_x'] - acc_x < closest['bbox']['width'] * 3:
-                        if 'linked_symbols' not in accidental:
-                            accidental['linked_symbols'] = []
+                    # Get bbox keys - check if using x_min or x1 format
+                    bbox_keys = self.get_bbox_keys(group[0]["bbox"])
+                    
+                    # Calculate chord bounding box
+                    x_min = min(n["bbox"][bbox_keys["x_min"]] for n in group)
+                    y_min = min(n["bbox"][bbox_keys["y_min"]] for n in group)
+                    x_max = max(n["bbox"][bbox_keys["x_max"]] for n in group)
+                    y_max = max(n["bbox"][bbox_keys["y_max"]] for n in group)
+                    center_x = (x_min + x_max) / 2
+                    center_y = (y_min + y_max) / 2
+                    
+                    chord_obj = {
+                        "id": chord_id,
+                        "class_name": "chord",
+                        "bbox": {
+                            bbox_keys["x_min"]: x_min,
+                            bbox_keys["y_min"]: y_min,
+                            bbox_keys["x_max"]: x_max,
+                            bbox_keys["y_max"]: y_max,
+                            "center_x": center_x,
+                            "center_y": center_y
+                        },
+                        "score": 1.0,
+                        "measure_id": measure_id,
+                        "staff_assignment": group[0].get("staff_assignment"),
+                        "notes": [n.get("id", symbols.index(n)) for n in group]
+                    }
+                    
+                    # Link noteheads to this chord
+                    for notehead in group:
+                        if "linked_symbols" not in notehead:
+                            notehead["linked_symbols"] = []
                         
-                        if 'linked_symbols' not in closest:
-                            closest['linked_symbols'] = []
-                        
-                        # Add bidirectional links
-                        accidental['linked_symbols'].append({
-                            'id': closest.get('id', symbols.index(closest)),
-                            'type': 'modifies_note'
+                        notehead["linked_symbols"].append({
+                            "type": "part_of_chord",
+                            "id": chord_id
                         })
+                    
+                    # Add chord to the symbols list
+                    self.linked_symbols[measure_id].append(chord_obj)
+            
+            # Identify beamed groups
+            beams = [s for s in symbols if "beam" in s.get("class_name", "").lower()]
+            
+            if beams:
+                # Group noteheads that are connected by beams
+                beamed_groups = []
+                processed_noteheads = set()
+                
+                for beam in beams:
+                    beam_group = []
+                    
+                    # Get bbox keys for this beam
+                    bbox_keys = self.get_bbox_keys(beam["bbox"])
+                    
+                    # Find noteheads that are close to this beam
+                    for notehead in noteheads:
+                        # Get a consistent ID for the notehead (using index if id doesn't exist)
+                        notehead_id = notehead.get("id", symbols.index(notehead))
                         
-                        closest['linked_symbols'].append({
-                            'id': accidental.get('id', symbols.index(accidental)),
-                            'type': 'has_accidental'
+                        # Check if we've already processed this notehead
+                        if notehead_id in processed_noteheads:
+                            continue
+                        
+                        # Check if notehead is close to the beam vertically
+                        notehead_x = notehead["bbox"]["center_x"]
+                        notehead_y = notehead["bbox"]["center_y"]
+                        
+                        beam_y_at_x = None
+                        
+                        # Interpolate beam y-position at notehead x-position
+                        beam_x_min = beam["bbox"][bbox_keys["x_min"]]
+                        beam_x_max = beam["bbox"][bbox_keys["x_max"]]
+                        beam_y_min = beam["bbox"][bbox_keys["y_min"]]
+                        beam_y_max = beam["bbox"][bbox_keys["y_max"]]
+                        
+                        # Check if notehead x is within beam x range
+                        if beam_x_min <= notehead_x <= beam_x_max:
+                            # Simple linear interpolation for beam y at notehead x
+                            if beam_x_max > beam_x_min:  # Avoid division by zero
+                                t = (notehead_x - beam_x_min) / (beam_x_max - beam_x_min)
+                                beam_y_at_x = beam_y_min + t * (beam_y_max - beam_y_min)
+                            else:
+                                beam_y_at_x = (beam_y_min + beam_y_max) / 2
+                            
+                            # Check if notehead is close enough to the beam
+                            if beam_y_at_x is not None and abs(notehead_y - beam_y_at_x) < 100:  # Adjust threshold as needed
+                                beam_group.append(notehead)
+                                processed_noteheads.add(notehead_id)
+                    
+                    if beam_group:
+                        beamed_groups.append({
+                            "beam": beam,
+                            "noteheads": beam_group
                         })
-    
+                
+                # Create beamed group objects
+                for group_idx, group in enumerate(beamed_groups):
+                    if group["noteheads"]:
+                        group_id = f"beamed_group_{measure_id}_{group_idx}"
+                        
+                        # Link noteheads to this beamed group
+                        for notehead in group["noteheads"]:
+                            if "linked_symbols" not in notehead:
+                                notehead["linked_symbols"] = []
+                            
+                            # Get a consistent ID for the beam
+                            beam_id = group["beam"].get("id", symbols.index(group["beam"]))
+                            
+                            notehead["linked_symbols"].append({
+                                "type": "part_of_beamed_group",
+                                "id": group_id,
+                                "beam_id": beam_id
+                            })
+                        
+                        # Link beam to noteheads
+                        if "linked_symbols" not in group["beam"]:
+                            group["beam"]["linked_symbols"] = []
+                        
+                        for notehead in group["noteheads"]:
+                            # Get a consistent ID for the notehead
+                            notehead_id = notehead.get("id", symbols.index(notehead))
+                            
+                            group["beam"]["linked_symbols"].append({
+                                "type": "connects_notehead",
+                                "id": notehead_id
+                            })
+            
+            print(f"Identified {len(chord_groups)} chord groups and {len(beams)} beams in measure {measure_id}")
     def visualize_links(self, output_path=None):
         """Visualize the linked symbols"""
         # Create figure

@@ -2641,5 +2641,1758 @@
         "staff_assignment": 0
       }
     ]
-  }
+  },
+  "detections": [
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 238.0,
+        "y1": 422.0,
+        "x2": 2298.0,
+        "y2": 424.0,
+        "width": 2060.0,
+        "height": 3.0,
+        "center_x": 1268.0,
+        "center_y": 423.0
+      },
+      "staff_system": 0,
+      "line_number": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 237.0,
+        "y1": 443.0,
+        "x2": 2299.0,
+        "y2": 445.0,
+        "width": 2062.0,
+        "height": 3.0,
+        "center_x": 1268.0,
+        "center_y": 444.0
+      },
+      "staff_system": 0,
+      "line_number": 1
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 237.0,
+        "y1": 464.0,
+        "x2": 2299.0,
+        "y2": 466.0,
+        "width": 2062.0,
+        "height": 3.0,
+        "center_x": 1268.0,
+        "center_y": 465.0
+      },
+      "staff_system": 0,
+      "line_number": 2
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 238.0,
+        "y1": 484.0,
+        "x2": 2299.0,
+        "y2": 486.0,
+        "width": 2061.0,
+        "height": 3.0,
+        "center_x": 1268.5,
+        "center_y": 485.0
+      },
+      "staff_system": 0,
+      "line_number": 3
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 237.0,
+        "y1": 505.0,
+        "x2": 2299.0,
+        "y2": 507.0,
+        "width": 2062.0,
+        "height": 3.0,
+        "center_x": 1268.0,
+        "center_y": 506.0
+      },
+      "staff_system": 0,
+      "line_number": 4
+    },
+    {
+      "class_id": 14,
+      "class_name": "gClef",
+      "confidence": 0.9608333110809326,
+      "bbox": {
+        "x1": 246.9978790283203,
+        "y1": 396.18963623046875,
+        "x2": 302.9242248535156,
+        "y2": 542.7487182617188,
+        "width": 55.92634582519531,
+        "height": 146.55908203125,
+        "center_x": 274.96105194091797,
+        "center_y": 469.46917724609375
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9425478577613831,
+      "bbox": {
+        "x1": 1517.8575439453125,
+        "y1": 413.9605407714844,
+        "x2": 1545.7291259765625,
+        "y2": 437.7399597167969,
+        "width": 27.87158203125,
+        "height": 23.7794189453125,
+        "center_x": 1531.7933349609375,
+        "center_y": 425.8502502441406
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "D#4",
+        "staff_position": -4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9425162672996521,
+      "bbox": {
+        "x1": 1248.75244140625,
+        "y1": 444.5713195800781,
+        "x2": 1276.702880859375,
+        "y2": 468.8916015625,
+        "width": 27.950439453125,
+        "height": 24.320281982421875,
+        "center_x": 1262.7276611328125,
+        "center_y": 456.73146057128906
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 58,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "A#4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9423377513885498,
+      "bbox": {
+        "x1": 579.7630004882812,
+        "y1": 413.3606262207031,
+        "x2": 608.0882568359375,
+        "y2": 438.00054931640625,
+        "width": 28.32525634765625,
+        "height": 24.639923095703125,
+        "center_x": 593.9256286621094,
+        "center_y": 425.6805877685547
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 44,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "D#4",
+        "staff_position": -4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9421286582946777,
+      "bbox": {
+        "x1": 408.67779541015625,
+        "y1": 393.13568115234375,
+        "x2": 436.758056640625,
+        "y2": 417.1795349121094,
+        "width": 28.08026123046875,
+        "height": 24.043853759765625,
+        "center_x": 422.7179260253906,
+        "center_y": 405.15760803222656
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 29,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "F#4",
+        "staff_position": -2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9399064779281616,
+      "bbox": {
+        "x1": 1517.71044921875,
+        "y1": 444.7406921386719,
+        "x2": 1545.6181640625,
+        "y2": 468.83392333984375,
+        "width": 27.90771484375,
+        "height": 24.093231201171875,
+        "center_x": 1531.664306640625,
+        "center_y": 456.7873077392578
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A#4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9385477900505066,
+      "bbox": {
+        "x1": 732.9743041992188,
+        "y1": 454.8244934082031,
+        "x2": 761.2763061523438,
+        "y2": 479.05322265625,
+        "width": 28.302001953125,
+        "height": 24.228729248046875,
+        "center_x": 747.1253051757812,
+        "center_y": 466.93885803222656
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A#4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9383541345596313,
+      "bbox": {
+        "x1": 733.108642578125,
+        "y1": 413.4714660644531,
+        "x2": 761.257568359375,
+        "y2": 438.080322265625,
+        "width": 28.14892578125,
+        "height": 24.608856201171875,
+        "center_x": 747.18310546875,
+        "center_y": 425.77589416503906
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 31,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "D#4",
+        "staff_position": -4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.936615526676178,
+      "bbox": {
+        "x1": 1248.5355224609375,
+        "y1": 465.8936767578125,
+        "x2": 1276.70654296875,
+        "y2": 490.018798828125,
+        "width": 28.1710205078125,
+        "height": 24.1251220703125,
+        "center_x": 1262.6210327148438,
+        "center_y": 477.95623779296875
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "Cb5",
+        "staff_position": 2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9365183115005493,
+      "bbox": {
+        "x1": 900.3583984375,
+        "y1": 465.544677734375,
+        "x2": 928.7046508789062,
+        "y2": 489.26605224609375,
+        "width": 28.34625244140625,
+        "height": 23.72137451171875,
+        "center_x": 914.5315246582031,
+        "center_y": 477.4053649902344
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 27,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "Cb5",
+        "staff_position": 2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9337422847747803,
+      "bbox": {
+        "x1": 709.030029296875,
+        "y1": 424.2314147949219,
+        "x2": 736.4053955078125,
+        "y2": 447.9686584472656,
+        "width": 27.3753662109375,
+        "height": 23.73724365234375,
+        "center_x": 722.7177124023438,
+        "center_y": 436.10003662109375
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "F#4",
+        "staff_position": -2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9336302280426025,
+      "bbox": {
+        "x1": 2212.84619140625,
+        "y1": 403.4638671875,
+        "x2": 2240.33837890625,
+        "y2": 427.3691101074219,
+        "width": 27.4921875,
+        "height": 23.905242919921875,
+        "center_x": 2226.59228515625,
+        "center_y": 415.41648864746094
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "Db4",
+        "staff_position": -4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9329891204833984,
+      "bbox": {
+        "x1": 1050.2176513671875,
+        "y1": 382.482421875,
+        "x2": 1078.7415771484375,
+        "y2": 406.71173095703125,
+        "width": 28.52392578125,
+        "height": 24.22930908203125,
+        "center_x": 1064.4796142578125,
+        "center_y": 394.5970764160156
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 25,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "G#4",
+        "staff_position": -1,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9328451156616211,
+      "bbox": {
+        "x1": 1050.373291015625,
+        "y1": 434.8030090332031,
+        "x2": 1078.348388671875,
+        "y2": 458.490966796875,
+        "width": 27.97509765625,
+        "height": 23.687957763671875,
+        "center_x": 1064.36083984375,
+        "center_y": 446.64698791503906
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 46,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "F#4",
+        "staff_position": -2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9323903918266296,
+      "bbox": {
+        "x1": 1872.36279296875,
+        "y1": 475.7007751464844,
+        "x2": 1900.432861328125,
+        "y2": 499.2308349609375,
+        "width": 28.070068359375,
+        "height": 23.530059814453125,
+        "center_x": 1886.3978271484375,
+        "center_y": 487.46580505371094
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 28,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "C#5",
+        "staff_position": 2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9323689937591553,
+      "bbox": {
+        "x1": 1847.331787109375,
+        "y1": 516.8114013671875,
+        "x2": 1875.48974609375,
+        "y2": 540.9393920898438,
+        "width": 28.157958984375,
+        "height": 24.12799072265625,
+        "center_x": 1861.4107666015625,
+        "center_y": 528.8753967285156
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 54,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "C#5",
+        "staff_position": 2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.931756854057312,
+      "bbox": {
+        "x1": 579.7958984375,
+        "y1": 444.7168273925781,
+        "x2": 607.93212890625,
+        "y2": 468.9120788574219,
+        "width": 28.13623046875,
+        "height": 24.19525146484375,
+        "center_x": 593.864013671875,
+        "center_y": 456.814453125
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 61,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "A#4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9309659004211426,
+      "bbox": {
+        "x1": 1672.9366455078125,
+        "y1": 455.0363464355469,
+        "x2": 1701.004638671875,
+        "y2": 479.3677673339844,
+        "width": 28.0679931640625,
+        "height": 24.3314208984375,
+        "center_x": 1686.9706420898438,
+        "center_y": 467.2020568847656
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A#4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.930343508720398,
+      "bbox": {
+        "x1": 875.2107543945312,
+        "y1": 476.02734375,
+        "x2": 903.3309326171875,
+        "y2": 500.0238952636719,
+        "width": 28.12017822265625,
+        "height": 23.996551513671875,
+        "center_x": 889.2708435058594,
+        "center_y": 488.02561950683594
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "Cb5",
+        "staff_position": 2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalFlat"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9302758574485779,
+      "bbox": {
+        "x1": 2187.5546875,
+        "y1": 413.6357727050781,
+        "x2": 2214.811767578125,
+        "y2": 437.1806945800781,
+        "width": 27.257080078125,
+        "height": 23.544921875,
+        "center_x": 2201.1832275390625,
+        "center_y": 425.4082336425781
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 55,
+          "type": "has_accidental"
+        },
+        {
+          "id": 53,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "Db4",
+        "staff_position": -4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalFlat"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9301027655601501,
+      "bbox": {
+        "x1": 1050.335205078125,
+        "y1": 414.0708312988281,
+        "x2": 1078.7236328125,
+        "y2": 437.9507751464844,
+        "width": 28.388427734375,
+        "height": 23.87994384765625,
+        "center_x": 1064.5294189453125,
+        "center_y": 426.01080322265625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 49,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "D#4",
+        "staff_position": -4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9296762347221375,
+      "bbox": {
+        "x1": 1673.081298828125,
+        "y1": 414.0225524902344,
+        "x2": 1700.8740234375,
+        "y2": 437.7851257324219,
+        "width": 27.792724609375,
+        "height": 23.7625732421875,
+        "center_x": 1686.9776611328125,
+        "center_y": 425.9038391113281
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 39,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "D#4",
+        "staff_position": -4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9295572638511658,
+      "bbox": {
+        "x1": 1673.0111083984375,
+        "y1": 434.654052734375,
+        "x2": 1700.8953857421875,
+        "y2": 458.2491149902344,
+        "width": 27.88427734375,
+        "height": 23.595062255859375,
+        "center_x": 1686.9532470703125,
+        "center_y": 446.4515838623047
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 52,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "F#4",
+        "staff_position": -2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9283473491668701,
+      "bbox": {
+        "x1": 409.3134765625,
+        "y1": 455.32940673828125,
+        "x2": 436.9200439453125,
+        "y2": 479.21136474609375,
+        "width": 27.6065673828125,
+        "height": 23.8819580078125,
+        "center_x": 423.11676025390625,
+        "center_y": 467.2703857421875
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A#4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9279154539108276,
+      "bbox": {
+        "x1": 2034.48876953125,
+        "y1": 413.7080078125,
+        "x2": 2062.46728515625,
+        "y2": 437.6371765136719,
+        "width": 27.978515625,
+        "height": 23.929168701171875,
+        "center_x": 2048.47802734375,
+        "center_y": 425.67259216308594
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "D#4",
+        "staff_position": -4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9268821477890015,
+      "bbox": {
+        "x1": 1024.605712890625,
+        "y1": 365.690673828125,
+        "x2": 1045.61083984375,
+        "y2": 425.05157470703125,
+        "width": 21.005126953125,
+        "height": 59.36090087890625,
+        "center_x": 1035.1082763671875,
+        "center_y": 395.3711242675781
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 12,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9264443516731262,
+      "bbox": {
+        "x1": 1424.775146484375,
+        "y1": 496.5543212890625,
+        "x2": 1452.7469482421875,
+        "y2": 520.569580078125,
+        "width": 27.9718017578125,
+        "height": 24.0152587890625,
+        "center_x": 1438.7610473632812,
+        "center_y": 508.56195068359375
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 50,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "Eb5",
+        "staff_position": 4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalFlat"
+      }
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.9263016581535339,
+      "bbox": {
+        "x1": 851.8336791992188,
+        "y1": 450.7879943847656,
+        "x2": 870.7468872070312,
+        "y2": 503.34100341796875,
+        "width": 18.9132080078125,
+        "height": 52.553009033203125,
+        "center_x": 861.290283203125,
+        "center_y": 477.0644989013672
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 9,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.926182210445404,
+      "bbox": {
+        "x1": 1821.68212890625,
+        "y1": 457.6042175292969,
+        "x2": 1842.7650146484375,
+        "y2": 517.5399169921875,
+        "width": 21.0828857421875,
+        "height": 59.935699462890625,
+        "center_x": 1832.2235717773438,
+        "center_y": 487.5720672607422
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 14,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9259941577911377,
+      "bbox": {
+        "x1": 382.7381286621094,
+        "y1": 375.60565185546875,
+        "x2": 403.71832275390625,
+        "y2": 435.1539611816406,
+        "width": 20.980194091796875,
+        "height": 59.548309326171875,
+        "center_x": 393.2282257080078,
+        "center_y": 405.3798065185547
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 4,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9255138039588928,
+      "bbox": {
+        "x1": 1517.9295654296875,
+        "y1": 382.4617004394531,
+        "x2": 1545.8494873046875,
+        "y2": 406.2057800292969,
+        "width": 27.919921875,
+        "height": 23.74407958984375,
+        "center_x": 1531.8895263671875,
+        "center_y": 394.333740234375
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "G#4",
+        "staff_position": -1,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9251847863197327,
+      "bbox": {
+        "x1": 684.9280395507812,
+        "y1": 396.4056701660156,
+        "x2": 705.4674682617188,
+        "y2": 455.32489013671875,
+        "width": 20.5394287109375,
+        "height": 58.919219970703125,
+        "center_x": 695.19775390625,
+        "center_y": 425.8652801513672
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 7,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9241056442260742,
+      "bbox": {
+        "x1": 875.0571899414062,
+        "y1": 527.5714721679688,
+        "x2": 902.9266357421875,
+        "y2": 551.7832641601562,
+        "width": 27.86944580078125,
+        "height": 24.2117919921875,
+        "center_x": 888.9919128417969,
+        "center_y": 539.6773681640625
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "Bb4",
+        "staff_position": 1,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalFlat"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9237608909606934,
+      "bbox": {
+        "x1": 555.2249145507812,
+        "y1": 424.5596923828125,
+        "x2": 582.23583984375,
+        "y2": 447.6822509765625,
+        "width": 27.01092529296875,
+        "height": 23.12255859375,
+        "center_x": 568.7303771972656,
+        "center_y": 436.1209716796875
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "F#4",
+        "staff_position": -2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9232861995697021,
+      "bbox": {
+        "x1": 1846.7994384765625,
+        "y1": 486.2942199707031,
+        "x2": 1875.1348876953125,
+        "y2": 510.2166748046875,
+        "width": 28.33544921875,
+        "height": 23.922454833984375,
+        "center_x": 1860.9671630859375,
+        "center_y": 498.2554473876953
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 43,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "E#5",
+        "staff_position": 4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9231182336807251,
+      "bbox": {
+        "x1": 2009.423583984375,
+        "y1": 362.37371826171875,
+        "x2": 2036.907470703125,
+        "y2": 386.6785583496094,
+        "width": 27.48388671875,
+        "height": 24.304840087890625,
+        "center_x": 2023.16552734375,
+        "center_y": 374.52613830566406
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 59,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "B#4",
+        "staff_position": 1,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9218243360519409,
+      "bbox": {
+        "x1": 408.924072265625,
+        "y1": 434.4873962402344,
+        "x2": 436.88494873046875,
+        "y2": 458.91009521484375,
+        "width": 27.96087646484375,
+        "height": 24.422698974609375,
+        "center_x": 422.9045104980469,
+        "center_y": 446.69874572753906
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 56,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "Fb4",
+        "staff_position": -2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalFlat"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9215606451034546,
+      "bbox": {
+        "x1": 383.8935852050781,
+        "y1": 444.1418762207031,
+        "x2": 412.36065673828125,
+        "y2": 469.1163024902344,
+        "width": 28.467071533203125,
+        "height": 24.97442626953125,
+        "center_x": 398.1271209716797,
+        "center_y": 456.62908935546875
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 42,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "A#4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.919805109500885,
+      "bbox": {
+        "x1": 1399.6868896484375,
+        "y1": 506.6794738769531,
+        "x2": 1427.5677490234375,
+        "y2": 530.7208251953125,
+        "width": 27.880859375,
+        "height": 24.041351318359375,
+        "center_x": 1413.6273193359375,
+        "center_y": 518.7001495361328
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "D#5",
+        "staff_position": 3,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.919023334980011,
+      "bbox": {
+        "x1": 1647.4359130859375,
+        "y1": 396.6685791015625,
+        "x2": 1668.488525390625,
+        "y2": 455.1990051269531,
+        "width": 21.0526123046875,
+        "height": 58.530426025390625,
+        "center_x": 1657.9622192382812,
+        "center_y": 425.9337921142578
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 21,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9181945323944092,
+      "bbox": {
+        "x1": 2033.734619140625,
+        "y1": 351.7457275390625,
+        "x2": 2062.023193359375,
+        "y2": 376.06744384765625,
+        "width": 28.28857421875,
+        "height": 24.32171630859375,
+        "center_x": 2047.87890625,
+        "center_y": 363.9065856933594
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 51,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "C#5",
+        "staff_position": 2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9171038866043091,
+      "bbox": {
+        "x1": 2034.0511474609375,
+        "y1": 372.4539489746094,
+        "x2": 2062.13720703125,
+        "y2": 396.4267883300781,
+        "width": 28.0860595703125,
+        "height": 23.97283935546875,
+        "center_x": 2048.0941772460938,
+        "center_y": 384.44036865234375
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A#4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": null
+      }
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9158276915550232,
+      "bbox": {
+        "x1": 360.54864501953125,
+        "y1": 427.2048034667969,
+        "x2": 380.7724609375,
+        "y2": 486.03900146484375,
+        "width": 20.22381591796875,
+        "height": 58.834197998046875,
+        "center_x": 370.6605529785156,
+        "center_y": 456.6219024658203
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 37,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.915744423866272,
+      "bbox": {
+        "x1": 1778.333984375,
+        "y1": 468.23052978515625,
+        "x2": 1799.1092529296875,
+        "y2": 527.2224731445312,
+        "width": 20.7752685546875,
+        "height": 58.991943359375,
+        "center_x": 1788.7216186523438,
+        "center_y": 497.72650146484375
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 34,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9144442677497864,
+      "bbox": {
+        "x1": 531.2611083984375,
+        "y1": 396.6552734375,
+        "x2": 551.7915649414062,
+        "y2": 455.1190490722656,
+        "width": 20.53045654296875,
+        "height": 58.463775634765625,
+        "center_x": 541.5263366699219,
+        "center_y": 425.8871612548828
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 3,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.9129310846328735,
+      "bbox": {
+        "x1": 838.3043823242188,
+        "y1": 501.6974792480469,
+        "x2": 857.1820068359375,
+        "y2": 554.271240234375,
+        "width": 18.87762451171875,
+        "height": 52.573760986328125,
+        "center_x": 847.7431945800781,
+        "center_y": 527.9843597412109
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9126184582710266,
+      "bbox": {
+        "x1": 1004.7855224609375,
+        "y1": 417.3235778808594,
+        "x2": 1026.026611328125,
+        "y2": 475.3440856933594,
+        "width": 21.2410888671875,
+        "height": 58.0205078125,
+        "center_x": 1015.4060668945312,
+        "center_y": 446.3338317871094
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 13,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.911369264125824,
+      "bbox": {
+        "x1": 1223.5386962890625,
+        "y1": 455.31939697265625,
+        "x2": 1250.844482421875,
+        "y2": 479.7388610839844,
+        "width": 27.3057861328125,
+        "height": 24.419464111328125,
+        "center_x": 1237.1915893554688,
+        "center_y": 467.5291290283203
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 60,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "A#4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        },
+        "local_accidental": "accidentalSharp"
+      }
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.9109215140342712,
+      "bbox": {
+        "x1": 1156.2275390625,
+        "y1": 431.2720642089844,
+        "x2": 1174.448974609375,
+        "y2": 482.0036315917969,
+        "width": 18.221435546875,
+        "height": 50.7315673828125,
+        "center_x": 1165.3382568359375,
+        "center_y": 456.6378479003906
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9106706380844116,
+      "bbox": {
+        "x1": 980.5601806640625,
+        "y1": 396.4853515625,
+        "x2": 1001.697265625,
+        "y2": 454.5442810058594,
+        "width": 21.1370849609375,
+        "height": 58.058929443359375,
+        "center_x": 991.1287231445312,
+        "center_y": 425.5148162841797
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 20,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.9089322090148926,
+      "bbox": {
+        "x1": 1353.8001708984375,
+        "y1": 481.64385986328125,
+        "x2": 1372.8179931640625,
+        "y2": 533.404541015625,
+        "width": 19.017822265625,
+        "height": 51.76068115234375,
+        "center_x": 1363.30908203125,
+        "center_y": 507.5242004394531
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 26,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.9085303544998169,
+      "bbox": {
+        "x1": 1988.00390625,
+        "y1": 336.8664245605469,
+        "x2": 2006.394775390625,
+        "y2": 388.7942199707031,
+        "width": 18.390869140625,
+        "height": 51.92779541015625,
+        "center_x": 1997.1993408203125,
+        "center_y": 362.830322265625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 40,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9081931710243225,
+      "bbox": {
+        "x1": 1623.2598876953125,
+        "y1": 417.03369140625,
+        "x2": 1643.976318359375,
+        "y2": 474.9122619628906,
+        "width": 20.7164306640625,
+        "height": 57.878570556640625,
+        "center_x": 1633.6181030273438,
+        "center_y": 445.9729766845703
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 22,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9081380367279053,
+      "bbox": {
+        "x1": 2164.053955078125,
+        "y1": 386.1382141113281,
+        "x2": 2184.6044921875,
+        "y2": 445.26495361328125,
+        "width": 20.550537109375,
+        "height": 59.126739501953125,
+        "center_x": 2174.3292236328125,
+        "center_y": 415.7015838623047
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 19,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.907207727432251,
+      "bbox": {
+        "x1": 1800.1524658203125,
+        "y1": 498.9224853515625,
+        "x2": 1820.6212158203125,
+        "y2": 558.2542724609375,
+        "width": 20.46875,
+        "height": 59.331787109375,
+        "center_x": 1810.3868408203125,
+        "center_y": 528.58837890625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 15,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9038274884223938,
+      "bbox": {
+        "x1": 2139.87255859375,
+        "y1": 395.6595458984375,
+        "x2": 2160.71728515625,
+        "y2": 454.8863220214844,
+        "width": 20.8447265625,
+        "height": 59.226776123046875,
+        "center_x": 2150.294921875,
+        "center_y": 425.27293395996094
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 19,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9029701352119446,
+      "bbox": {
+        "x1": 336.1509704589844,
+        "y1": 416.4574279785156,
+        "x2": 357.11370849609375,
+        "y2": 475.9241027832031,
+        "width": 20.962738037109375,
+        "height": 59.4666748046875,
+        "center_x": 346.63233947753906,
+        "center_y": 446.1907653808594
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 36,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.9023910164833069,
+      "bbox": {
+        "x1": 1375.78125,
+        "y1": 471.7491149902344,
+        "x2": 1395.029296875,
+        "y2": 524.4158325195312,
+        "width": 19.248046875,
+        "height": 52.666717529296875,
+        "center_x": 1385.4052734375,
+        "center_y": 498.0824737548828
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.8979133367538452,
+      "bbox": {
+        "x1": 1200.45654296875,
+        "y1": 428.2590026855469,
+        "x2": 1220.809814453125,
+        "y2": 486.46380615234375,
+        "width": 20.353271484375,
+        "height": 58.204803466796875,
+        "center_x": 1210.6331787109375,
+        "center_y": 457.3614044189453
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 2,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.8931289911270142,
+      "bbox": {
+        "x1": 1952.9234619140625,
+        "y1": 348.48614501953125,
+        "x2": 1971.488525390625,
+        "y2": 399.3989562988281,
+        "width": 18.5650634765625,
+        "height": 50.912811279296875,
+        "center_x": 1962.2059936523438,
+        "center_y": 373.9425506591797
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 35,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.8918132781982422,
+      "bbox": {
+        "x1": 1178.156005859375,
+        "y1": 440.71075439453125,
+        "x2": 1197.0821533203125,
+        "y2": 493.1498107910156,
+        "width": 18.9261474609375,
+        "height": 52.439056396484375,
+        "center_x": 1187.6190795898438,
+        "center_y": 466.93028259277344
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 47,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 12,
+      "class_name": "accidentalNatural",
+      "confidence": 0.8900185227394104,
+      "bbox": {
+        "x1": 513.93017578125,
+        "y1": 427.91131591796875,
+        "x2": 527.85107421875,
+        "y2": 485.70172119140625,
+        "width": 13.9208984375,
+        "height": 57.7904052734375,
+        "center_x": 520.890625,
+        "center_y": 456.8065185546875
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 16,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.8333842158317566,
+      "bbox": {
+        "x1": 1974.5869140625,
+        "y1": 388.2060852050781,
+        "x2": 1993.6331787109375,
+        "y2": 440.860595703125,
+        "width": 19.0462646484375,
+        "height": 52.654510498046875,
+        "center_x": 1984.1100463867188,
+        "center_y": 414.53334045410156
+      },
+      "staff_assignment": 0
+    }
+  ]
 }

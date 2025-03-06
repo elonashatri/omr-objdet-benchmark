@@ -198,22 +198,45 @@ class PitchIdentifier:
         else:
             # Calculate the average spacing between adjacent staff lines
             spacings = [line_positions[i+1] - line_positions[i] 
-                      for i in range(len(line_positions)-1)]
+                    for i in range(len(line_positions)-1)]
             staff_spacing = sum(spacings) / len(spacings)
             self.log(f"Calculated staff spacing: {staff_spacing}")
         
-        # Get position of middle line (index 2 for a 5-line staff)
-        if len(line_positions) >= 5:
-            middle_line = line_positions[2]
-            self.log(f"Using middle line (index 2): {middle_line}")
-        else:
-            middle_line = line_positions[len(line_positions) // 2]
-            self.log(f"Using approximated middle line: {middle_line}")
+        # Find the closest staff line
+        line_distances = [abs(notehead_y - line_y) for line_y in line_positions]
+        closest_line_index = line_distances.index(min(line_distances))
+        closest_line_y = line_positions[closest_line_index]
         
-        # Calculate position relative to middle line
-        # Round to nearest integer (0 = on the middle line)
-        position = round((middle_line - notehead_y) / (staff_spacing / 2))
-        self.log(f"Calculated staff position: {position} (notehead_y: {notehead_y}, middle_line: {middle_line})")
+        # Calculate the distance from the notehead to the closest staff line
+        distance_to_line = abs(notehead_y - closest_line_y)
+        
+        # Determine if the notehead is above or below the staff line
+        is_above = notehead_y < closest_line_y
+        
+        # Calculate the vertical offset in terms of staff line units
+        # If the distance is less than half a staff line spacing, consider it on the line
+        if distance_to_line < staff_spacing / 2:
+            offset = 0
+        else:
+            # Calculate how many half-spaces away from the line the notehead is
+            offset = round(distance_to_line / (staff_spacing / 2))
+            
+            # Adjust the sign based on whether it's above or below the line
+            offset = offset if is_above else -offset
+        
+        # Calculate the final staff position
+        # Middle line is typically index 2 in a 5-line staff
+        middle_line_index = 2
+        position = (closest_line_index - middle_line_index) * 2 + offset
+        
+        self.log(f"Detailed position calculation:")
+        self.log(f"  Notehead Y: {notehead_y}")
+        self.log(f"  Closest line Y: {closest_line_y}")
+        self.log(f"  Staff spacing: {staff_spacing}")
+        self.log(f"  Distance to line: {distance_to_line}")
+        self.log(f"  Is above: {is_above}")
+        self.log(f"  Offset: {offset}")
+        self.log(f"  Final staff position: {position}")
         
         return position
     
@@ -385,6 +408,10 @@ class PitchIdentifier:
         
         self.log(f"Grouped all symbols into {len(staff_systems_symbols)} staff systems")
         
+        # Track active accidentals in each measure per staff line and note letter
+        # Format: {staff_id: {measure_id: {note_letter: accidental_type}}}
+        active_accidentals = defaultdict(lambda: defaultdict(dict))
+        
         # Process each staff system
         for staff_id, system_symbols in staff_systems_symbols.items():
             self.log(f"Processing staff system {staff_id} with {len(system_symbols)} symbols")
@@ -411,6 +438,9 @@ class PitchIdentifier:
             for notehead in noteheads:
                 self.log(f"Processing notehead at {notehead['bbox']['center_x']}, {notehead['bbox']['center_y']}")
                 
+                # Get the measure ID if available (for tracking accidentals)
+                measure_id = notehead.get("measure_id", 0)
+                
                 # Get staff position
                 position = self.get_staff_position(notehead, system_staff_lines)
                 
@@ -422,19 +452,37 @@ class PitchIdentifier:
                 
                 self.log(f"Base note: {base_note} (position: {position})")
                 
+                # Extract the note letter (without octave)
+                note_letter = base_note[0] if base_note and len(base_note) > 0 else "?"
+                
                 # Apply key signature
                 note_name = self.apply_key_signature(base_note, key_sig)
                 self.log(f"After key signature: {note_name}")
+                
+                # Check for local accidentals that affect this notehead
+                accidental_type = self.find_local_accidentals(notehead, system_symbols)
+                
+                # If a local accidental is found, apply it and update active accidentals
+                if accidental_type:
+                    self.log(f"Found local accidental: {accidental_type}")
+                    note_name = self.apply_local_accidental(note_name, accidental_type)
+                    active_accidentals[staff_id][measure_id][note_letter] = accidental_type
+                # Otherwise, check if this note is affected by an active accidental in this measure
+                elif note_letter in active_accidentals[staff_id][measure_id]:
+                    prev_accidental = active_accidentals[staff_id][measure_id][note_letter]
+                    self.log(f"Applying active accidental from measure: {prev_accidental}")
+                    note_name = self.apply_local_accidental(note_name, prev_accidental)
+                
+                self.log(f"Final pitch: {note_name}")
                 
                 # Add pitch information to the notehead
                 notehead["pitch"] = {
                     "note_name": note_name,
                     "staff_position": position,
                     "clef": clef_type,
-                    "key_signature": key_sig
+                    "key_signature": key_sig,
+                    "local_accidental": accidental_type if accidental_type else None
                 }
-                
-                self.log(f"Set pitch: {note_name}")
             
             # Count noteheads with pitch information after processing
             noteheads = [s for s in result.get("detections", []) if s.get("class_name", "") == "noteheadBlack"]
