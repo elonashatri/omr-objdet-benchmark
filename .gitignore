@@ -4,3 +4,5 @@ nohup.out
 *.txt
 events.out.*
 *.pt
+.jar
+runs/

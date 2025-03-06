@@ -300,57 +300,62 @@ def calculate_map(results, idx_to_class, iou_threshold=0.5):
 
 
 def visualize_detections(image, predictions, ground_truths, idx_to_class, threshold=0.5, output_path=None):
-    """Visualize detections on an image"""
+    """
+    Visualize detections on an image at higher resolution with clearer labels.
+    Green = Ground Truth, Blue = Predictions.
+    """
     # Create a copy of the image for visualization
     vis_image = image.copy()
     
     # Draw ground truth boxes
     for box, label_id in zip(ground_truths["boxes"], ground_truths["labels"]):
-        # Convert box coordinates to integers
         x1, y1, x2, y2 = map(int, box)
-        
-        # Get class name
         label_id = int(label_id)
+        
         if label_id in idx_to_class:
             label = idx_to_class[label_id]
         else:
             label = f"Class {label_id}"
         
-        # Draw ground truth box in green
-        cv2.rectangle(vis_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
-        cv2.putText(vis_image, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+        # Thicker lines for better visibility
+        cv2.rectangle(vis_image, (x1, y1), (x2, y2), (0, 255, 0), 3)
+        # Larger font scale
+        cv2.putText(vis_image, label, (x1, max(y1 - 5, 0)),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
     
     # Draw predicted boxes
     for box, score, label_id in zip(predictions["boxes"], predictions["scores"], predictions["labels"]):
-        # Skip low confidence predictions
         if score < threshold:
             continue
         
-        # Convert box coordinates to integers
         x1, y1, x2, y2 = map(int, box)
-        
-        # Get class name
         label_id = int(label_id)
+        
         if label_id in idx_to_class:
             label = idx_to_class[label_id]
         else:
             label = f"Class {label_id}"
         
-        # Draw predicted box in blue
-        cv2.rectangle(vis_image, (x1, y1), (x2, y2), (255, 0, 0), 2)
-        cv2.putText(vis_image, f"{label}: {score:.2f}", (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+        # Thicker lines for better visibility
+        cv2.rectangle(vis_image, (x1, y1), (x2, y2), (255, 0, 0), 3)
+        # Larger font scale
+        cv2.putText(vis_image, f"{label}: {score:.2f}",
+                    (x1, max(y1 - 5, 0)),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 0, 0), 2)
     
-    # Show the image
-    plt.figure(figsize=(12, 8))
+    # Display with matplotlib at higher DPI
+    plt.figure(figsize=(20, 12), dpi=300)  # Larger, higher-resolution canvas
     plt.imshow(vis_image)
     plt.axis('off')
-    plt.title("Object Detections (Green: Ground Truth, Blue: Predictions)")
+    plt.title("Object Detections (Green: GT, Blue: Predictions)")
     
     if output_path:
-        plt.savefig(output_path, bbox_inches='tight')
-    
+        plt.savefig(output_path, bbox_inches='tight', dpi=300)  
+        # 'bbox_inches="tight"' removes extra whitespace
     plt.close()
+    
     return vis_image
+
 
 
 def run_benchmark(args):

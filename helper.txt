@@ -47,19 +47,6 @@ python scripts/detect_notation.py \
     --max_detections 300
 
 
-nohup python scripts/robust_yolo_training.py \
-    --data_dir data/images \
-    --annotation_dir data/annotations \
-    --class_mapping data/class_mapping.json \
-    --output_dir results/yolov8_robust \
-    --model yolov8s.pt \
-    --batch_size 32 \
-    --epochs 500 \
-    --conf_threshold 0.001 \
-    --gpu_id 2 \
-    --workers 4 \
-    --yaml_path results/yolo_fixed/dataset.yaml > robust_yolo_training.txt
-
 
 
     # DETR 
@@ -94,8 +81,8 @@ inference:
 /homes/es314/omr-objdet-benchmark/scripts/detect_notation.py
 
 python scripts/detect_notation.py \
-    --model /homes/es314/runs/detect/train11/weights/best.pt \
-    --image /homes/es314/omr-objdet-benchmark/old_doremi_72/24_Etudes_progressives_pour_la_guitare_Op.100_-_Mauro_Giuliani_1781_-_1829-028.png\
+    --model //homes/es314/runs/staffline_extreme/weights/best.pt \
+    --image /homes/es314/omr-objdet-benchmark/results/detections/Accidentals-004.png \
     --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json \
     --output_dir results/detections \
     --conf 0.25 \
@@ -110,7 +97,7 @@ python scripts/detect_notation.py \
     --epochs 200 \
     --batch 4 \
     --device 2 \
-    --staffline_class_id 3 > staffline-focus.txt
+    --staffline_class_id 2 > staffline-focus.txt
 
 
 
@@ -127,7 +114,5 @@ python scripts/detect_notation.py \
 
 
 
-
-tensorboard --logdir /homes/es314/runs
 
 tensorboard --logdir /homes/es314/runs
