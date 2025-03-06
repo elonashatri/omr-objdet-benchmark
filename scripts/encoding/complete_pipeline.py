@@ -176,7 +176,7 @@ def process_single_image(image_path, img_stem, model_path, class_mapping_file,
     # Use the merged file directly since the linked file has issues
     print(f"Using merged data for pitch identification")
     identifier = PitchIdentifier(debug=True)
-    identifier.process_file(merged_json, pitched_json)
+    identifier.process_file(linked_json, pitched_json)
     
     # Step 6: Create visualization with pitch information
     print("Step 6: Creating visualization with pitch information...")

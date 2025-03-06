@@ -96,16 +96,16 @@ class PitchIdentifier:
             String indicating clef type ("treble", "bass", or "unknown")
         """
         for symbol in system_symbols:
-            class_name = symbol.get("class_name", "").lower()
-            if "gclef" in class_name or "g_clef" in class_name:
+            class_name = symbol.get("class_name", "")
+            if class_name == "gClef":
                 return "treble"
-            elif "fclef" in class_name or "f_clef" in class_name:
+            elif class_name == "fClef":
                 return "bass"
         
         # Default to treble if no clef is found
         self.log("No clef found, defaulting to treble")
         return "treble"
-    
+        
     def identify_key_signature(self, system_symbols):
         """
         Identify the key signature in a staff system
@@ -134,7 +134,7 @@ class PitchIdentifier:
             # and not associated with notes (key signature accidentals)
             is_isolated = True
             for other in system_symbols:
-                if "notehead" in other.get("class_name", "").lower():
+                if "noteheadBlack" in other.get("class_name", "").lower():
                     # Check if accidental is close to this notehead horizontally
                     if (abs(other["bbox"]["center_x"] - x_pos) < 30 and 
                         abs(other["bbox"]["center_y"] - y_pos) < 20):
@@ -334,6 +334,7 @@ class PitchIdentifier:
         
         return None
     
+    # def identify_notehead_pitches(self, linked_data):
     def identify_notehead_pitches(self, linked_data):
         """
         Identify pitches for all noteheads in the linked data
@@ -361,7 +362,7 @@ class PitchIdentifier:
         
         # Extract staff lines
         staff_lines = [s for s in result.get("detections", []) 
-                      if "staff_line" in s.get("class_name", "").lower()]
+                    if s.get("class_name", "") == "staff_line"]
         self.log(f"Found {len(staff_lines)} staff lines")
         
         # Group staff lines by staff system
@@ -374,19 +375,7 @@ class PitchIdentifier:
         
         self.log(f"Grouped staff lines into {len(staff_systems_lines)} staff systems")
         
-        # If no staff systems were found using staff_system field, try using staff_assignment
-        if not staff_systems_lines:
-            self.log("No staff systems found using staff_system field, trying staff_assignment")
-            # Group all symbols by staff assignment
-            for symbol in result.get("detections", []):
-                staff_id = symbol.get("staff_assignment")
-                if staff_id is not None:
-                    if "staff_line" in symbol.get("class_name", "").lower():
-                        staff_systems_lines[staff_id].append(symbol)
-        
-        self.log(f"After trying staff_assignment: {len(staff_systems_lines)} staff systems")
-        
-        # Group all symbols by staff assignment
+        # Group all symbols by staff system
         staff_systems_symbols = defaultdict(list)
         for symbol in result.get("detections", []):
             # Try both staff_system and staff_assignment
@@ -402,19 +391,6 @@ class PitchIdentifier:
             
             # Get staff lines for this system
             system_staff_lines = staff_systems_lines.get(staff_id, [])
-            if not system_staff_lines:
-                self.log(f"WARNING: No staff lines found for staff system {staff_id}")
-                # Try to find staff lines that might not have proper staff_system assignment
-                # Use the y-coordinate range of symbols in this system to guess
-                min_y = min(s["bbox"]["y1"] for s in system_symbols)
-                max_y = max(s["bbox"]["y2"] for s in system_symbols)
-                # Find staff lines that might belong to this system based on y-coordinate
-                for line in staff_lines:
-                    line_y = line["bbox"]["center_y"]
-                    if min_y <= line_y <= max_y:
-                        system_staff_lines.append(line)
-            
-            self.log(f"Found {len(system_staff_lines)} staff lines for system {staff_id}")
             
             # Identify clef for this system
             clef_type = self.identify_clef(system_symbols)
@@ -425,14 +401,11 @@ class PitchIdentifier:
             self.log(f"Identified key signature: {key_sig}")
             
             # Find all noteheads in this system
-            noteheads = [s for s in system_symbols if "notehead" in s.get("class_name", "").lower()]
+            noteheads = [s for s in system_symbols if s.get("class_name", "") == "noteheadBlack"]
             self.log(f"Found {len(noteheads)} noteheads in system {staff_id}")
             
             # Sort noteheads by x-coordinate (left to right)
             noteheads.sort(key=lambda x: x["bbox"]["center_x"])
-            
-            # Track accidentals that have been applied in the current measure
-            current_measure_accidentals = {}
             
             # Process each notehead
             for notehead in noteheads:
@@ -453,30 +426,20 @@ class PitchIdentifier:
                 note_name = self.apply_key_signature(base_note, key_sig)
                 self.log(f"After key signature: {note_name}")
                 
-                # Check for local accidentals
-                accidental = self.find_local_accidentals(notehead, system_symbols)
-                if accidental:
-                    note_name = self.apply_local_accidental(note_name, accidental)
-                    self.log(f"After local accidental: {note_name}")
-                    # Remember this accidental for this note in the current measure
-                    note_letter = note_name[0]
-                    current_measure_accidentals[note_letter] = accidental
-                
                 # Add pitch information to the notehead
                 notehead["pitch"] = {
                     "note_name": note_name,
                     "staff_position": position,
                     "clef": clef_type,
-                    "key_signature": key_sig,
-                    "local_accidental": accidental
+                    "key_signature": key_sig
                 }
                 
                 self.log(f"Set pitch: {note_name}")
-        
-        # Count noteheads with pitch information after processing
-        noteheads = [s for s in result.get("detections", []) if "notehead" in s.get("class_name", "").lower()]
-        noteheads_with_pitch = [n for n in noteheads if "pitch" in n]
-        self.log(f"After processing: {len(noteheads_with_pitch)}/{len(noteheads)} noteheads have pitch information")
+            
+            # Count noteheads with pitch information after processing
+            noteheads = [s for s in result.get("detections", []) if s.get("class_name", "") == "noteheadBlack"]
+            noteheads_with_pitch = [n for n in noteheads if "pitch" in n]
+            self.log(f"After processing: {len(noteheads_with_pitch)}/{len(noteheads)} noteheads have pitch information")
         
         return result
     

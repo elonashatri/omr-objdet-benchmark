@@ -1,0 +1,4362 @@
+{
+  "symbols": [
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 238.0,
+        "y1": 422.0,
+        "x2": 2298.0,
+        "y2": 424.0,
+        "width": 2060.0,
+        "height": 3.0,
+        "center_x": 1268.0,
+        "center_y": 423.0
+      },
+      "staff_system": 0,
+      "line_number": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 237.0,
+        "y1": 443.0,
+        "x2": 2299.0,
+        "y2": 445.0,
+        "width": 2062.0,
+        "height": 3.0,
+        "center_x": 1268.0,
+        "center_y": 444.0
+      },
+      "staff_system": 0,
+      "line_number": 1
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 237.0,
+        "y1": 464.0,
+        "x2": 2299.0,
+        "y2": 466.0,
+        "width": 2062.0,
+        "height": 3.0,
+        "center_x": 1268.0,
+        "center_y": 465.0
+      },
+      "staff_system": 0,
+      "line_number": 2
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 238.0,
+        "y1": 484.0,
+        "x2": 2299.0,
+        "y2": 486.0,
+        "width": 2061.0,
+        "height": 3.0,
+        "center_x": 1268.5,
+        "center_y": 485.0
+      },
+      "staff_system": 0,
+      "line_number": 3
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 237.0,
+        "y1": 505.0,
+        "x2": 2299.0,
+        "y2": 507.0,
+        "width": 2062.0,
+        "height": 3.0,
+        "center_x": 1268.0,
+        "center_y": 506.0
+      },
+      "staff_system": 0,
+      "line_number": 4
+    },
+    {
+      "class_id": 14,
+      "class_name": "gClef",
+      "confidence": 0.9587105512619019,
+      "bbox": {
+        "x1": 246.9248504638672,
+        "y1": 396.18585205078125,
+        "x2": 302.9266052246094,
+        "y2": 542.7700805664062,
+        "width": 56.00175476074219,
+        "height": 146.584228515625,
+        "center_x": 274.9257278442383,
+        "center_y": 469.47796630859375
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9434256553649902,
+      "bbox": {
+        "x1": 408.6438903808594,
+        "y1": 393.16497802734375,
+        "x2": 436.7846984863281,
+        "y2": 417.17694091796875,
+        "width": 28.14080810546875,
+        "height": 24.011962890625,
+        "center_x": 422.71429443359375,
+        "center_y": 405.17095947265625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 31,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9427279233932495,
+      "bbox": {
+        "x1": 1517.9052734375,
+        "y1": 413.9322204589844,
+        "x2": 1545.7454833984375,
+        "y2": 437.721923828125,
+        "width": 27.8402099609375,
+        "height": 23.789703369140625,
+        "center_x": 1531.8253784179688,
+        "center_y": 425.8270721435547
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9426307678222656,
+      "bbox": {
+        "x1": 1248.797119140625,
+        "y1": 444.5802917480469,
+        "x2": 1276.7017822265625,
+        "y2": 468.9271545410156,
+        "width": 27.9046630859375,
+        "height": 24.34686279296875,
+        "center_x": 1262.7494506835938,
+        "center_y": 456.75372314453125
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 58,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.942410409450531,
+      "bbox": {
+        "x1": 579.838623046875,
+        "y1": 413.39849853515625,
+        "x2": 608.0762939453125,
+        "y2": 437.9529724121094,
+        "width": 28.2376708984375,
+        "height": 24.554473876953125,
+        "center_x": 593.9574584960938,
+        "center_y": 425.6757354736328
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 44,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9398757219314575,
+      "bbox": {
+        "x1": 1517.7279052734375,
+        "y1": 444.8240966796875,
+        "x2": 1545.648193359375,
+        "y2": 468.85943603515625,
+        "width": 27.9202880859375,
+        "height": 24.03533935546875,
+        "center_x": 1531.6880493164062,
+        "center_y": 456.8417663574219
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9394213557243347,
+      "bbox": {
+        "x1": 733.1766967773438,
+        "y1": 413.51129150390625,
+        "x2": 761.2770385742188,
+        "y2": 437.98956298828125,
+        "width": 28.100341796875,
+        "height": 24.478271484375,
+        "center_x": 747.2268676757812,
+        "center_y": 425.75042724609375
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 32,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9386165738105774,
+      "bbox": {
+        "x1": 733.0140380859375,
+        "y1": 454.8406066894531,
+        "x2": 761.2779541015625,
+        "y2": 479.04986572265625,
+        "width": 28.263916015625,
+        "height": 24.209259033203125,
+        "center_x": 747.14599609375,
+        "center_y": 466.9452362060547
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.937852144241333,
+      "bbox": {
+        "x1": 709.099365234375,
+        "y1": 424.2814025878906,
+        "x2": 736.2955932617188,
+        "y2": 448.0045471191406,
+        "width": 27.19622802734375,
+        "height": 23.72314453125,
+        "center_x": 722.6974792480469,
+        "center_y": 436.1429748535156
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9370126724243164,
+      "bbox": {
+        "x1": 1248.6256103515625,
+        "y1": 465.9675598144531,
+        "x2": 1276.739501953125,
+        "y2": 489.9755554199219,
+        "width": 28.1138916015625,
+        "height": 24.00799560546875,
+        "center_x": 1262.6825561523438,
+        "center_y": 477.9715576171875
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9366835355758667,
+      "bbox": {
+        "x1": 900.27392578125,
+        "y1": 465.51251220703125,
+        "x2": 928.7075805664062,
+        "y2": 489.26202392578125,
+        "width": 28.43365478515625,
+        "height": 23.74951171875,
+        "center_x": 914.4907531738281,
+        "center_y": 477.38726806640625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 28,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9341734647750854,
+      "bbox": {
+        "x1": 1872.522705078125,
+        "y1": 475.7866516113281,
+        "x2": 1900.4814453125,
+        "y2": 499.292236328125,
+        "width": 27.958740234375,
+        "height": 23.505584716796875,
+        "center_x": 1886.5020751953125,
+        "center_y": 487.53944396972656
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 35,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.933961033821106,
+      "bbox": {
+        "x1": 2212.870361328125,
+        "y1": 403.47137451171875,
+        "x2": 2240.392333984375,
+        "y2": 427.3037109375,
+        "width": 27.52197265625,
+        "height": 23.83233642578125,
+        "center_x": 2226.63134765625,
+        "center_y": 415.3875427246094
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9327548146247864,
+      "bbox": {
+        "x1": 1050.3773193359375,
+        "y1": 434.8772888183594,
+        "x2": 1078.3153076171875,
+        "y2": 458.46099853515625,
+        "width": 27.93798828125,
+        "height": 23.583709716796875,
+        "center_x": 1064.3463134765625,
+        "center_y": 446.6691436767578
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 45,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9327024221420288,
+      "bbox": {
+        "x1": 1847.428466796875,
+        "y1": 516.7789916992188,
+        "x2": 1875.5106201171875,
+        "y2": 540.914794921875,
+        "width": 28.0821533203125,
+        "height": 24.13580322265625,
+        "center_x": 1861.4695434570312,
+        "center_y": 528.8468933105469
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 52,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9326373934745789,
+      "bbox": {
+        "x1": 579.9004516601562,
+        "y1": 444.7095031738281,
+        "x2": 607.8951416015625,
+        "y2": 468.8310241699219,
+        "width": 27.99468994140625,
+        "height": 24.12152099609375,
+        "center_x": 593.8977966308594,
+        "center_y": 456.770263671875
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 59,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9317525029182434,
+      "bbox": {
+        "x1": 2187.499755859375,
+        "y1": 413.591552734375,
+        "x2": 2214.727783203125,
+        "y2": 437.0240478515625,
+        "width": 27.22802734375,
+        "height": 23.4324951171875,
+        "center_x": 2201.11376953125,
+        "center_y": 425.30780029296875
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 53,
+          "type": "has_accidental"
+        },
+        {
+          "id": 50,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9315246939659119,
+      "bbox": {
+        "x1": 1672.9178466796875,
+        "y1": 454.97833251953125,
+        "x2": 1700.957275390625,
+        "y2": 479.313232421875,
+        "width": 28.0394287109375,
+        "height": 24.33489990234375,
+        "center_x": 1686.9375610351562,
+        "center_y": 467.1457824707031
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9314818382263184,
+      "bbox": {
+        "x1": 1673.02587890625,
+        "y1": 413.9584655761719,
+        "x2": 1700.7603759765625,
+        "y2": 437.7029113769531,
+        "width": 27.7344970703125,
+        "height": 23.74444580078125,
+        "center_x": 1686.8931274414062,
+        "center_y": 425.8306884765625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 40,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9313688278198242,
+      "bbox": {
+        "x1": 1050.1749267578125,
+        "y1": 382.43963623046875,
+        "x2": 1078.7529296875,
+        "y2": 406.6305236816406,
+        "width": 28.5780029296875,
+        "height": 24.190887451171875,
+        "center_x": 1064.4639282226562,
+        "center_y": 394.5350799560547
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 26,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9304845929145813,
+      "bbox": {
+        "x1": 1050.30810546875,
+        "y1": 414.0348815917969,
+        "x2": 1078.77880859375,
+        "y2": 437.9825744628906,
+        "width": 28.470703125,
+        "height": 23.94769287109375,
+        "center_x": 1064.54345703125,
+        "center_y": 426.00872802734375
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 48,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9303062558174133,
+      "bbox": {
+        "x1": 875.1465454101562,
+        "y1": 476.11474609375,
+        "x2": 903.2112426757812,
+        "y2": 500.05810546875,
+        "width": 28.064697265625,
+        "height": 23.943359375,
+        "center_x": 889.1788940429688,
+        "center_y": 488.08642578125
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9297090768814087,
+      "bbox": {
+        "x1": 409.240966796875,
+        "y1": 455.29620361328125,
+        "x2": 436.814453125,
+        "y2": 479.20538330078125,
+        "width": 27.573486328125,
+        "height": 23.9091796875,
+        "center_x": 423.0277099609375,
+        "center_y": 467.25079345703125
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9294314980506897,
+      "bbox": {
+        "x1": 1672.9393310546875,
+        "y1": 434.6590576171875,
+        "x2": 1700.80615234375,
+        "y2": 458.2631530761719,
+        "width": 27.8668212890625,
+        "height": 23.604095458984375,
+        "center_x": 1686.8727416992188,
+        "center_y": 446.4611053466797
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 54,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9278342723846436,
+      "bbox": {
+        "x1": 2034.4439697265625,
+        "y1": 413.6789855957031,
+        "x2": 2062.428955078125,
+        "y2": 437.56085205078125,
+        "width": 27.9849853515625,
+        "height": 23.881866455078125,
+        "center_x": 2048.4364624023438,
+        "center_y": 425.6199188232422
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9266651272773743,
+      "bbox": {
+        "x1": 1846.9483642578125,
+        "y1": 486.3837585449219,
+        "x2": 1875.2275390625,
+        "y2": 510.1671447753906,
+        "width": 28.2791748046875,
+        "height": 23.78338623046875,
+        "center_x": 1861.0879516601562,
+        "center_y": 498.27545166015625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 43,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9263634085655212,
+      "bbox": {
+        "x1": 1024.6131591796875,
+        "y1": 365.7469787597656,
+        "x2": 1045.5245361328125,
+        "y2": 424.9261779785156,
+        "width": 20.911376953125,
+        "height": 59.17919921875,
+        "center_x": 1035.06884765625,
+        "center_y": 395.3365783691406
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 19,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9260098934173584,
+      "bbox": {
+        "x1": 555.3522338867188,
+        "y1": 424.66131591796875,
+        "x2": 582.2903442382812,
+        "y2": 447.7154541015625,
+        "width": 26.9381103515625,
+        "height": 23.05413818359375,
+        "center_x": 568.8212890625,
+        "center_y": 436.1883850097656
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.925713062286377,
+      "bbox": {
+        "x1": 851.8823852539062,
+        "y1": 450.8801574707031,
+        "x2": 870.7333984375,
+        "y2": 503.3096923828125,
+        "width": 18.85101318359375,
+        "height": 52.429534912109375,
+        "center_x": 861.3078918457031,
+        "center_y": 477.0949249267578
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 10,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9252187609672546,
+      "bbox": {
+        "x1": 875.0143432617188,
+        "y1": 527.603759765625,
+        "x2": 902.8525390625,
+        "y2": 551.8096923828125,
+        "width": 27.83819580078125,
+        "height": 24.2059326171875,
+        "center_x": 888.9334411621094,
+        "center_y": 539.7067260742188
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9250253438949585,
+      "bbox": {
+        "x1": 1424.7664794921875,
+        "y1": 496.5783386230469,
+        "x2": 1452.8165283203125,
+        "y2": 520.598388671875,
+        "width": 28.050048828125,
+        "height": 24.020050048828125,
+        "center_x": 1438.79150390625,
+        "center_y": 508.58836364746094
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 51,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9250138998031616,
+      "bbox": {
+        "x1": 382.6355285644531,
+        "y1": 375.5533142089844,
+        "x2": 403.7054748535156,
+        "y2": 435.15167236328125,
+        "width": 21.0699462890625,
+        "height": 59.598358154296875,
+        "center_x": 393.1705017089844,
+        "center_y": 405.3524932861328
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 1,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9238016605377197,
+      "bbox": {
+        "x1": 684.9183349609375,
+        "y1": 396.57000732421875,
+        "x2": 705.4439086914062,
+        "y2": 455.24212646484375,
+        "width": 20.52557373046875,
+        "height": 58.672119140625,
+        "center_x": 695.1811218261719,
+        "center_y": 425.90606689453125
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 6,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9234718680381775,
+      "bbox": {
+        "x1": 2009.420166015625,
+        "y1": 362.33544921875,
+        "x2": 2036.811279296875,
+        "y2": 386.73785400390625,
+        "width": 27.39111328125,
+        "height": 24.40240478515625,
+        "center_x": 2023.11572265625,
+        "center_y": 374.5366516113281
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 61,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9233234524726868,
+      "bbox": {
+        "x1": 383.8118591308594,
+        "y1": 444.20013427734375,
+        "x2": 412.16845703125,
+        "y2": 469.0834045410156,
+        "width": 28.356597900390625,
+        "height": 24.883270263671875,
+        "center_x": 397.9901580810547,
+        "center_y": 456.6417694091797
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 41,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.922851026058197,
+      "bbox": {
+        "x1": 1821.722900390625,
+        "y1": 457.55609130859375,
+        "x2": 1842.751708984375,
+        "y2": 517.2664794921875,
+        "width": 21.02880859375,
+        "height": 59.71038818359375,
+        "center_x": 1832.2373046875,
+        "center_y": 487.4112854003906
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 11,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9226637482643127,
+      "bbox": {
+        "x1": 1517.95703125,
+        "y1": 382.40020751953125,
+        "x2": 1545.872802734375,
+        "y2": 406.1747131347656,
+        "width": 27.915771484375,
+        "height": 23.774505615234375,
+        "center_x": 1531.9149169921875,
+        "center_y": 394.28746032714844
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9224857687950134,
+      "bbox": {
+        "x1": 408.8587646484375,
+        "y1": 434.54302978515625,
+        "x2": 436.8283996582031,
+        "y2": 458.89764404296875,
+        "width": 27.969635009765625,
+        "height": 24.3546142578125,
+        "center_x": 422.8435821533203,
+        "center_y": 446.7203369140625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 57,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9218940734863281,
+      "bbox": {
+        "x1": 1399.6280517578125,
+        "y1": 506.7021484375,
+        "x2": 1427.50830078125,
+        "y2": 530.73046875,
+        "width": 27.8802490234375,
+        "height": 24.0283203125,
+        "center_x": 1413.5681762695312,
+        "center_y": 518.71630859375
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.921473503112793,
+      "bbox": {
+        "x1": 2033.9261474609375,
+        "y1": 372.46160888671875,
+        "x2": 2062.121826171875,
+        "y2": 396.3585205078125,
+        "width": 28.1956787109375,
+        "height": 23.89691162109375,
+        "center_x": 2048.0239868164062,
+        "center_y": 384.4100646972656
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.919872522354126,
+      "bbox": {
+        "x1": 1647.4227294921875,
+        "y1": 396.66497802734375,
+        "x2": 1668.4732666015625,
+        "y2": 455.219970703125,
+        "width": 21.050537109375,
+        "height": 58.55499267578125,
+        "center_x": 1657.947998046875,
+        "center_y": 425.9424743652344
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 18,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9195929765701294,
+      "bbox": {
+        "x1": 360.517333984375,
+        "y1": 427.1983947753906,
+        "x2": 380.771728515625,
+        "y2": 485.942626953125,
+        "width": 20.25439453125,
+        "height": 58.744232177734375,
+        "center_x": 370.64453125,
+        "center_y": 456.5705108642578
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 34,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9192720055580139,
+      "bbox": {
+        "x1": 2033.71484375,
+        "y1": 351.7457580566406,
+        "x2": 2062.03076171875,
+        "y2": 376.0402526855469,
+        "width": 28.31591796875,
+        "height": 24.29449462890625,
+        "center_x": 2047.872802734375,
+        "center_y": 363.89300537109375
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 55,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.918060302734375,
+      "bbox": {
+        "x1": 1778.242431640625,
+        "y1": 468.18017578125,
+        "x2": 1798.9896240234375,
+        "y2": 527.0958862304688,
+        "width": 20.7471923828125,
+        "height": 58.91571044921875,
+        "center_x": 1788.6160278320312,
+        "center_y": 497.6380310058594
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 25,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9173023700714111,
+      "bbox": {
+        "x1": 531.20947265625,
+        "y1": 396.97412109375,
+        "x2": 551.7258911132812,
+        "y2": 455.2992858886719,
+        "width": 20.51641845703125,
+        "height": 58.325164794921875,
+        "center_x": 541.4676818847656,
+        "center_y": 426.13670349121094
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 4,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9172658324241638,
+      "bbox": {
+        "x1": 1004.7841796875,
+        "y1": 417.2663269042969,
+        "x2": 1026.0819091796875,
+        "y2": 475.344970703125,
+        "width": 21.2977294921875,
+        "height": 58.078643798828125,
+        "center_x": 1015.4330444335938,
+        "center_y": 446.30564880371094
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 13,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.9153294563293457,
+      "bbox": {
+        "x1": 1156.2427978515625,
+        "y1": 431.3546447753906,
+        "x2": 1174.3724365234375,
+        "y2": 481.7502746582031,
+        "width": 18.129638671875,
+        "height": 50.3956298828125,
+        "center_x": 1165.3076171875,
+        "center_y": 456.5524597167969
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9140424132347107,
+      "bbox": {
+        "x1": 1223.5091552734375,
+        "y1": 455.36309814453125,
+        "x2": 1250.6614990234375,
+        "y2": 479.8492126464844,
+        "width": 27.15234375,
+        "height": 24.486114501953125,
+        "center_x": 1237.0853271484375,
+        "center_y": 467.6061553955078
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 60,
+          "type": "has_accidental"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9111740589141846,
+      "bbox": {
+        "x1": 980.5364379882812,
+        "y1": 396.4879455566406,
+        "x2": 1001.7438354492188,
+        "y2": 454.5646667480469,
+        "width": 21.2073974609375,
+        "height": 58.07672119140625,
+        "center_x": 991.14013671875,
+        "center_y": 425.52630615234375
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 20,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.9109256863594055,
+      "bbox": {
+        "x1": 838.32275390625,
+        "y1": 501.9304504394531,
+        "x2": 857.234130859375,
+        "y2": 554.2199096679688,
+        "width": 18.911376953125,
+        "height": 52.289459228515625,
+        "center_x": 847.7784423828125,
+        "center_y": 528.0751800537109
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9102664589881897,
+      "bbox": {
+        "x1": 2164.05078125,
+        "y1": 386.1300964355469,
+        "x2": 2184.492431640625,
+        "y2": 445.146484375,
+        "width": 20.441650390625,
+        "height": 59.016387939453125,
+        "center_x": 2174.2716064453125,
+        "center_y": 415.63829040527344
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 16,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.9097498059272766,
+      "bbox": {
+        "x1": 1353.71826171875,
+        "y1": 481.7596435546875,
+        "x2": 1372.767822265625,
+        "y2": 533.5347290039062,
+        "width": 19.049560546875,
+        "height": 51.77508544921875,
+        "center_x": 1363.2430419921875,
+        "center_y": 507.6471862792969
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 30,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9090617299079895,
+      "bbox": {
+        "x1": 1800.220703125,
+        "y1": 498.9377746582031,
+        "x2": 1820.60693359375,
+        "y2": 558.2008666992188,
+        "width": 20.38623046875,
+        "height": 59.263092041015625,
+        "center_x": 1810.413818359375,
+        "center_y": 528.5693206787109
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 14,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9083693027496338,
+      "bbox": {
+        "x1": 2139.873291015625,
+        "y1": 395.6745910644531,
+        "x2": 2160.66455078125,
+        "y2": 455.0137023925781,
+        "width": 20.791259765625,
+        "height": 59.339111328125,
+        "center_x": 2150.2689208984375,
+        "center_y": 425.3441467285156
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 16,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9059972763061523,
+      "bbox": {
+        "x1": 1623.14501953125,
+        "y1": 416.9808044433594,
+        "x2": 1643.9796142578125,
+        "y2": 474.94927978515625,
+        "width": 20.8345947265625,
+        "height": 57.968475341796875,
+        "center_x": 1633.5623168945312,
+        "center_y": 445.9650421142578
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 23,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.904660165309906,
+      "bbox": {
+        "x1": 1988.0625,
+        "y1": 336.9776916503906,
+        "x2": 2006.3682861328125,
+        "y2": 388.71051025390625,
+        "width": 18.3057861328125,
+        "height": 51.732818603515625,
+        "center_x": 1997.2153930664062,
+        "center_y": 362.84410095214844
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 42,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.8998233079910278,
+      "bbox": {
+        "x1": 1375.847900390625,
+        "y1": 471.5113830566406,
+        "x2": 1394.7503662109375,
+        "y2": 524.4948120117188,
+        "width": 18.9024658203125,
+        "height": 52.983428955078125,
+        "center_x": 1385.2991333007812,
+        "center_y": 498.0030975341797
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.8995052576065063,
+      "bbox": {
+        "x1": 336.0688781738281,
+        "y1": 416.5791931152344,
+        "x2": 357.02252197265625,
+        "y2": 476.04412841796875,
+        "width": 20.953643798828125,
+        "height": 59.464935302734375,
+        "center_x": 346.5457000732422,
+        "center_y": 446.31166076660156
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 37,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.8985369801521301,
+      "bbox": {
+        "x1": 1200.4451904296875,
+        "y1": 428.1317443847656,
+        "x2": 1220.7354736328125,
+        "y2": 486.3988342285156,
+        "width": 20.290283203125,
+        "height": 58.26708984375,
+        "center_x": 1210.59033203125,
+        "center_y": 457.2652893066406
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 3,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 12,
+      "class_name": "accidentalNatural",
+      "confidence": 0.8979573249816895,
+      "bbox": {
+        "x1": 513.9678955078125,
+        "y1": 427.784423828125,
+        "x2": 527.8135986328125,
+        "y2": 485.7170104980469,
+        "width": 13.845703125,
+        "height": 57.932586669921875,
+        "center_x": 520.8907470703125,
+        "center_y": 456.75071716308594
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 15,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.8972816467285156,
+      "bbox": {
+        "x1": 1178.182373046875,
+        "y1": 440.8974609375,
+        "x2": 1197.0484619140625,
+        "y2": 493.0503234863281,
+        "width": 18.8660888671875,
+        "height": 52.152862548828125,
+        "center_x": 1187.6154174804688,
+        "center_y": 466.97389221191406
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 47,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.8900109529495239,
+      "bbox": {
+        "x1": 1952.691650390625,
+        "y1": 348.4288330078125,
+        "x2": 1971.3975830078125,
+        "y2": 399.39154052734375,
+        "width": 18.7059326171875,
+        "height": 50.96270751953125,
+        "center_x": 1962.0446166992188,
+        "center_y": 373.9101867675781
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 33,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.8482114672660828,
+      "bbox": {
+        "x1": 1974.5972900390625,
+        "y1": 388.2491455078125,
+        "x2": 1993.6728515625,
+        "y2": 440.84552001953125,
+        "width": 19.0755615234375,
+        "height": 52.59637451171875,
+        "center_x": 1984.1350708007812,
+        "center_y": 414.5473327636719
+      },
+      "staff_assignment": 0
+    }
+  ],
+  "staff_systems": [
+    {
+      "id": "staff_0",
+      "symbols": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "groupings": {
+    "staff_0": [
+      {
+        "class_id": 14,
+        "class_name": "gClef",
+        "confidence": 0.9587105512619019,
+        "bbox": {
+          "x1": 246.9248504638672,
+          "y1": 396.18585205078125,
+          "x2": 302.9266052246094,
+          "y2": 542.7700805664062,
+          "width": 56.00175476074219,
+          "height": 146.584228515625,
+          "center_x": 274.9257278442383,
+          "center_y": 469.47796630859375
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9434256553649902,
+        "bbox": {
+          "x1": 408.6438903808594,
+          "y1": 393.16497802734375,
+          "x2": 436.7846984863281,
+          "y2": 417.17694091796875,
+          "width": 28.14080810546875,
+          "height": 24.011962890625,
+          "center_x": 422.71429443359375,
+          "center_y": 405.17095947265625
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 31,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9427279233932495,
+        "bbox": {
+          "x1": 1517.9052734375,
+          "y1": 413.9322204589844,
+          "x2": 1545.7454833984375,
+          "y2": 437.721923828125,
+          "width": 27.8402099609375,
+          "height": 23.789703369140625,
+          "center_x": 1531.8253784179688,
+          "center_y": 425.8270721435547
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9426307678222656,
+        "bbox": {
+          "x1": 1248.797119140625,
+          "y1": 444.5802917480469,
+          "x2": 1276.7017822265625,
+          "y2": 468.9271545410156,
+          "width": 27.9046630859375,
+          "height": 24.34686279296875,
+          "center_x": 1262.7494506835938,
+          "center_y": 456.75372314453125
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 58,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.942410409450531,
+        "bbox": {
+          "x1": 579.838623046875,
+          "y1": 413.39849853515625,
+          "x2": 608.0762939453125,
+          "y2": 437.9529724121094,
+          "width": 28.2376708984375,
+          "height": 24.554473876953125,
+          "center_x": 593.9574584960938,
+          "center_y": 425.6757354736328
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 44,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9398757219314575,
+        "bbox": {
+          "x1": 1517.7279052734375,
+          "y1": 444.8240966796875,
+          "x2": 1545.648193359375,
+          "y2": 468.85943603515625,
+          "width": 27.9202880859375,
+          "height": 24.03533935546875,
+          "center_x": 1531.6880493164062,
+          "center_y": 456.8417663574219
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9394213557243347,
+        "bbox": {
+          "x1": 733.1766967773438,
+          "y1": 413.51129150390625,
+          "x2": 761.2770385742188,
+          "y2": 437.98956298828125,
+          "width": 28.100341796875,
+          "height": 24.478271484375,
+          "center_x": 747.2268676757812,
+          "center_y": 425.75042724609375
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 32,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9386165738105774,
+        "bbox": {
+          "x1": 733.0140380859375,
+          "y1": 454.8406066894531,
+          "x2": 761.2779541015625,
+          "y2": 479.04986572265625,
+          "width": 28.263916015625,
+          "height": 24.209259033203125,
+          "center_x": 747.14599609375,
+          "center_y": 466.9452362060547
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.937852144241333,
+        "bbox": {
+          "x1": 709.099365234375,
+          "y1": 424.2814025878906,
+          "x2": 736.2955932617188,
+          "y2": 448.0045471191406,
+          "width": 27.19622802734375,
+          "height": 23.72314453125,
+          "center_x": 722.6974792480469,
+          "center_y": 436.1429748535156
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9370126724243164,
+        "bbox": {
+          "x1": 1248.6256103515625,
+          "y1": 465.9675598144531,
+          "x2": 1276.739501953125,
+          "y2": 489.9755554199219,
+          "width": 28.1138916015625,
+          "height": 24.00799560546875,
+          "center_x": 1262.6825561523438,
+          "center_y": 477.9715576171875
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9366835355758667,
+        "bbox": {
+          "x1": 900.27392578125,
+          "y1": 465.51251220703125,
+          "x2": 928.7075805664062,
+          "y2": 489.26202392578125,
+          "width": 28.43365478515625,
+          "height": 23.74951171875,
+          "center_x": 914.4907531738281,
+          "center_y": 477.38726806640625
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 28,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9341734647750854,
+        "bbox": {
+          "x1": 1872.522705078125,
+          "y1": 475.7866516113281,
+          "x2": 1900.4814453125,
+          "y2": 499.292236328125,
+          "width": 27.958740234375,
+          "height": 23.505584716796875,
+          "center_x": 1886.5020751953125,
+          "center_y": 487.53944396972656
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 35,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.933961033821106,
+        "bbox": {
+          "x1": 2212.870361328125,
+          "y1": 403.47137451171875,
+          "x2": 2240.392333984375,
+          "y2": 427.3037109375,
+          "width": 27.52197265625,
+          "height": 23.83233642578125,
+          "center_x": 2226.63134765625,
+          "center_y": 415.3875427246094
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9327548146247864,
+        "bbox": {
+          "x1": 1050.3773193359375,
+          "y1": 434.8772888183594,
+          "x2": 1078.3153076171875,
+          "y2": 458.46099853515625,
+          "width": 27.93798828125,
+          "height": 23.583709716796875,
+          "center_x": 1064.3463134765625,
+          "center_y": 446.6691436767578
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 45,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9327024221420288,
+        "bbox": {
+          "x1": 1847.428466796875,
+          "y1": 516.7789916992188,
+          "x2": 1875.5106201171875,
+          "y2": 540.914794921875,
+          "width": 28.0821533203125,
+          "height": 24.13580322265625,
+          "center_x": 1861.4695434570312,
+          "center_y": 528.8468933105469
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 52,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9326373934745789,
+        "bbox": {
+          "x1": 579.9004516601562,
+          "y1": 444.7095031738281,
+          "x2": 607.8951416015625,
+          "y2": 468.8310241699219,
+          "width": 27.99468994140625,
+          "height": 24.12152099609375,
+          "center_x": 593.8977966308594,
+          "center_y": 456.770263671875
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 59,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9317525029182434,
+        "bbox": {
+          "x1": 2187.499755859375,
+          "y1": 413.591552734375,
+          "x2": 2214.727783203125,
+          "y2": 437.0240478515625,
+          "width": 27.22802734375,
+          "height": 23.4324951171875,
+          "center_x": 2201.11376953125,
+          "center_y": 425.30780029296875
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 53,
+            "type": "has_accidental"
+          },
+          {
+            "id": 50,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9315246939659119,
+        "bbox": {
+          "x1": 1672.9178466796875,
+          "y1": 454.97833251953125,
+          "x2": 1700.957275390625,
+          "y2": 479.313232421875,
+          "width": 28.0394287109375,
+          "height": 24.33489990234375,
+          "center_x": 1686.9375610351562,
+          "center_y": 467.1457824707031
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9314818382263184,
+        "bbox": {
+          "x1": 1673.02587890625,
+          "y1": 413.9584655761719,
+          "x2": 1700.7603759765625,
+          "y2": 437.7029113769531,
+          "width": 27.7344970703125,
+          "height": 23.74444580078125,
+          "center_x": 1686.8931274414062,
+          "center_y": 425.8306884765625
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 40,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9313688278198242,
+        "bbox": {
+          "x1": 1050.1749267578125,
+          "y1": 382.43963623046875,
+          "x2": 1078.7529296875,
+          "y2": 406.6305236816406,
+          "width": 28.5780029296875,
+          "height": 24.190887451171875,
+          "center_x": 1064.4639282226562,
+          "center_y": 394.5350799560547
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 26,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9304845929145813,
+        "bbox": {
+          "x1": 1050.30810546875,
+          "y1": 414.0348815917969,
+          "x2": 1078.77880859375,
+          "y2": 437.9825744628906,
+          "width": 28.470703125,
+          "height": 23.94769287109375,
+          "center_x": 1064.54345703125,
+          "center_y": 426.00872802734375
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 48,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9303062558174133,
+        "bbox": {
+          "x1": 875.1465454101562,
+          "y1": 476.11474609375,
+          "x2": 903.2112426757812,
+          "y2": 500.05810546875,
+          "width": 28.064697265625,
+          "height": 23.943359375,
+          "center_x": 889.1788940429688,
+          "center_y": 488.08642578125
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9297090768814087,
+        "bbox": {
+          "x1": 409.240966796875,
+          "y1": 455.29620361328125,
+          "x2": 436.814453125,
+          "y2": 479.20538330078125,
+          "width": 27.573486328125,
+          "height": 23.9091796875,
+          "center_x": 423.0277099609375,
+          "center_y": 467.25079345703125
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9294314980506897,
+        "bbox": {
+          "x1": 1672.9393310546875,
+          "y1": 434.6590576171875,
+          "x2": 1700.80615234375,
+          "y2": 458.2631530761719,
+          "width": 27.8668212890625,
+          "height": 23.604095458984375,
+          "center_x": 1686.8727416992188,
+          "center_y": 446.4611053466797
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 54,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9278342723846436,
+        "bbox": {
+          "x1": 2034.4439697265625,
+          "y1": 413.6789855957031,
+          "x2": 2062.428955078125,
+          "y2": 437.56085205078125,
+          "width": 27.9849853515625,
+          "height": 23.881866455078125,
+          "center_x": 2048.4364624023438,
+          "center_y": 425.6199188232422
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9266651272773743,
+        "bbox": {
+          "x1": 1846.9483642578125,
+          "y1": 486.3837585449219,
+          "x2": 1875.2275390625,
+          "y2": 510.1671447753906,
+          "width": 28.2791748046875,
+          "height": 23.78338623046875,
+          "center_x": 1861.0879516601562,
+          "center_y": 498.27545166015625
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 43,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.9263634085655212,
+        "bbox": {
+          "x1": 1024.6131591796875,
+          "y1": 365.7469787597656,
+          "x2": 1045.5245361328125,
+          "y2": 424.9261779785156,
+          "width": 20.911376953125,
+          "height": 59.17919921875,
+          "center_x": 1035.06884765625,
+          "center_y": 395.3365783691406
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 19,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9260098934173584,
+        "bbox": {
+          "x1": 555.3522338867188,
+          "y1": 424.66131591796875,
+          "x2": 582.2903442382812,
+          "y2": 447.7154541015625,
+          "width": 26.9381103515625,
+          "height": 23.05413818359375,
+          "center_x": 568.8212890625,
+          "center_y": 436.1883850097656
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 5,
+        "class_name": "accidentalFlat",
+        "confidence": 0.925713062286377,
+        "bbox": {
+          "x1": 851.8823852539062,
+          "y1": 450.8801574707031,
+          "x2": 870.7333984375,
+          "y2": 503.3096923828125,
+          "width": 18.85101318359375,
+          "height": 52.429534912109375,
+          "center_x": 861.3078918457031,
+          "center_y": 477.0949249267578
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 10,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9252187609672546,
+        "bbox": {
+          "x1": 875.0143432617188,
+          "y1": 527.603759765625,
+          "x2": 902.8525390625,
+          "y2": 551.8096923828125,
+          "width": 27.83819580078125,
+          "height": 24.2059326171875,
+          "center_x": 888.9334411621094,
+          "center_y": 539.7067260742188
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9250253438949585,
+        "bbox": {
+          "x1": 1424.7664794921875,
+          "y1": 496.5783386230469,
+          "x2": 1452.8165283203125,
+          "y2": 520.598388671875,
+          "width": 28.050048828125,
+          "height": 24.020050048828125,
+          "center_x": 1438.79150390625,
+          "center_y": 508.58836364746094
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 51,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.9250138998031616,
+        "bbox": {
+          "x1": 382.6355285644531,
+          "y1": 375.5533142089844,
+          "x2": 403.7054748535156,
+          "y2": 435.15167236328125,
+          "width": 21.0699462890625,
+          "height": 59.598358154296875,
+          "center_x": 393.1705017089844,
+          "center_y": 405.3524932861328
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 1,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.9238016605377197,
+        "bbox": {
+          "x1": 684.9183349609375,
+          "y1": 396.57000732421875,
+          "x2": 705.4439086914062,
+          "y2": 455.24212646484375,
+          "width": 20.52557373046875,
+          "height": 58.672119140625,
+          "center_x": 695.1811218261719,
+          "center_y": 425.90606689453125
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 6,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9234718680381775,
+        "bbox": {
+          "x1": 2009.420166015625,
+          "y1": 362.33544921875,
+          "x2": 2036.811279296875,
+          "y2": 386.73785400390625,
+          "width": 27.39111328125,
+          "height": 24.40240478515625,
+          "center_x": 2023.11572265625,
+          "center_y": 374.5366516113281
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 61,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9233234524726868,
+        "bbox": {
+          "x1": 383.8118591308594,
+          "y1": 444.20013427734375,
+          "x2": 412.16845703125,
+          "y2": 469.0834045410156,
+          "width": 28.356597900390625,
+          "height": 24.883270263671875,
+          "center_x": 397.9901580810547,
+          "center_y": 456.6417694091797
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 41,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.922851026058197,
+        "bbox": {
+          "x1": 1821.722900390625,
+          "y1": 457.55609130859375,
+          "x2": 1842.751708984375,
+          "y2": 517.2664794921875,
+          "width": 21.02880859375,
+          "height": 59.71038818359375,
+          "center_x": 1832.2373046875,
+          "center_y": 487.4112854003906
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 11,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9226637482643127,
+        "bbox": {
+          "x1": 1517.95703125,
+          "y1": 382.40020751953125,
+          "x2": 1545.872802734375,
+          "y2": 406.1747131347656,
+          "width": 27.915771484375,
+          "height": 23.774505615234375,
+          "center_x": 1531.9149169921875,
+          "center_y": 394.28746032714844
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9224857687950134,
+        "bbox": {
+          "x1": 408.8587646484375,
+          "y1": 434.54302978515625,
+          "x2": 436.8283996582031,
+          "y2": 458.89764404296875,
+          "width": 27.969635009765625,
+          "height": 24.3546142578125,
+          "center_x": 422.8435821533203,
+          "center_y": 446.7203369140625
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 57,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9218940734863281,
+        "bbox": {
+          "x1": 1399.6280517578125,
+          "y1": 506.7021484375,
+          "x2": 1427.50830078125,
+          "y2": 530.73046875,
+          "width": 27.8802490234375,
+          "height": 24.0283203125,
+          "center_x": 1413.5681762695312,
+          "center_y": 518.71630859375
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.921473503112793,
+        "bbox": {
+          "x1": 2033.9261474609375,
+          "y1": 372.46160888671875,
+          "x2": 2062.121826171875,
+          "y2": 396.3585205078125,
+          "width": 28.1956787109375,
+          "height": 23.89691162109375,
+          "center_x": 2048.0239868164062,
+          "center_y": 384.4100646972656
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.919872522354126,
+        "bbox": {
+          "x1": 1647.4227294921875,
+          "y1": 396.66497802734375,
+          "x2": 1668.4732666015625,
+          "y2": 455.219970703125,
+          "width": 21.050537109375,
+          "height": 58.55499267578125,
+          "center_x": 1657.947998046875,
+          "center_y": 425.9424743652344
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 18,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.9195929765701294,
+        "bbox": {
+          "x1": 360.517333984375,
+          "y1": 427.1983947753906,
+          "x2": 380.771728515625,
+          "y2": 485.942626953125,
+          "width": 20.25439453125,
+          "height": 58.744232177734375,
+          "center_x": 370.64453125,
+          "center_y": 456.5705108642578
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 34,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9192720055580139,
+        "bbox": {
+          "x1": 2033.71484375,
+          "y1": 351.7457580566406,
+          "x2": 2062.03076171875,
+          "y2": 376.0402526855469,
+          "width": 28.31591796875,
+          "height": 24.29449462890625,
+          "center_x": 2047.872802734375,
+          "center_y": 363.89300537109375
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 55,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.918060302734375,
+        "bbox": {
+          "x1": 1778.242431640625,
+          "y1": 468.18017578125,
+          "x2": 1798.9896240234375,
+          "y2": 527.0958862304688,
+          "width": 20.7471923828125,
+          "height": 58.91571044921875,
+          "center_x": 1788.6160278320312,
+          "center_y": 497.6380310058594
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 25,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.9173023700714111,
+        "bbox": {
+          "x1": 531.20947265625,
+          "y1": 396.97412109375,
+          "x2": 551.7258911132812,
+          "y2": 455.2992858886719,
+          "width": 20.51641845703125,
+          "height": 58.325164794921875,
+          "center_x": 541.4676818847656,
+          "center_y": 426.13670349121094
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 4,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.9172658324241638,
+        "bbox": {
+          "x1": 1004.7841796875,
+          "y1": 417.2663269042969,
+          "x2": 1026.0819091796875,
+          "y2": 475.344970703125,
+          "width": 21.2977294921875,
+          "height": 58.078643798828125,
+          "center_x": 1015.4330444335938,
+          "center_y": 446.30564880371094
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 13,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "accidentalFlat",
+        "confidence": 0.9153294563293457,
+        "bbox": {
+          "x1": 1156.2427978515625,
+          "y1": 431.3546447753906,
+          "x2": 1174.3724365234375,
+          "y2": 481.7502746582031,
+          "width": 18.129638671875,
+          "height": 50.3956298828125,
+          "center_x": 1165.3076171875,
+          "center_y": 456.5524597167969
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 0,
+        "class_name": "noteheadBlack",
+        "confidence": 0.9140424132347107,
+        "bbox": {
+          "x1": 1223.5091552734375,
+          "y1": 455.36309814453125,
+          "x2": 1250.6614990234375,
+          "y2": 479.8492126464844,
+          "width": 27.15234375,
+          "height": 24.486114501953125,
+          "center_x": 1237.0853271484375,
+          "center_y": 467.6061553955078
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 60,
+            "type": "has_accidental"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.9111740589141846,
+        "bbox": {
+          "x1": 980.5364379882812,
+          "y1": 396.4879455566406,
+          "x2": 1001.7438354492188,
+          "y2": 454.5646667480469,
+          "width": 21.2073974609375,
+          "height": 58.07672119140625,
+          "center_x": 991.14013671875,
+          "center_y": 425.52630615234375
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 20,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "accidentalFlat",
+        "confidence": 0.9109256863594055,
+        "bbox": {
+          "x1": 838.32275390625,
+          "y1": 501.9304504394531,
+          "x2": 857.234130859375,
+          "y2": 554.2199096679688,
+          "width": 18.911376953125,
+          "height": 52.289459228515625,
+          "center_x": 847.7784423828125,
+          "center_y": 528.0751800537109
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.9102664589881897,
+        "bbox": {
+          "x1": 2164.05078125,
+          "y1": 386.1300964355469,
+          "x2": 2184.492431640625,
+          "y2": 445.146484375,
+          "width": 20.441650390625,
+          "height": 59.016387939453125,
+          "center_x": 2174.2716064453125,
+          "center_y": 415.63829040527344
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 16,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "accidentalFlat",
+        "confidence": 0.9097498059272766,
+        "bbox": {
+          "x1": 1353.71826171875,
+          "y1": 481.7596435546875,
+          "x2": 1372.767822265625,
+          "y2": 533.5347290039062,
+          "width": 19.049560546875,
+          "height": 51.77508544921875,
+          "center_x": 1363.2430419921875,
+          "center_y": 507.6471862792969
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 30,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.9090617299079895,
+        "bbox": {
+          "x1": 1800.220703125,
+          "y1": 498.9377746582031,
+          "x2": 1820.60693359375,
+          "y2": 558.2008666992188,
+          "width": 20.38623046875,
+          "height": 59.263092041015625,
+          "center_x": 1810.413818359375,
+          "center_y": 528.5693206787109
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 14,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.9083693027496338,
+        "bbox": {
+          "x1": 2139.873291015625,
+          "y1": 395.6745910644531,
+          "x2": 2160.66455078125,
+          "y2": 455.0137023925781,
+          "width": 20.791259765625,
+          "height": 59.339111328125,
+          "center_x": 2150.2689208984375,
+          "center_y": 425.3441467285156
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 16,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.9059972763061523,
+        "bbox": {
+          "x1": 1623.14501953125,
+          "y1": 416.9808044433594,
+          "x2": 1643.9796142578125,
+          "y2": 474.94927978515625,
+          "width": 20.8345947265625,
+          "height": 57.968475341796875,
+          "center_x": 1633.5623168945312,
+          "center_y": 445.9650421142578
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 23,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "accidentalFlat",
+        "confidence": 0.904660165309906,
+        "bbox": {
+          "x1": 1988.0625,
+          "y1": 336.9776916503906,
+          "x2": 2006.3682861328125,
+          "y2": 388.71051025390625,
+          "width": 18.3057861328125,
+          "height": 51.732818603515625,
+          "center_x": 1997.2153930664062,
+          "center_y": 362.84410095214844
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 42,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "accidentalFlat",
+        "confidence": 0.8998233079910278,
+        "bbox": {
+          "x1": 1375.847900390625,
+          "y1": 471.5113830566406,
+          "x2": 1394.7503662109375,
+          "y2": 524.4948120117188,
+          "width": 18.9024658203125,
+          "height": 52.983428955078125,
+          "center_x": 1385.2991333007812,
+          "center_y": 498.0030975341797
+        },
+        "staff_assignment": 0
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.8995052576065063,
+        "bbox": {
+          "x1": 336.0688781738281,
+          "y1": 416.5791931152344,
+          "x2": 357.02252197265625,
+          "y2": 476.04412841796875,
+          "width": 20.953643798828125,
+          "height": 59.464935302734375,
+          "center_x": 346.5457000732422,
+          "center_y": 446.31166076660156
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 37,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "class_name": "accidentalSharp",
+        "confidence": 0.8985369801521301,
+        "bbox": {
+          "x1": 1200.4451904296875,
+          "y1": 428.1317443847656,
+          "x2": 1220.7354736328125,
+          "y2": 486.3988342285156,
+          "width": 20.290283203125,
+          "height": 58.26708984375,
+          "center_x": 1210.59033203125,
+          "center_y": 457.2652893066406
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 3,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 12,
+        "class_name": "accidentalNatural",
+        "confidence": 0.8979573249816895,
+        "bbox": {
+          "x1": 513.9678955078125,
+          "y1": 427.784423828125,
+          "x2": 527.8135986328125,
+          "y2": 485.7170104980469,
+          "width": 13.845703125,
+          "height": 57.932586669921875,
+          "center_x": 520.8907470703125,
+          "center_y": 456.75071716308594
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 15,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "accidentalFlat",
+        "confidence": 0.8972816467285156,
+        "bbox": {
+          "x1": 1178.182373046875,
+          "y1": 440.8974609375,
+          "x2": 1197.0484619140625,
+          "y2": 493.0503234863281,
+          "width": 18.8660888671875,
+          "height": 52.152862548828125,
+          "center_x": 1187.6154174804688,
+          "center_y": 466.97389221191406
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 47,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "accidentalFlat",
+        "confidence": 0.8900109529495239,
+        "bbox": {
+          "x1": 1952.691650390625,
+          "y1": 348.4288330078125,
+          "x2": 1971.3975830078125,
+          "y2": 399.39154052734375,
+          "width": 18.7059326171875,
+          "height": 50.96270751953125,
+          "center_x": 1962.0446166992188,
+          "center_y": 373.9101867675781
+        },
+        "staff_assignment": 0,
+        "linked_symbols": [
+          {
+            "id": 33,
+            "type": "modifies_note"
+          }
+        ]
+      },
+      {
+        "class_id": 5,
+        "class_name": "accidentalFlat",
+        "confidence": 0.8482114672660828,
+        "bbox": {
+          "x1": 1974.5972900390625,
+          "y1": 388.2491455078125,
+          "x2": 1993.6728515625,
+          "y2": 440.84552001953125,
+          "width": 19.0755615234375,
+          "height": 52.59637451171875,
+          "center_x": 1984.1350708007812,
+          "center_y": 414.5473327636719
+        },
+        "staff_assignment": 0
+      }
+    ]
+  },
+  "detections": [
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 238.0,
+        "y1": 422.0,
+        "x2": 2298.0,
+        "y2": 424.0,
+        "width": 2060.0,
+        "height": 3.0,
+        "center_x": 1268.0,
+        "center_y": 423.0
+      },
+      "staff_system": 0,
+      "line_number": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 237.0,
+        "y1": 443.0,
+        "x2": 2299.0,
+        "y2": 445.0,
+        "width": 2062.0,
+        "height": 3.0,
+        "center_x": 1268.0,
+        "center_y": 444.0
+      },
+      "staff_system": 0,
+      "line_number": 1
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 237.0,
+        "y1": 464.0,
+        "x2": 2299.0,
+        "y2": 466.0,
+        "width": 2062.0,
+        "height": 3.0,
+        "center_x": 1268.0,
+        "center_y": 465.0
+      },
+      "staff_system": 0,
+      "line_number": 2
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 238.0,
+        "y1": 484.0,
+        "x2": 2299.0,
+        "y2": 486.0,
+        "width": 2061.0,
+        "height": 3.0,
+        "center_x": 1268.5,
+        "center_y": 485.0
+      },
+      "staff_system": 0,
+      "line_number": 3
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 237.0,
+        "y1": 505.0,
+        "x2": 2299.0,
+        "y2": 507.0,
+        "width": 2062.0,
+        "height": 3.0,
+        "center_x": 1268.0,
+        "center_y": 506.0
+      },
+      "staff_system": 0,
+      "line_number": 4
+    },
+    {
+      "class_id": 14,
+      "class_name": "gClef",
+      "confidence": 0.9587105512619019,
+      "bbox": {
+        "x1": 246.9248504638672,
+        "y1": 396.18585205078125,
+        "x2": 302.9266052246094,
+        "y2": 542.7700805664062,
+        "width": 56.00175476074219,
+        "height": 146.584228515625,
+        "center_x": 274.9257278442383,
+        "center_y": 469.47796630859375
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9434256553649902,
+      "bbox": {
+        "x1": 408.6438903808594,
+        "y1": 393.16497802734375,
+        "x2": 436.7846984863281,
+        "y2": 417.17694091796875,
+        "width": 28.14080810546875,
+        "height": 24.011962890625,
+        "center_x": 422.71429443359375,
+        "center_y": 405.17095947265625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 31,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "G5",
+        "staff_position": 6,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9427279233932495,
+      "bbox": {
+        "x1": 1517.9052734375,
+        "y1": 413.9322204589844,
+        "x2": 1545.7454833984375,
+        "y2": 437.721923828125,
+        "width": 27.8402099609375,
+        "height": 23.789703369140625,
+        "center_x": 1531.8253784179688,
+        "center_y": 425.8270721435547
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "E5",
+        "staff_position": 4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9426307678222656,
+      "bbox": {
+        "x1": 1248.797119140625,
+        "y1": 444.5802917480469,
+        "x2": 1276.7017822265625,
+        "y2": 468.9271545410156,
+        "width": 27.9046630859375,
+        "height": 24.34686279296875,
+        "center_x": 1262.7494506835938,
+        "center_y": 456.75372314453125
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 58,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "B4",
+        "staff_position": 1,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.942410409450531,
+      "bbox": {
+        "x1": 579.838623046875,
+        "y1": 413.39849853515625,
+        "x2": 608.0762939453125,
+        "y2": 437.9529724121094,
+        "width": 28.2376708984375,
+        "height": 24.554473876953125,
+        "center_x": 593.9574584960938,
+        "center_y": 425.6757354736328
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 44,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "E5",
+        "staff_position": 4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9398757219314575,
+      "bbox": {
+        "x1": 1517.7279052734375,
+        "y1": 444.8240966796875,
+        "x2": 1545.648193359375,
+        "y2": 468.85943603515625,
+        "width": 27.9202880859375,
+        "height": 24.03533935546875,
+        "center_x": 1531.6880493164062,
+        "center_y": 456.8417663574219
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "B4",
+        "staff_position": 1,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9394213557243347,
+      "bbox": {
+        "x1": 733.1766967773438,
+        "y1": 413.51129150390625,
+        "x2": 761.2770385742188,
+        "y2": 437.98956298828125,
+        "width": 28.100341796875,
+        "height": 24.478271484375,
+        "center_x": 747.2268676757812,
+        "center_y": 425.75042724609375
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 32,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "E5",
+        "staff_position": 4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9386165738105774,
+      "bbox": {
+        "x1": 733.0140380859375,
+        "y1": 454.8406066894531,
+        "x2": 761.2779541015625,
+        "y2": 479.04986572265625,
+        "width": 28.263916015625,
+        "height": 24.209259033203125,
+        "center_x": 747.14599609375,
+        "center_y": 466.9452362060547
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.937852144241333,
+      "bbox": {
+        "x1": 709.099365234375,
+        "y1": 424.2814025878906,
+        "x2": 736.2955932617188,
+        "y2": 448.0045471191406,
+        "width": 27.19622802734375,
+        "height": 23.72314453125,
+        "center_x": 722.6974792480469,
+        "center_y": 436.1429748535156
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "D5",
+        "staff_position": 3,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9370126724243164,
+      "bbox": {
+        "x1": 1248.6256103515625,
+        "y1": 465.9675598144531,
+        "x2": 1276.739501953125,
+        "y2": 489.9755554199219,
+        "width": 28.1138916015625,
+        "height": 24.00799560546875,
+        "center_x": 1262.6825561523438,
+        "center_y": 477.9715576171875
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "G4",
+        "staff_position": -1,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9366835355758667,
+      "bbox": {
+        "x1": 900.27392578125,
+        "y1": 465.51251220703125,
+        "x2": 928.7075805664062,
+        "y2": 489.26202392578125,
+        "width": 28.43365478515625,
+        "height": 23.74951171875,
+        "center_x": 914.4907531738281,
+        "center_y": 477.38726806640625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 28,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "G4",
+        "staff_position": -1,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9341734647750854,
+      "bbox": {
+        "x1": 1872.522705078125,
+        "y1": 475.7866516113281,
+        "x2": 1900.4814453125,
+        "y2": 499.292236328125,
+        "width": 27.958740234375,
+        "height": 23.505584716796875,
+        "center_x": 1886.5020751953125,
+        "center_y": 487.53944396972656
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 35,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "F4",
+        "staff_position": -2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.933961033821106,
+      "bbox": {
+        "x1": 2212.870361328125,
+        "y1": 403.47137451171875,
+        "x2": 2240.392333984375,
+        "y2": 427.3037109375,
+        "width": 27.52197265625,
+        "height": 23.83233642578125,
+        "center_x": 2226.63134765625,
+        "center_y": 415.3875427246094
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "F5",
+        "staff_position": 5,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9327548146247864,
+      "bbox": {
+        "x1": 1050.3773193359375,
+        "y1": 434.8772888183594,
+        "x2": 1078.3153076171875,
+        "y2": 458.46099853515625,
+        "width": 27.93798828125,
+        "height": 23.583709716796875,
+        "center_x": 1064.3463134765625,
+        "center_y": 446.6691436767578
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 45,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "C5",
+        "staff_position": 2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9327024221420288,
+      "bbox": {
+        "x1": 1847.428466796875,
+        "y1": 516.7789916992188,
+        "x2": 1875.5106201171875,
+        "y2": 540.914794921875,
+        "width": 28.0821533203125,
+        "height": 24.13580322265625,
+        "center_x": 1861.4695434570312,
+        "center_y": 528.8468933105469
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 52,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "?",
+        "staff_position": -6,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9326373934745789,
+      "bbox": {
+        "x1": 579.9004516601562,
+        "y1": 444.7095031738281,
+        "x2": 607.8951416015625,
+        "y2": 468.8310241699219,
+        "width": 27.99468994140625,
+        "height": 24.12152099609375,
+        "center_x": 593.8977966308594,
+        "center_y": 456.770263671875
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 59,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "B4",
+        "staff_position": 1,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9317525029182434,
+      "bbox": {
+        "x1": 2187.499755859375,
+        "y1": 413.591552734375,
+        "x2": 2214.727783203125,
+        "y2": 437.0240478515625,
+        "width": 27.22802734375,
+        "height": 23.4324951171875,
+        "center_x": 2201.11376953125,
+        "center_y": 425.30780029296875
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 53,
+          "type": "has_accidental"
+        },
+        {
+          "id": 50,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "E5",
+        "staff_position": 4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9315246939659119,
+      "bbox": {
+        "x1": 1672.9178466796875,
+        "y1": 454.97833251953125,
+        "x2": 1700.957275390625,
+        "y2": 479.313232421875,
+        "width": 28.0394287109375,
+        "height": 24.33489990234375,
+        "center_x": 1686.9375610351562,
+        "center_y": 467.1457824707031
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9314818382263184,
+      "bbox": {
+        "x1": 1673.02587890625,
+        "y1": 413.9584655761719,
+        "x2": 1700.7603759765625,
+        "y2": 437.7029113769531,
+        "width": 27.7344970703125,
+        "height": 23.74444580078125,
+        "center_x": 1686.8931274414062,
+        "center_y": 425.8306884765625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 40,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "E5",
+        "staff_position": 4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9313688278198242,
+      "bbox": {
+        "x1": 1050.1749267578125,
+        "y1": 382.43963623046875,
+        "x2": 1078.7529296875,
+        "y2": 406.6305236816406,
+        "width": 28.5780029296875,
+        "height": 24.190887451171875,
+        "center_x": 1064.4639282226562,
+        "center_y": 394.5350799560547
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 26,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "A5",
+        "staff_position": 7,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9304845929145813,
+      "bbox": {
+        "x1": 1050.30810546875,
+        "y1": 414.0348815917969,
+        "x2": 1078.77880859375,
+        "y2": 437.9825744628906,
+        "width": 28.470703125,
+        "height": 23.94769287109375,
+        "center_x": 1064.54345703125,
+        "center_y": 426.00872802734375
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 48,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "E5",
+        "staff_position": 4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9303062558174133,
+      "bbox": {
+        "x1": 875.1465454101562,
+        "y1": 476.11474609375,
+        "x2": 903.2112426757812,
+        "y2": 500.05810546875,
+        "width": 28.064697265625,
+        "height": 23.943359375,
+        "center_x": 889.1788940429688,
+        "center_y": 488.08642578125
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "F4",
+        "staff_position": -2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9297090768814087,
+      "bbox": {
+        "x1": 409.240966796875,
+        "y1": 455.29620361328125,
+        "x2": 436.814453125,
+        "y2": 479.20538330078125,
+        "width": 27.573486328125,
+        "height": 23.9091796875,
+        "center_x": 423.0277099609375,
+        "center_y": 467.25079345703125
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9294314980506897,
+      "bbox": {
+        "x1": 1672.9393310546875,
+        "y1": 434.6590576171875,
+        "x2": 1700.80615234375,
+        "y2": 458.2631530761719,
+        "width": 27.8668212890625,
+        "height": 23.604095458984375,
+        "center_x": 1686.8727416992188,
+        "center_y": 446.4611053466797
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 54,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "C5",
+        "staff_position": 2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9278342723846436,
+      "bbox": {
+        "x1": 2034.4439697265625,
+        "y1": 413.6789855957031,
+        "x2": 2062.428955078125,
+        "y2": 437.56085205078125,
+        "width": 27.9849853515625,
+        "height": 23.881866455078125,
+        "center_x": 2048.4364624023438,
+        "center_y": 425.6199188232422
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "E5",
+        "staff_position": 4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9266651272773743,
+      "bbox": {
+        "x1": 1846.9483642578125,
+        "y1": 486.3837585449219,
+        "x2": 1875.2275390625,
+        "y2": 510.1671447753906,
+        "width": 28.2791748046875,
+        "height": 23.78338623046875,
+        "center_x": 1861.0879516601562,
+        "center_y": 498.27545166015625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 43,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "E4",
+        "staff_position": -3,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9263634085655212,
+      "bbox": {
+        "x1": 1024.6131591796875,
+        "y1": 365.7469787597656,
+        "x2": 1045.5245361328125,
+        "y2": 424.9261779785156,
+        "width": 20.911376953125,
+        "height": 59.17919921875,
+        "center_x": 1035.06884765625,
+        "center_y": 395.3365783691406
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 19,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9260098934173584,
+      "bbox": {
+        "x1": 555.3522338867188,
+        "y1": 424.66131591796875,
+        "x2": 582.2903442382812,
+        "y2": 447.7154541015625,
+        "width": 26.9381103515625,
+        "height": 23.05413818359375,
+        "center_x": 568.8212890625,
+        "center_y": 436.1883850097656
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "D5",
+        "staff_position": 3,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.925713062286377,
+      "bbox": {
+        "x1": 851.8823852539062,
+        "y1": 450.8801574707031,
+        "x2": 870.7333984375,
+        "y2": 503.3096923828125,
+        "width": 18.85101318359375,
+        "height": 52.429534912109375,
+        "center_x": 861.3078918457031,
+        "center_y": 477.0949249267578
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 10,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9252187609672546,
+      "bbox": {
+        "x1": 875.0143432617188,
+        "y1": 527.603759765625,
+        "x2": 902.8525390625,
+        "y2": 551.8096923828125,
+        "width": 27.83819580078125,
+        "height": 24.2059326171875,
+        "center_x": 888.9334411621094,
+        "center_y": 539.7067260742188
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "?",
+        "staff_position": -7,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9250253438949585,
+      "bbox": {
+        "x1": 1424.7664794921875,
+        "y1": 496.5783386230469,
+        "x2": 1452.8165283203125,
+        "y2": 520.598388671875,
+        "width": 28.050048828125,
+        "height": 24.020050048828125,
+        "center_x": 1438.79150390625,
+        "center_y": 508.58836364746094
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 51,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "D4",
+        "staff_position": -4,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9250138998031616,
+      "bbox": {
+        "x1": 382.6355285644531,
+        "y1": 375.5533142089844,
+        "x2": 403.7054748535156,
+        "y2": 435.15167236328125,
+        "width": 21.0699462890625,
+        "height": 59.598358154296875,
+        "center_x": 393.1705017089844,
+        "center_y": 405.3524932861328
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 1,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9238016605377197,
+      "bbox": {
+        "x1": 684.9183349609375,
+        "y1": 396.57000732421875,
+        "x2": 705.4439086914062,
+        "y2": 455.24212646484375,
+        "width": 20.52557373046875,
+        "height": 58.672119140625,
+        "center_x": 695.1811218261719,
+        "center_y": 425.90606689453125
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 6,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9234718680381775,
+      "bbox": {
+        "x1": 2009.420166015625,
+        "y1": 362.33544921875,
+        "x2": 2036.811279296875,
+        "y2": 386.73785400390625,
+        "width": 27.39111328125,
+        "height": 24.40240478515625,
+        "center_x": 2023.11572265625,
+        "center_y": 374.5366516113281
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 61,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "C6",
+        "staff_position": 9,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9233234524726868,
+      "bbox": {
+        "x1": 383.8118591308594,
+        "y1": 444.20013427734375,
+        "x2": 412.16845703125,
+        "y2": 469.0834045410156,
+        "width": 28.356597900390625,
+        "height": 24.883270263671875,
+        "center_x": 397.9901580810547,
+        "center_y": 456.6417694091797
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 41,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "B4",
+        "staff_position": 1,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.922851026058197,
+      "bbox": {
+        "x1": 1821.722900390625,
+        "y1": 457.55609130859375,
+        "x2": 1842.751708984375,
+        "y2": 517.2664794921875,
+        "width": 21.02880859375,
+        "height": 59.71038818359375,
+        "center_x": 1832.2373046875,
+        "center_y": 487.4112854003906
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 11,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9226637482643127,
+      "bbox": {
+        "x1": 1517.95703125,
+        "y1": 382.40020751953125,
+        "x2": 1545.872802734375,
+        "y2": 406.1747131347656,
+        "width": 27.915771484375,
+        "height": 23.774505615234375,
+        "center_x": 1531.9149169921875,
+        "center_y": 394.28746032714844
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "A5",
+        "staff_position": 7,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9224857687950134,
+      "bbox": {
+        "x1": 408.8587646484375,
+        "y1": 434.54302978515625,
+        "x2": 436.8283996582031,
+        "y2": 458.89764404296875,
+        "width": 27.969635009765625,
+        "height": 24.3546142578125,
+        "center_x": 422.8435821533203,
+        "center_y": 446.7203369140625
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 57,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "C5",
+        "staff_position": 2,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9218940734863281,
+      "bbox": {
+        "x1": 1399.6280517578125,
+        "y1": 506.7021484375,
+        "x2": 1427.50830078125,
+        "y2": 530.73046875,
+        "width": 27.8802490234375,
+        "height": 24.0283203125,
+        "center_x": 1413.5681762695312,
+        "center_y": 518.71630859375
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "C4",
+        "staff_position": -5,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.921473503112793,
+      "bbox": {
+        "x1": 2033.9261474609375,
+        "y1": 372.46160888671875,
+        "x2": 2062.121826171875,
+        "y2": 396.3585205078125,
+        "width": 28.1956787109375,
+        "height": 23.89691162109375,
+        "center_x": 2048.0239868164062,
+        "center_y": 384.4100646972656
+      },
+      "staff_assignment": 0,
+      "pitch": {
+        "note_name": "B5",
+        "staff_position": 8,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.919872522354126,
+      "bbox": {
+        "x1": 1647.4227294921875,
+        "y1": 396.66497802734375,
+        "x2": 1668.4732666015625,
+        "y2": 455.219970703125,
+        "width": 21.050537109375,
+        "height": 58.55499267578125,
+        "center_x": 1657.947998046875,
+        "center_y": 425.9424743652344
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 18,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9195929765701294,
+      "bbox": {
+        "x1": 360.517333984375,
+        "y1": 427.1983947753906,
+        "x2": 380.771728515625,
+        "y2": 485.942626953125,
+        "width": 20.25439453125,
+        "height": 58.744232177734375,
+        "center_x": 370.64453125,
+        "center_y": 456.5705108642578
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 34,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9192720055580139,
+      "bbox": {
+        "x1": 2033.71484375,
+        "y1": 351.7457580566406,
+        "x2": 2062.03076171875,
+        "y2": 376.0402526855469,
+        "width": 28.31591796875,
+        "height": 24.29449462890625,
+        "center_x": 2047.872802734375,
+        "center_y": 363.89300537109375
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 55,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "D6",
+        "staff_position": 10,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.918060302734375,
+      "bbox": {
+        "x1": 1778.242431640625,
+        "y1": 468.18017578125,
+        "x2": 1798.9896240234375,
+        "y2": 527.0958862304688,
+        "width": 20.7471923828125,
+        "height": 58.91571044921875,
+        "center_x": 1788.6160278320312,
+        "center_y": 497.6380310058594
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 25,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9173023700714111,
+      "bbox": {
+        "x1": 531.20947265625,
+        "y1": 396.97412109375,
+        "x2": 551.7258911132812,
+        "y2": 455.2992858886719,
+        "width": 20.51641845703125,
+        "height": 58.325164794921875,
+        "center_x": 541.4676818847656,
+        "center_y": 426.13670349121094
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 4,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9172658324241638,
+      "bbox": {
+        "x1": 1004.7841796875,
+        "y1": 417.2663269042969,
+        "x2": 1026.0819091796875,
+        "y2": 475.344970703125,
+        "width": 21.2977294921875,
+        "height": 58.078643798828125,
+        "center_x": 1015.4330444335938,
+        "center_y": 446.30564880371094
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 13,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.9153294563293457,
+      "bbox": {
+        "x1": 1156.2427978515625,
+        "y1": 431.3546447753906,
+        "x2": 1174.3724365234375,
+        "y2": 481.7502746582031,
+        "width": 18.129638671875,
+        "height": 50.3956298828125,
+        "center_x": 1165.3076171875,
+        "center_y": 456.5524597167969
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "noteheadBlack",
+      "confidence": 0.9140424132347107,
+      "bbox": {
+        "x1": 1223.5091552734375,
+        "y1": 455.36309814453125,
+        "x2": 1250.6614990234375,
+        "y2": 479.8492126464844,
+        "width": 27.15234375,
+        "height": 24.486114501953125,
+        "center_x": 1237.0853271484375,
+        "center_y": 467.6061553955078
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 60,
+          "type": "has_accidental"
+        }
+      ],
+      "pitch": {
+        "note_name": "A4",
+        "staff_position": 0,
+        "clef": "treble",
+        "key_signature": {
+          "type": "none",
+          "count": 0,
+          "notes": []
+        }
+      }
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9111740589141846,
+      "bbox": {
+        "x1": 980.5364379882812,
+        "y1": 396.4879455566406,
+        "x2": 1001.7438354492188,
+        "y2": 454.5646667480469,
+        "width": 21.2073974609375,
+        "height": 58.07672119140625,
+        "center_x": 991.14013671875,
+        "center_y": 425.52630615234375
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 20,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.9109256863594055,
+      "bbox": {
+        "x1": 838.32275390625,
+        "y1": 501.9304504394531,
+        "x2": 857.234130859375,
+        "y2": 554.2199096679688,
+        "width": 18.911376953125,
+        "height": 52.289459228515625,
+        "center_x": 847.7784423828125,
+        "center_y": 528.0751800537109
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9102664589881897,
+      "bbox": {
+        "x1": 2164.05078125,
+        "y1": 386.1300964355469,
+        "x2": 2184.492431640625,
+        "y2": 445.146484375,
+        "width": 20.441650390625,
+        "height": 59.016387939453125,
+        "center_x": 2174.2716064453125,
+        "center_y": 415.63829040527344
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 16,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.9097498059272766,
+      "bbox": {
+        "x1": 1353.71826171875,
+        "y1": 481.7596435546875,
+        "x2": 1372.767822265625,
+        "y2": 533.5347290039062,
+        "width": 19.049560546875,
+        "height": 51.77508544921875,
+        "center_x": 1363.2430419921875,
+        "center_y": 507.6471862792969
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 30,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9090617299079895,
+      "bbox": {
+        "x1": 1800.220703125,
+        "y1": 498.9377746582031,
+        "x2": 1820.60693359375,
+        "y2": 558.2008666992188,
+        "width": 20.38623046875,
+        "height": 59.263092041015625,
+        "center_x": 1810.413818359375,
+        "center_y": 528.5693206787109
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 14,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9083693027496338,
+      "bbox": {
+        "x1": 2139.873291015625,
+        "y1": 395.6745910644531,
+        "x2": 2160.66455078125,
+        "y2": 455.0137023925781,
+        "width": 20.791259765625,
+        "height": 59.339111328125,
+        "center_x": 2150.2689208984375,
+        "center_y": 425.3441467285156
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 16,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.9059972763061523,
+      "bbox": {
+        "x1": 1623.14501953125,
+        "y1": 416.9808044433594,
+        "x2": 1643.9796142578125,
+        "y2": 474.94927978515625,
+        "width": 20.8345947265625,
+        "height": 57.968475341796875,
+        "center_x": 1633.5623168945312,
+        "center_y": 445.9650421142578
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 23,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.904660165309906,
+      "bbox": {
+        "x1": 1988.0625,
+        "y1": 336.9776916503906,
+        "x2": 2006.3682861328125,
+        "y2": 388.71051025390625,
+        "width": 18.3057861328125,
+        "height": 51.732818603515625,
+        "center_x": 1997.2153930664062,
+        "center_y": 362.84410095214844
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 42,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.8998233079910278,
+      "bbox": {
+        "x1": 1375.847900390625,
+        "y1": 471.5113830566406,
+        "x2": 1394.7503662109375,
+        "y2": 524.4948120117188,
+        "width": 18.9024658203125,
+        "height": 52.983428955078125,
+        "center_x": 1385.2991333007812,
+        "center_y": 498.0030975341797
+      },
+      "staff_assignment": 0
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.8995052576065063,
+      "bbox": {
+        "x1": 336.0688781738281,
+        "y1": 416.5791931152344,
+        "x2": 357.02252197265625,
+        "y2": 476.04412841796875,
+        "width": 20.953643798828125,
+        "height": 59.464935302734375,
+        "center_x": 346.5457000732422,
+        "center_y": 446.31166076660156
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 37,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 6,
+      "class_name": "accidentalSharp",
+      "confidence": 0.8985369801521301,
+      "bbox": {
+        "x1": 1200.4451904296875,
+        "y1": 428.1317443847656,
+        "x2": 1220.7354736328125,
+        "y2": 486.3988342285156,
+        "width": 20.290283203125,
+        "height": 58.26708984375,
+        "center_x": 1210.59033203125,
+        "center_y": 457.2652893066406
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 3,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 12,
+      "class_name": "accidentalNatural",
+      "confidence": 0.8979573249816895,
+      "bbox": {
+        "x1": 513.9678955078125,
+        "y1": 427.784423828125,
+        "x2": 527.8135986328125,
+        "y2": 485.7170104980469,
+        "width": 13.845703125,
+        "height": 57.932586669921875,
+        "center_x": 520.8907470703125,
+        "center_y": 456.75071716308594
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 15,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.8972816467285156,
+      "bbox": {
+        "x1": 1178.182373046875,
+        "y1": 440.8974609375,
+        "x2": 1197.0484619140625,
+        "y2": 493.0503234863281,
+        "width": 18.8660888671875,
+        "height": 52.152862548828125,
+        "center_x": 1187.6154174804688,
+        "center_y": 466.97389221191406
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 47,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.8900109529495239,
+      "bbox": {
+        "x1": 1952.691650390625,
+        "y1": 348.4288330078125,
+        "x2": 1971.3975830078125,
+        "y2": 399.39154052734375,
+        "width": 18.7059326171875,
+        "height": 50.96270751953125,
+        "center_x": 1962.0446166992188,
+        "center_y": 373.9101867675781
+      },
+      "staff_assignment": 0,
+      "linked_symbols": [
+        {
+          "id": 33,
+          "type": "modifies_note"
+        }
+      ]
+    },
+    {
+      "class_id": 5,
+      "class_name": "accidentalFlat",
+      "confidence": 0.8482114672660828,
+      "bbox": {
+        "x1": 1974.5972900390625,
+        "y1": 388.2491455078125,
+        "x2": 1993.6728515625,
+        "y2": 440.84552001953125,
+        "width": 19.0755615234375,
+        "height": 52.59637451171875,
+        "center_x": 1984.1350708007812,
+        "center_y": 414.5473327636719
+      },
+      "staff_assignment": 0
+    }
+  ]
+}

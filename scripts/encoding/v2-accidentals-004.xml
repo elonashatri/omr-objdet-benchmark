@@ -1,0 +1,1598 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<masks>
+<Page pageIndex="3">
+<Nodes>
+<Node name="L5">
+<Id>399</Id>
+<ClassName>kStaffLine</ClassName>
+<Top>424</Top>
+<Left>237</Left>
+<Width>2063</Width>
+<Height>3</Height>
+<Mask>0: 0 1: 6189 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>1</order_id></Node>
+<Node name="L4">
+<Id>396</Id>
+<ClassName>kStaffLine</ClassName>
+<Top>445</Top>
+<Left>237</Left>
+<Width>2063</Width>
+<Height>3</Height>
+<Mask>0: 0 1: 6189 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>2</order_id></Node>
+<Node name="L3">
+<Id>395</Id>
+<ClassName>kStaffLine</ClassName>
+<Top>466</Top>
+<Left>237</Left>
+<Width>2063</Width>
+<Height>3</Height>
+<Mask>0: 0 1: 6189 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>3</order_id></Node>
+<Node name="L2">
+<Id>398</Id>
+<ClassName>kStaffLine</ClassName>
+<Top>486</Top>
+<Left>237</Left>
+<Width>2063</Width>
+<Height>3</Height>
+<Mask>0: 0 1: 6189 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>4</order_id></Node>
+<Node name="L1">
+<Id>397</Id>
+<ClassName>kStaffLine</ClassName>
+<Top>507</Top>
+<Left>237</Left>
+<Width>2063</Width>
+<Height>3</Height>
+<Mask>0: 0 1: 6189 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>5</order_id></Node>
+<Node>
+<Id>412</Id>
+<ClassName>gClef</ClassName>
+<Top>396</Top>
+<Left>247</Left>
+<Width>56</Width>
+<Height>147</Height>
+<Mask>0: 35 1: 5 0: 50 1: 7 0: 48 1: 9 0: 46 1: 11 0: 44 1: 12 0: 44 1: 13 0: 42 1: 14 0: 41 1: 16 0: 40 1: 16 0: 39 1: 18 0: 38 1: 18 0: 37 1: 19 0: 37 1: 20 0: 35 1: 21 0: 35 1: 10 0: 6 1: 5 0: 35 1: 9 0: 7 1: 5 0: 34 1: 9 0: 9 1: 5 0: 33 1: 8 0: 10 1: 5 0: 33 1: 8 0: 11 1: 4 0: 33 1: 7 0: 12 1: 4 0: 33 1: 6 0: 13 1: 4 0: 32 1: 7 0: 12 1: 5 0: 32 1: 7 0: 12 1: 5 0: 32 1: 6 0: 13 1: 5 0: 32 1: 6 0: 13 1: 5 0: 32 1: 6 0: 12 1: 6 0: 32 1: 5 0: 13 1: 6 0: 32 1: 5 0: 13 1: 6 0: 32 1: 5 0: 12 1: 7 0: 32 1: 5 0: 11 1: 8 0: 32 1: 5 0: 11 1: 7 0: 33 1: 5 0: 10 1: 8 0: 33 1: 5 0: 9 1: 9 0: 33 1: 5 0: 8 1: 10 0: 33 1: 5 0: 8 1: 9 0: 34 1: 5 0: 7 1: 10 0: 34 1: 5 0: 6 1: 11 0: 34 1: 5 0: 5 1: 11 0: 35 1: 5 0: 4 1: 12 0: 35 1: 5 0: 3 1: 13 0: 36 1: 4 0: 2 1: 13 0: 37 1: 4 0: 1 1: 14 0: 37 1: 18 0: 38 1: 17 0: 39 1: 17 0: 38 1: 17 0: 38 1: 17 0: 38 1: 18 0: 36 1: 19 0: 36 1: 19 0: 36 1: 19 0: 36 1: 19 0: 36 1: 20 0: 35 1: 20 0: 35 1: 20 0: 35 1: 20 0: 35 1: 20 0: 35 1: 21 0: 34 1: 22 0: 33 1: 18 0: 1 1: 4 0: 33 1: 17 0: 2 1: 4 0: 32 1: 17 0: 3 1: 5 0: 30 1: 17 0: 4 1: 5 0: 29 1: 16 0: 7 1: 4 0: 29 1: 15 0: 8 1: 4 0: 28 1: 15 0: 9 1: 4 0: 27 1: 15 0: 10 1: 5 0: 26 1: 14 0: 11 1: 5 0: 25 1: 14 0: 12 1: 5 0: 25 1: 13 0: 14 1: 4 0: 24 1: 13 0: 15 1: 11 0: 17 1: 12 0: 14 1: 16 0: 14 1: 12 0: 11 1: 21 0: 11 1: 12 0: 11 1: 24 0: 9 1: 11 0: 11 1: 26 0: 8 1: 10 0: 10 1: 29 0: 6 1: 11 0: 10 1: 30 0: 5 1: 10 0: 10 1: 32 0: 4 1: 10 0: 9 1: 34 0: 3 1: 9 0: 9 1: 35 0: 3 1: 9 0: 9 1: 36 0: 2 1: 8 0: 9 1: 37 0: 2 1: 8 0: 9 1: 19 0: 2 1: 17 0: 1 1: 8 0: 9 1: 12 0: 3 1: 4 0: 5 1: 14 0: 1 1: 8 0: 9 1: 10 0: 5 1: 5 0: 6 1: 21 0: 8 1: 10 0: 6 1: 5 0: 7 1: 19 0: 9 1: 9 0: 7 1: 5 0: 8 1: 18 0: 9 1: 8 0: 9 1: 4 0: 9 1: 17 0: 9 1: 8 0: 9 1: 4 0: 10 1: 16 0: 9 1: 7 0: 10 1: 5 0: 9 1: 16 0: 9 1: 7 0: 10 1: 5 0: 10 1: 15 0: 10 1: 6 0: 10 1: 5 0: 10 1: 8 0: 1 1: 6 0: 10 1: 6 0: 10 1: 5 0: 10 1: 8 0: 1 1: 7 0: 9 1: 6 0: 11 1: 4 0: 10 1: 8 0: 1 1: 7 0: 9 1: 6 0: 11 1: 4 0: 10 1: 8 0: 2 1: 6 0: 10 1: 6 0: 10 1: 5 0: 10 1: 7 0: 2 1: 7 0: 9 1: 6 0: 10 1: 5 0: 10 1: 7 0: 2 1: 7 0: 10 1: 6 0: 9 1: 5 0: 9 1: 7 0: 4 1: 7 0: 10 1: 6 0: 8 1: 5 0: 9 1: 7 0: 4 1: 7 0: 10 1: 7 0: 8 1: 4 0: 9 1: 7 0: 5 1: 7 0: 10 1: 8 0: 6 1: 4 0: 8 1: 7 0: 7 1: 7 0: 11 1: 7 0: 5 1: 5 0: 7 1: 7 0: 8 1: 7 0: 12 1: 5 0: 5 1: 5 0: 6 1: 7 0: 9 1: 8 0: 14 1: 1 0: 6 1: 5 0: 5 1: 7 0: 11 1: 8 0: 20 1: 5 0: 4 1: 7 0: 13 1: 9 0: 19 1: 4 0: 3 1: 8 0: 15 1: 9 0: 17 1: 4 0: 1 1: 8 0: 18 1: 10 0: 15 1: 12 0: 20 1: 13 0: 10 1: 12 0: 23 1: 31 0: 27 1: 27 0: 32 1: 22 0: 39 1: 12 0: 1 1: 4 0: 52 1: 5 0: 51 1: 5 0: 51 1: 5 0: 51 1: 5 0: 52 1: 4 0: 52 1: 5 0: 51 1: 5 0: 51 1: 5 0: 51 1: 5 0: 51 1: 5 0: 29 1: 8 0: 15 1: 4 0: 27 1: 11 0: 14 1: 4 0: 26 1: 13 0: 13 1: 5 0: 24 1: 15 0: 12 1: 5 0: 24 1: 16 0: 11 1: 5 0: 23 1: 17 0: 11 1: 5 0: 23 1: 17 0: 11 1: 5 0: 23 1: 17 0: 11 1: 5 0: 23 1: 17 0: 11 1: 5 0: 23 1: 17 0: 11 1: 5 0: 23 1: 17 0: 11 1: 4 0: 24 1: 17 0: 10 1: 5 0: 24 1: 17 0: 10 1: 5 0: 24 1: 16 0: 11 1: 5 0: 24 1: 16 0: 10 1: 5 0: 26 1: 13 0: 11 1: 6 0: 26 1: 12 0: 12 1: 5 0: 28 1: 8 0: 13 1: 7 0: 28 1: 8 0: 12 1: 7 0: 30 1: 9 0: 7 1: 9 0: 32 1: 23 0: 35 1: 19 0: 39 1: 15 0: 45 1: 8 0: 25 </Mask>
+<Data>
+<DataItem key="dorico_event_id" type="int">3552</DataItem>
+<DataItem key="clef_type" type="str">kGClef</DataItem>
+<DataItem key="clef_hotspot" type="str">G4</DataItem>
+<DataItem key="clef_required_stave_lines" type="int">5</DataItem>
+<DataItem key="clef_stave_position" type="int">2</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L2</DataItem>
+<DataItem key="line_pos" type="str">L2</DataItem></Data>
+<order_id>6</order_id></Node>
+<Node>
+<Id>359</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>417</Top>
+<Left>336</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L4</DataItem>
+<DataItem key="line_pos" type="str">L4</DataItem></Data>
+<order_id>7</order_id></Node>
+<Node>
+<Id>358</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>427</Top>
+<Left>360</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem></Data>
+<order_id>8</order_id></Node>
+<Node>
+<Id>357</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>376</Top>
+<Left>383</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L6</DataItem>
+<DataItem key="line_pos" type="str">L6</DataItem></Data>
+<order_id>9</order_id></Node>
+<Node>
+<Id>316</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>445</Top>
+<Left>384</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>360</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">33.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">73</DataItem>
+<DataItem key="normalized_pitch_step" type="str">C#</DataItem>
+<DataItem key="dorico_event_id" type="int">3676</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem></Data>
+<order_id>10</order_id></Node>
+<Node>
+<Id>319</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>393</Top>
+<Left>409</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>360</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">33.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">82</DataItem>
+<DataItem key="normalized_pitch_step" type="str">A#</DataItem>
+<DataItem key="dorico_event_id" type="int">3678</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L6</DataItem>
+<DataItem key="line_pos" type="str">L6</DataItem></Data>
+<order_id>11</order_id></Node>
+<Node>
+<Id>360</Id>
+<ClassName>stem</ClassName>
+<Top>409</Top>
+<Left>409</Left>
+<Width>3</Width>
+<Height>123</Height>
+<Mask>0: 0 1: 369 </Mask>
+<Inlinks>318 316 317 319</Inlinks>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>12</order_id></Node>
+<Node>
+<Id>318</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>435</Top>
+<Left>409</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>360</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">33.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">75</DataItem>
+<DataItem key="normalized_pitch_step" type="str">D#</DataItem>
+<DataItem key="dorico_event_id" type="int">3677</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L4</DataItem>
+<DataItem key="line_pos" type="str">L4</DataItem></Data>
+<order_id>13</order_id></Node>
+<Node>
+<Id>317</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>455</Top>
+<Left>409</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>360</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">33.000000</DataItem>
+<DataItem key="pitch_octave" type="int">4</DataItem>
+<DataItem key="midi_pitch_code" type="int">71</DataItem>
+<DataItem key="normalized_pitch_step" type="str">B</DataItem>
+<DataItem key="dorico_event_id" type="int">3675</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L3</DataItem>
+<DataItem key="line_pos" type="str">L3</DataItem></Data>
+<order_id>14</order_id></Node>
+<Node>
+<Id>400</Id>
+<ClassName>barline</ClassName>
+<Top>424</Top>
+<Left>492</Left>
+<Width>5</Width>
+<Height>86</Height>
+<Mask>0: 0 1: 430 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>15</order_id></Node>
+<Node>
+<Id>362</Id>
+<ClassName>accidentalNatural</ClassName>
+<Top>428</Top>
+<Left>514</Left>
+<Width>14</Width>
+<Height>57</Height>
+<Mask>0: 0 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 8 1: 6 0: 5 1: 9 0: 2 1: 126 0: 4 1: 9 0: 5 1: 8 0: 6 1: 8 0: 6 1: 8 0: 6 1: 8 0: 6 1: 8 0: 6 1: 8 0: 6 1: 8 0: 6 1: 8 0: 4 1: 10 0: 1 1: 140 0: 5 1: 7 0: 7 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 10 1: 4 0: 11 1: 3 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem></Data>
+<order_id>16</order_id></Node>
+<Node>
+<Id>361</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>396</Top>
+<Left>531</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>17</order_id></Node>
+<Node>
+<Id>320</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>424</Top>
+<Left>555</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>363</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">34.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">76</DataItem>
+<DataItem key="normalized_pitch_step" type="str">E</DataItem>
+<DataItem key="dorico_event_id" type="int">3680</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S4</DataItem>
+<DataItem key="line_pos" type="str">S4</DataItem></Data>
+<order_id>18</order_id></Node>
+<Node>
+<Id>322</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>414</Top>
+<Left>580</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>363</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">34.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">78</DataItem>
+<DataItem key="normalized_pitch_step" type="str">F#</DataItem>
+<DataItem key="dorico_event_id" type="int">3681</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>19</order_id></Node>
+<Node>
+<Id>363</Id>
+<ClassName>stem</ClassName>
+<Top>429</Top>
+<Left>580</Left>
+<Width>3</Width>
+<Height>95</Height>
+<Mask>0: 0 1: 285 </Mask>
+<Inlinks>320 321 322</Inlinks>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>20</order_id></Node>
+<Node>
+<Id>321</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>445</Top>
+<Left>580</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>363</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">34.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">72</DataItem>
+<DataItem key="normalized_pitch_step" type="str">C</DataItem>
+<DataItem key="dorico_event_id" type="int">3679</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem></Data>
+<order_id>21</order_id></Node>
+<Node>
+<Id>401</Id>
+<ClassName>barline</ClassName>
+<Top>424</Top>
+<Left>663</Left>
+<Width>5</Width>
+<Height>86</Height>
+<Mask>0: 0 1: 430 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>22</order_id></Node>
+<Node>
+<Id>364</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>396</Top>
+<Left>685</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>23</order_id></Node>
+<Node>
+<Id>323</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>424</Top>
+<Left>708</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>365</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">35.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">76</DataItem>
+<DataItem key="normalized_pitch_step" type="str">E</DataItem>
+<DataItem key="dorico_event_id" type="int">3683</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S4</DataItem>
+<DataItem key="line_pos" type="str">S4</DataItem></Data>
+<order_id>24</order_id></Node>
+<Node>
+<Id>325</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>414</Top>
+<Left>733</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>365</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">35.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">78</DataItem>
+<DataItem key="normalized_pitch_step" type="str">F#</DataItem>
+<DataItem key="dorico_event_id" type="int">3684</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>25</order_id></Node>
+<Node>
+<Id>365</Id>
+<ClassName>stem</ClassName>
+<Top>429</Top>
+<Left>733</Left>
+<Width>3</Width>
+<Height>103</Height>
+<Mask>0: 0 1: 309 </Mask>
+<Inlinks>323 324 325</Inlinks>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>26</order_id></Node>
+<Node>
+<Id>324</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>455</Top>
+<Left>733</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>365</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">35.000000</DataItem>
+<DataItem key="pitch_octave" type="int">4</DataItem>
+<DataItem key="midi_pitch_code" type="int">71</DataItem>
+<DataItem key="normalized_pitch_step" type="str">B</DataItem>
+<DataItem key="dorico_event_id" type="int">3682</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L3</DataItem>
+<DataItem key="line_pos" type="str">L3</DataItem></Data>
+<order_id>27</order_id></Node>
+<Node>
+<Id>402</Id>
+<ClassName>barline</ClassName>
+<Top>424</Top>
+<Left>816</Left>
+<Width>5</Width>
+<Height>86</Height>
+<Mask>0: 0 1: 430 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>28</order_id></Node>
+<Node>
+<Id>367</Id>
+<ClassName>accidentalFlat</ClassName>
+<Top>503</Top>
+<Left>838</Left>
+<Width>19</Width>
+<Height>52</Height>
+<Mask>0: 0 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 6 1: 3 0: 6 1: 4 0: 3 1: 8 0: 4 1: 4 0: 1 1: 12 0: 2 1: 18 0: 1 1: 18 0: 1 1: 27 0: 3 1: 14 0: 6 1: 12 0: 7 1: 11 0: 9 1: 10 0: 9 1: 10 0: 8 1: 11 0: 8 1: 11 0: 8 1: 6 0: 1 1: 4 0: 7 1: 7 0: 1 1: 4 0: 7 1: 6 0: 2 1: 4 0: 6 1: 6 0: 3 1: 4 0: 5 1: 7 0: 3 1: 4 0: 4 1: 7 0: 4 1: 4 0: 3 1: 7 0: 5 1: 5 0: 1 1: 7 0: 6 1: 12 0: 7 1: 10 0: 9 1: 9 0: 10 1: 8 0: 11 1: 7 0: 12 1: 5 0: 14 1: 4 0: 16 1: 2 0: 16 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S-1</DataItem>
+<DataItem key="line_pos" type="str">S-1</DataItem></Data>
+<order_id>29</order_id></Node>
+<Node>
+<Id>366</Id>
+<ClassName>accidentalFlat</ClassName>
+<Top>451</Top>
+<Left>852</Left>
+<Width>19</Width>
+<Height>52</Height>
+<Mask>0: 0 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 6 1: 3 0: 6 1: 4 0: 3 1: 8 0: 4 1: 4 0: 1 1: 12 0: 2 1: 18 0: 1 1: 18 0: 1 1: 27 0: 3 1: 14 0: 6 1: 12 0: 7 1: 11 0: 9 1: 10 0: 9 1: 10 0: 8 1: 11 0: 8 1: 11 0: 8 1: 6 0: 1 1: 4 0: 7 1: 7 0: 1 1: 4 0: 7 1: 6 0: 2 1: 4 0: 6 1: 6 0: 3 1: 4 0: 5 1: 7 0: 3 1: 4 0: 4 1: 7 0: 4 1: 4 0: 3 1: 7 0: 5 1: 5 0: 1 1: 7 0: 6 1: 12 0: 7 1: 10 0: 9 1: 9 0: 10 1: 8 0: 11 1: 7 0: 12 1: 5 0: 14 1: 4 0: 16 1: 2 0: 16 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L2</DataItem>
+<DataItem key="line_pos" type="str">L2</DataItem></Data>
+<order_id>30</order_id></Node>
+<Node>
+<Id>327</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>476</Top>
+<Left>876</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>368</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">36.000000</DataItem>
+<DataItem key="pitch_octave" type="int">4</DataItem>
+<DataItem key="midi_pitch_code" type="int">66</DataItem>
+<DataItem key="normalized_pitch_step" type="str">Gb</DataItem>
+<DataItem key="dorico_event_id" type="int">3686</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L2</DataItem>
+<DataItem key="line_pos" type="str">L2</DataItem></Data>
+<order_id>31</order_id></Node>
+<Node>
+<Id>326</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>528</Top>
+<Left>876</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>368</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">36.000000</DataItem>
+<DataItem key="pitch_octave" type="int">3</DataItem>
+<DataItem key="midi_pitch_code" type="int">58</DataItem>
+<DataItem key="normalized_pitch_step" type="str">Bb</DataItem>
+<DataItem key="dorico_event_id" type="int">3685</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S-1</DataItem>
+<DataItem key="line_pos" type="str">S-1</DataItem></Data>
+<order_id>32</order_id></Node>
+<Node>
+<Id>368</Id>
+<ClassName>stem</ClassName>
+<Top>410</Top>
+<Left>901</Left>
+<Width>3</Width>
+<Height>126</Height>
+<Mask>0: 0 1: 378 </Mask>
+<Inlinks>327 326 328</Inlinks>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>33</order_id></Node>
+<Node>
+<Id>328</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>466</Top>
+<Left>901</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>368</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">36.000000</DataItem>
+<DataItem key="pitch_octave" type="int">4</DataItem>
+<DataItem key="midi_pitch_code" type="int">69</DataItem>
+<DataItem key="normalized_pitch_step" type="str">A</DataItem>
+<DataItem key="dorico_event_id" type="int">3687</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S2</DataItem>
+<DataItem key="line_pos" type="str">S2</DataItem></Data>
+<order_id>34</order_id></Node>
+<Node>
+<Id>403</Id>
+<ClassName>barline</ClassName>
+<Top>424</Top>
+<Left>959</Left>
+<Width>5</Width>
+<Height>86</Height>
+<Mask>0: 0 1: 430 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>35</order_id></Node>
+<Node>
+<Id>371</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>396</Top>
+<Left>981</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>36</order_id></Node>
+<Node>
+<Id>370</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>417</Top>
+<Left>1005</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L4</DataItem>
+<DataItem key="line_pos" type="str">L4</DataItem></Data>
+<order_id>37</order_id></Node>
+<Node>
+<Id>369</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>365</Top>
+<Left>1025</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S6</DataItem>
+<DataItem key="line_pos" type="str">S6</DataItem></Data>
+<order_id>38</order_id></Node>
+<Node>
+<Id>331</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>383</Top>
+<Left>1050</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>372</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">37.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">84</DataItem>
+<DataItem key="normalized_pitch_step" type="str">B#</DataItem>
+<DataItem key="dorico_event_id" type="int">3690</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S6</DataItem>
+<DataItem key="line_pos" type="str">S6</DataItem></Data>
+<order_id>39</order_id></Node>
+<Node>
+<Id>372</Id>
+<ClassName>stem</ClassName>
+<Top>398</Top>
+<Left>1050</Left>
+<Width>3</Width>
+<Height>118</Height>
+<Mask>0: 0 1: 354 </Mask>
+<Inlinks>330 329 331</Inlinks>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>40</order_id></Node>
+<Node>
+<Id>329</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>414</Top>
+<Left>1050</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>372</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">37.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">78</DataItem>
+<DataItem key="normalized_pitch_step" type="str">F#</DataItem>
+<DataItem key="dorico_event_id" type="int">3689</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>41</order_id></Node>
+<Node>
+<Id>330</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>435</Top>
+<Left>1050</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>372</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">37.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">75</DataItem>
+<DataItem key="normalized_pitch_step" type="str">D#</DataItem>
+<DataItem key="dorico_event_id" type="int">3688</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L4</DataItem>
+<DataItem key="line_pos" type="str">L4</DataItem></Data>
+<order_id>42</order_id></Node>
+<Node>
+<Id>404</Id>
+<ClassName>barline</ClassName>
+<Top>424</Top>
+<Left>1133</Left>
+<Width>5</Width>
+<Height>86</Height>
+<Mask>0: 0 1: 430 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>43</order_id></Node>
+<Node>
+<Id>375</Id>
+<ClassName>accidentalFlat</ClassName>
+<Top>430</Top>
+<Left>1156</Left>
+<Width>19</Width>
+<Height>52</Height>
+<Mask>0: 0 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 6 1: 3 0: 6 1: 4 0: 3 1: 8 0: 4 1: 4 0: 1 1: 12 0: 2 1: 18 0: 1 1: 18 0: 1 1: 27 0: 3 1: 14 0: 6 1: 12 0: 7 1: 11 0: 9 1: 10 0: 9 1: 10 0: 8 1: 11 0: 8 1: 11 0: 8 1: 6 0: 1 1: 4 0: 7 1: 7 0: 1 1: 4 0: 7 1: 6 0: 2 1: 4 0: 6 1: 6 0: 3 1: 4 0: 5 1: 7 0: 3 1: 4 0: 4 1: 7 0: 4 1: 4 0: 3 1: 7 0: 5 1: 5 0: 1 1: 7 0: 6 1: 12 0: 7 1: 10 0: 9 1: 9 0: 10 1: 8 0: 11 1: 7 0: 12 1: 5 0: 14 1: 4 0: 16 1: 2 0: 16 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L3</DataItem>
+<DataItem key="line_pos" type="str">L3</DataItem></Data>
+<order_id>44</order_id></Node>
+<Node>
+<Id>374</Id>
+<ClassName>accidentalFlat</ClassName>
+<Top>441</Top>
+<Left>1178</Left>
+<Width>19</Width>
+<Height>52</Height>
+<Mask>0: 0 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 6 1: 3 0: 6 1: 4 0: 3 1: 8 0: 4 1: 4 0: 1 1: 12 0: 2 1: 18 0: 1 1: 18 0: 1 1: 27 0: 3 1: 14 0: 6 1: 12 0: 7 1: 11 0: 9 1: 10 0: 9 1: 10 0: 8 1: 11 0: 8 1: 11 0: 8 1: 6 0: 1 1: 4 0: 7 1: 7 0: 1 1: 4 0: 7 1: 6 0: 2 1: 4 0: 6 1: 6 0: 3 1: 4 0: 5 1: 7 0: 3 1: 4 0: 4 1: 7 0: 4 1: 4 0: 3 1: 7 0: 5 1: 5 0: 1 1: 7 0: 6 1: 12 0: 7 1: 10 0: 9 1: 9 0: 10 1: 8 0: 11 1: 7 0: 12 1: 5 0: 14 1: 4 0: 16 1: 2 0: 16 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S2</DataItem>
+<DataItem key="line_pos" type="str">S2</DataItem></Data>
+<order_id>45</order_id></Node>
+<Node>
+<Id>373</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>427</Top>
+<Left>1200</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem></Data>
+<order_id>46</order_id></Node>
+<Node>
+<Id>332</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>455</Top>
+<Left>1224</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>376</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">38.000000</DataItem>
+<DataItem key="pitch_octave" type="int">4</DataItem>
+<DataItem key="midi_pitch_code" type="int">70</DataItem>
+<DataItem key="normalized_pitch_step" type="str">Bb</DataItem>
+<DataItem key="dorico_event_id" type="int">3692</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L3</DataItem>
+<DataItem key="line_pos" type="str">L3</DataItem></Data>
+<order_id>47</order_id></Node>
+<Node>
+<Id>334</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>445</Top>
+<Left>1248</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>376</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">38.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">73</DataItem>
+<DataItem key="normalized_pitch_step" type="str">C#</DataItem>
+<DataItem key="dorico_event_id" type="int">3693</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem></Data>
+<order_id>48</order_id></Node>
+<Node>
+<Id>376</Id>
+<ClassName>stem</ClassName>
+<Top>460</Top>
+<Left>1248</Left>
+<Width>3</Width>
+<Height>79</Height>
+<Mask>0: 0 1: 237 </Mask>
+<Inlinks>332 333 334</Inlinks>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>49</order_id></Node>
+<Node>
+<Id>333</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>466</Top>
+<Left>1248</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>376</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">38.000000</DataItem>
+<DataItem key="pitch_octave" type="int">4</DataItem>
+<DataItem key="midi_pitch_code" type="int">68</DataItem>
+<DataItem key="normalized_pitch_step" type="str">Ab</DataItem>
+<DataItem key="dorico_event_id" type="int">3691</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S2</DataItem>
+<DataItem key="line_pos" type="str">S2</DataItem></Data>
+<order_id>50</order_id></Node>
+<Node>
+<Id>405</Id>
+<ClassName>barline</ClassName>
+<Top>424</Top>
+<Left>1331</Left>
+<Width>5</Width>
+<Height>86</Height>
+<Mask>0: 0 1: 430 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>51</order_id></Node>
+<Node>
+<Id>378</Id>
+<ClassName>accidentalFlat</ClassName>
+<Top>482</Top>
+<Left>1354</Left>
+<Width>19</Width>
+<Height>52</Height>
+<Mask>0: 0 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 6 1: 3 0: 6 1: 4 0: 3 1: 8 0: 4 1: 4 0: 1 1: 12 0: 2 1: 18 0: 1 1: 18 0: 1 1: 27 0: 3 1: 14 0: 6 1: 12 0: 7 1: 11 0: 9 1: 10 0: 9 1: 10 0: 8 1: 11 0: 8 1: 11 0: 8 1: 6 0: 1 1: 4 0: 7 1: 7 0: 1 1: 4 0: 7 1: 6 0: 2 1: 4 0: 6 1: 6 0: 3 1: 4 0: 5 1: 7 0: 3 1: 4 0: 4 1: 7 0: 4 1: 4 0: 3 1: 7 0: 5 1: 5 0: 1 1: 7 0: 6 1: 12 0: 7 1: 10 0: 9 1: 9 0: 10 1: 8 0: 11 1: 7 0: 12 1: 5 0: 14 1: 4 0: 16 1: 2 0: 16 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S0</DataItem>
+<DataItem key="line_pos" type="str">S0</DataItem></Data>
+<order_id>52</order_id></Node>
+<Node>
+<Id>377</Id>
+<ClassName>accidentalFlat</ClassName>
+<Top>472</Top>
+<Left>1376</Left>
+<Width>19</Width>
+<Height>52</Height>
+<Mask>0: 0 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 6 1: 3 0: 6 1: 4 0: 3 1: 8 0: 4 1: 4 0: 1 1: 12 0: 2 1: 18 0: 1 1: 18 0: 1 1: 27 0: 3 1: 14 0: 6 1: 12 0: 7 1: 11 0: 9 1: 10 0: 9 1: 10 0: 8 1: 11 0: 8 1: 11 0: 8 1: 6 0: 1 1: 4 0: 7 1: 7 0: 1 1: 4 0: 7 1: 6 0: 2 1: 4 0: 6 1: 6 0: 3 1: 4 0: 5 1: 7 0: 3 1: 4 0: 4 1: 7 0: 4 1: 4 0: 3 1: 7 0: 5 1: 5 0: 1 1: 7 0: 6 1: 12 0: 7 1: 10 0: 9 1: 9 0: 10 1: 8 0: 11 1: 7 0: 12 1: 5 0: 14 1: 4 0: 16 1: 2 0: 16 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L1</DataItem>
+<DataItem key="line_pos" type="str">L1</DataItem></Data>
+<order_id>53</order_id></Node>
+<Node>
+<Id>335</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>507</Top>
+<Left>1400</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>379</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">39.000000</DataItem>
+<DataItem key="pitch_octave" type="int">4</DataItem>
+<DataItem key="midi_pitch_code" type="int">61</DataItem>
+<DataItem key="normalized_pitch_step" type="str">Db</DataItem>
+<DataItem key="dorico_event_id" type="int">3694</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S0</DataItem>
+<DataItem key="line_pos" type="str">S0</DataItem></Data>
+<order_id>54</order_id></Node>
+<Node>
+<Id>379</Id>
+<ClassName>stem</ClassName>
+<Top>436</Top>
+<Left>1425</Left>
+<Width>3</Width>
+<Height>79</Height>
+<Mask>0: 0 1: 237 </Mask>
+<Inlinks>335 336</Inlinks>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>55</order_id></Node>
+<Node>
+<Id>336</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>497</Top>
+<Left>1425</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>379</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">39.000000</DataItem>
+<DataItem key="pitch_octave" type="int">4</DataItem>
+<DataItem key="midi_pitch_code" type="int">63</DataItem>
+<DataItem key="normalized_pitch_step" type="str">Eb</DataItem>
+<DataItem key="dorico_event_id" type="int">3695</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L1</DataItem>
+<DataItem key="line_pos" type="str">L1</DataItem></Data>
+<order_id>56</order_id></Node>
+<Node>
+<Id>406</Id>
+<ClassName>barline</ClassName>
+<Top>424</Top>
+<Left>1483</Left>
+<Width>5</Width>
+<Height>86</Height>
+<Mask>0: 0 1: 430 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>57</order_id></Node>
+<Node>
+<Id>339</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>383</Top>
+<Left>1518</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>380</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">40.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">83</DataItem>
+<DataItem key="normalized_pitch_step" type="str">B</DataItem>
+<DataItem key="dorico_event_id" type="int">3698</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S6</DataItem>
+<DataItem key="line_pos" type="str">S6</DataItem></Data>
+<order_id>58</order_id></Node>
+<Node>
+<Id>380</Id>
+<ClassName>stem</ClassName>
+<Top>398</Top>
+<Left>1518</Left>
+<Width>3</Width>
+<Height>126</Height>
+<Mask>0: 0 1: 378 </Mask>
+<Inlinks>337 338 339</Inlinks>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>59</order_id></Node>
+<Node>
+<Id>338</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>414</Top>
+<Left>1518</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>380</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">40.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">77</DataItem>
+<DataItem key="normalized_pitch_step" type="str">F</DataItem>
+<DataItem key="dorico_event_id" type="int">3697</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>60</order_id></Node>
+<Node>
+<Id>337</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>445</Top>
+<Left>1518</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>380</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">40.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">72</DataItem>
+<DataItem key="normalized_pitch_step" type="str">C</DataItem>
+<DataItem key="dorico_event_id" type="int">3696</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem>
+<DataItem key="line_pos" type="str">S3</DataItem></Data>
+<order_id>61</order_id></Node>
+<Node>
+<Id>407</Id>
+<ClassName>barline</ClassName>
+<Top>424</Top>
+<Left>1601</Left>
+<Width>5</Width>
+<Height>86</Height>
+<Mask>0: 0 1: 430 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>62</order_id></Node>
+<Node>
+<Id>382</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>417</Top>
+<Left>1623</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L4</DataItem>
+<DataItem key="line_pos" type="str">L4</DataItem></Data>
+<order_id>63</order_id></Node>
+<Node>
+<Id>381</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>396</Top>
+<Left>1647</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>64</order_id></Node>
+<Node>
+<Id>342</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>414</Top>
+<Left>1673</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>383</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">41.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">78</DataItem>
+<DataItem key="normalized_pitch_step" type="str">F#</DataItem>
+<DataItem key="dorico_event_id" type="int">3701</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>65</order_id></Node>
+<Node>
+<Id>383</Id>
+<ClassName>stem</ClassName>
+<Top>429</Top>
+<Left>1673</Left>
+<Width>3</Width>
+<Height>103</Height>
+<Mask>0: 0 1: 309 </Mask>
+<Inlinks>340 341 342</Inlinks>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>66</order_id></Node>
+<Node>
+<Id>341</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>435</Top>
+<Left>1673</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>383</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">41.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">75</DataItem>
+<DataItem key="normalized_pitch_step" type="str">D#</DataItem>
+<DataItem key="dorico_event_id" type="int">3700</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L4</DataItem>
+<DataItem key="line_pos" type="str">L4</DataItem></Data>
+<order_id>67</order_id></Node>
+<Node>
+<Id>340</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>455</Top>
+<Left>1673</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>383</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">41.000000</DataItem>
+<DataItem key="pitch_octave" type="int">4</DataItem>
+<DataItem key="midi_pitch_code" type="int">71</DataItem>
+<DataItem key="normalized_pitch_step" type="str">B</DataItem>
+<DataItem key="dorico_event_id" type="int">3699</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L3</DataItem>
+<DataItem key="line_pos" type="str">L3</DataItem></Data>
+<order_id>68</order_id></Node>
+<Node>
+<Id>408</Id>
+<ClassName>barline</ClassName>
+<Top>424</Top>
+<Left>1756</Left>
+<Width>5</Width>
+<Height>86</Height>
+<Mask>0: 0 1: 430 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>69</order_id></Node>
+<Node>
+<Id>386</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>469</Top>
+<Left>1779</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S1</DataItem>
+<DataItem key="line_pos" type="str">S1</DataItem></Data>
+<order_id>70</order_id></Node>
+<Node>
+<Id>385</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>500</Top>
+<Left>1800</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L0</DataItem>
+<DataItem key="line_pos" type="str">L0</DataItem></Data>
+<order_id>71</order_id></Node>
+<Node>
+<Id>384</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>458</Top>
+<Left>1822</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L2</DataItem>
+<DataItem key="line_pos" type="str">L2</DataItem></Data>
+<order_id>72</order_id></Node>
+<Node>
+<Id>344</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>486</Top>
+<Left>1848</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>387</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">42.000000</DataItem>
+<DataItem key="pitch_octave" type="int">4</DataItem>
+<DataItem key="midi_pitch_code" type="int">66</DataItem>
+<DataItem key="normalized_pitch_step" type="str">F#</DataItem>
+<DataItem key="dorico_event_id" type="int">3703</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S1</DataItem>
+<DataItem key="line_pos" type="str">S1</DataItem></Data>
+<order_id>73</order_id></Node>
+<Node>
+<Id>343</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>517</Top>
+<Left>1848</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>387</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">42.000000</DataItem>
+<DataItem key="pitch_octave" type="int">4</DataItem>
+<DataItem key="midi_pitch_code" type="int">61</DataItem>
+<DataItem key="normalized_pitch_step" type="str">C#</DataItem>
+<DataItem key="dorico_event_id" type="int">3702</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L0</DataItem>
+<DataItem key="line_pos" type="str">L0</DataItem></Data>
+<order_id>74</order_id></Node>
+<Node>
+<Id>387</Id>
+<ClassName>stem</ClassName>
+<Top>418</Top>
+<Left>1873</Left>
+<Width>3</Width>
+<Height>108</Height>
+<Mask>0: 0 1: 324 </Mask>
+<Inlinks>344 343 345</Inlinks>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>75</order_id></Node>
+<Node>
+<Id>345</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>476</Top>
+<Left>1873</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>387</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">42.000000</DataItem>
+<DataItem key="pitch_octave" type="int">4</DataItem>
+<DataItem key="midi_pitch_code" type="int">68</DataItem>
+<DataItem key="normalized_pitch_step" type="str">G#</DataItem>
+<DataItem key="dorico_event_id" type="int">3704</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L2</DataItem>
+<DataItem key="line_pos" type="str">L2</DataItem></Data>
+<order_id>76</order_id></Node>
+<Node>
+<Id>409</Id>
+<ClassName>barline</ClassName>
+<Top>424</Top>
+<Left>1931</Left>
+<Width>5</Width>
+<Height>86</Height>
+<Mask>0: 0 1: 430 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>77</order_id></Node>
+<Node>
+<Id>390</Id>
+<ClassName>accidentalFlat</ClassName>
+<Top>348</Top>
+<Left>1953</Left>
+<Width>19</Width>
+<Height>52</Height>
+<Mask>0: 0 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 6 1: 3 0: 6 1: 4 0: 3 1: 8 0: 4 1: 4 0: 1 1: 12 0: 2 1: 18 0: 1 1: 18 0: 1 1: 27 0: 3 1: 14 0: 6 1: 12 0: 7 1: 11 0: 9 1: 10 0: 9 1: 10 0: 8 1: 11 0: 8 1: 11 0: 8 1: 6 0: 1 1: 4 0: 7 1: 7 0: 1 1: 4 0: 7 1: 6 0: 2 1: 4 0: 6 1: 6 0: 3 1: 4 0: 5 1: 7 0: 3 1: 4 0: 4 1: 7 0: 4 1: 4 0: 3 1: 7 0: 5 1: 5 0: 1 1: 7 0: 6 1: 12 0: 7 1: 10 0: 9 1: 9 0: 10 1: 8 0: 11 1: 7 0: 12 1: 5 0: 14 1: 4 0: 16 1: 2 0: 16 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L7</DataItem>
+<DataItem key="line_pos" type="str">L7</DataItem></Data>
+<order_id>78</order_id></Node>
+<Node>
+<Id>389</Id>
+<ClassName>accidentalFlat</ClassName>
+<Top>389</Top>
+<Left>1975</Left>
+<Width>19</Width>
+<Height>52</Height>
+<Mask>0: 0 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 6 1: 3 0: 6 1: 4 0: 3 1: 8 0: 4 1: 4 0: 1 1: 12 0: 2 1: 18 0: 1 1: 18 0: 1 1: 27 0: 3 1: 14 0: 6 1: 12 0: 7 1: 11 0: 9 1: 10 0: 9 1: 10 0: 8 1: 11 0: 8 1: 11 0: 8 1: 6 0: 1 1: 4 0: 7 1: 7 0: 1 1: 4 0: 7 1: 6 0: 2 1: 4 0: 6 1: 6 0: 3 1: 4 0: 5 1: 7 0: 3 1: 4 0: 4 1: 7 0: 4 1: 4 0: 3 1: 7 0: 5 1: 5 0: 1 1: 7 0: 6 1: 12 0: 7 1: 10 0: 9 1: 9 0: 10 1: 8 0: 11 1: 7 0: 12 1: 5 0: 14 1: 4 0: 16 1: 2 0: 16 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>79</order_id></Node>
+<Node>
+<Id>388</Id>
+<ClassName>accidentalFlat</ClassName>
+<Top>337</Top>
+<Left>1988</Left>
+<Width>19</Width>
+<Height>52</Height>
+<Mask>0: 0 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 5 0: 14 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 15 1: 4 0: 6 1: 3 0: 6 1: 4 0: 3 1: 8 0: 4 1: 4 0: 1 1: 12 0: 2 1: 18 0: 1 1: 18 0: 1 1: 27 0: 3 1: 14 0: 6 1: 12 0: 7 1: 11 0: 9 1: 10 0: 9 1: 10 0: 8 1: 11 0: 8 1: 11 0: 8 1: 6 0: 1 1: 4 0: 7 1: 7 0: 1 1: 4 0: 7 1: 6 0: 2 1: 4 0: 6 1: 6 0: 3 1: 4 0: 5 1: 7 0: 3 1: 4 0: 4 1: 7 0: 4 1: 4 0: 3 1: 7 0: 5 1: 5 0: 1 1: 7 0: 6 1: 12 0: 7 1: 10 0: 9 1: 9 0: 10 1: 8 0: 11 1: 7 0: 12 1: 5 0: 14 1: 4 0: 16 1: 2 0: 16 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S7</DataItem>
+<DataItem key="line_pos" type="str">S7</DataItem></Data>
+<order_id>80</order_id></Node>
+<Node>
+<Id>346</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>362</Top>
+<Left>2010</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>391</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">43.000000</DataItem>
+<DataItem key="pitch_octave" type="int">6</DataItem>
+<DataItem key="midi_pitch_code" type="int">85</DataItem>
+<DataItem key="normalized_pitch_step" type="str">Db</DataItem>
+<DataItem key="dorico_event_id" type="int">3707</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S7</DataItem>
+<DataItem key="line_pos" type="str">S7</DataItem></Data>
+<order_id>81</order_id></Node>
+<Node>
+<Id>349</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>352</Top>
+<Left>2035</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>391</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">43.000000</DataItem>
+<DataItem key="pitch_octave" type="int">6</DataItem>
+<DataItem key="midi_pitch_code" type="int">88</DataItem>
+<DataItem key="normalized_pitch_step" type="str">E</DataItem>
+<DataItem key="dorico_event_id" type="int">3708</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L8</DataItem>
+<DataItem key="line_pos" type="str">L8</DataItem></Data>
+<order_id>82</order_id></Node>
+<Node>
+<Id>391</Id>
+<ClassName>stem</ClassName>
+<Top>367</Top>
+<Left>2035</Left>
+<Width>3</Width>
+<Height>131</Height>
+<Mask>0: 0 1: 393 </Mask>
+<Inlinks>348 346 347 349</Inlinks>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>83</order_id></Node>
+<Node>
+<Id>348</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>373</Top>
+<Left>2035</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>391</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">43.000000</DataItem>
+<DataItem key="pitch_octave" type="int">6</DataItem>
+<DataItem key="midi_pitch_code" type="int">83</DataItem>
+<DataItem key="normalized_pitch_step" type="str">Cb</DataItem>
+<DataItem key="dorico_event_id" type="int">3706</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L7</DataItem>
+<DataItem key="line_pos" type="str">L7</DataItem></Data>
+<order_id>84</order_id></Node>
+<Node>
+<Id>347</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>414</Top>
+<Left>2035</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>391</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">43.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">76</DataItem>
+<DataItem key="normalized_pitch_step" type="str">Fb</DataItem>
+<DataItem key="dorico_event_id" type="int">3705</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>85</order_id></Node>
+<Node>
+<Id>410</Id>
+<ClassName>barline</ClassName>
+<Top>424</Top>
+<Left>2118</Left>
+<Width>5</Width>
+<Height>86</Height>
+<Mask>0: 0 1: 430 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>86</order_id></Node>
+<Node>
+<Id>393</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>396</Top>
+<Left>2140</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>87</order_id></Node>
+<Node>
+<Id>392</Id>
+<ClassName>accidentalSharp</ClassName>
+<Top>386</Top>
+<Left>2164</Left>
+<Width>21</Width>
+<Height>59</Height>
+<Mask>0: 14 1: 3 0: 18 1: 3 0: 18 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 1 1: 3 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 17 0: 4 1: 17 0: 3 1: 18 0: 1 1: 59 0: 3 1: 17 0: 4 1: 17 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 2 1: 2 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 7 1: 7 0: 4 1: 3 0: 6 1: 8 0: 4 1: 3 0: 4 1: 10 0: 4 1: 3 0: 2 1: 12 0: 3 1: 18 0: 2 1: 60 0: 1 1: 18 0: 3 1: 17 0: 4 1: 12 0: 1 1: 4 0: 4 1: 10 0: 4 1: 3 0: 4 1: 8 0: 6 1: 3 0: 4 1: 7 0: 7 1: 3 0: 4 1: 7 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 7 1: 3 0: 8 1: 3 0: 18 1: 3 0: 18 1: 3 0: 18 1: 2 0: 15 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S5</DataItem>
+<DataItem key="line_pos" type="str">S5</DataItem></Data>
+<order_id>88</order_id></Node>
+<Node>
+<Id>350</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>414</Top>
+<Left>2187</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>394</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">44.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">78</DataItem>
+<DataItem key="normalized_pitch_step" type="str">F#</DataItem>
+<DataItem key="dorico_event_id" type="int">3709</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem>
+<DataItem key="line_pos" type="str">L5</DataItem></Data>
+<order_id>89</order_id></Node>
+<Node>
+<Id>351</Id>
+<ClassName>noteheadBlack</ClassName>
+<Top>404</Top>
+<Left>2212</Left>
+<Width>28</Width>
+<Height>24</Height>
+<Mask>0: 12 1: 11 0: 14 1: 16 0: 10 1: 19 0: 8 1: 21 0: 6 1: 22 0: 5 1: 24 0: 3 1: 25 0: 2 1: 26 0: 1 1: 27 0: 1 1: 27 0: 1 1: 54 0: 1 1: 27 0: 1 1: 26 0: 2 1: 26 0: 2 1: 25 0: 3 1: 24 0: 4 1: 23 0: 5 1: 22 0: 6 1: 21 0: 8 1: 19 0: 10 1: 16 0: 13 1: 13 0: 18 1: 6 0: 16 </Mask>
+<Outlinks>394</Outlinks>
+<Data>
+<DataItem key="duration_beats" type="float">1.000000</DataItem>
+<DataItem key="onset_beats" type="float">44.000000</DataItem>
+<DataItem key="pitch_octave" type="int">5</DataItem>
+<DataItem key="midi_pitch_code" type="int">80</DataItem>
+<DataItem key="normalized_pitch_step" type="str">G#</DataItem>
+<DataItem key="dorico_event_id" type="int">3710</DataItem>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem>
+<DataItem key="line_pos" type="str">S5</DataItem>
+<DataItem key="line_pos" type="str">S5</DataItem></Data>
+<order_id>90</order_id></Node>
+<Node>
+<Id>394</Id>
+<ClassName>stem</ClassName>
+<Top>419</Top>
+<Left>2212</Left>
+<Width>3</Width>
+<Height>79</Height>
+<Mask>0: 0 1: 237 </Mask>
+<Inlinks>350 351</Inlinks>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>91</order_id></Node>
+<Node>
+<Id>411</Id>
+<ClassName>barline</ClassName>
+<Top>424</Top>
+<Left>2295</Left>
+<Width>5</Width>
+<Height>86</Height>
+<Mask>0: 0 1: 430 </Mask>
+<Data>
+<DataItem key="staff_id" type="int">0</DataItem>
+<DataItem key="spacing_run_id" type="int">46519037996249449</DataItem>
+<DataItem key="ordered_staff_id" type="int">0</DataItem></Data>
+<order_id>92</order_id></Node>
+</Nodes>
+</Page>
+</masks>
