@@ -1,0 +1,196 @@
+{
+  "staff_systems": [
+    {
+      "id": 0,
+      "lines": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": 1,
+      "lines": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "detections": [
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 257.0,
+        "y1": 422.0,
+        "x2": 2299.0,
+        "y2": 426.0,
+        "width": 2042.0,
+        "height": 4.0,
+        "center_x": 1278.0,
+        "center_y": 424.0
+      },
+      "staff_system": 0,
+      "line_number": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 257.0,
+        "y1": 449.0,
+        "x2": 2299.0,
+        "y2": 453.0,
+        "width": 2042.0,
+        "height": 4.0,
+        "center_x": 1278.0,
+        "center_y": 451.0
+      },
+      "staff_system": 0,
+      "line_number": 1
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 257.0,
+        "y1": 476.0,
+        "x2": 2299.0,
+        "y2": 480.0,
+        "width": 2042.0,
+        "height": 4.0,
+        "center_x": 1278.0,
+        "center_y": 478.0
+      },
+      "staff_system": 0,
+      "line_number": 2
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 257.0,
+        "y1": 503.0,
+        "x2": 2299.0,
+        "y2": 507.0,
+        "width": 2042.0,
+        "height": 4.0,
+        "center_x": 1278.0,
+        "center_y": 505.0
+      },
+      "staff_system": 0,
+      "line_number": 3
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 257.0,
+        "y1": 530.0,
+        "x2": 2299.0,
+        "y2": 534.0,
+        "width": 2042.0,
+        "height": 4.0,
+        "center_x": 1278.0,
+        "center_y": 532.0
+      },
+      "staff_system": 0,
+      "line_number": 4
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 257.0,
+        "y1": 802.0,
+        "x2": 2299.0,
+        "y2": 806.0,
+        "width": 2042.0,
+        "height": 4.0,
+        "center_x": 1278.0,
+        "center_y": 804.0
+      },
+      "staff_system": 1,
+      "line_number": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 257.0,
+        "y1": 829.0,
+        "x2": 2299.0,
+        "y2": 833.0,
+        "width": 2042.0,
+        "height": 4.0,
+        "center_x": 1278.0,
+        "center_y": 831.0
+      },
+      "staff_system": 1,
+      "line_number": 1
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 257.0,
+        "y1": 856.0,
+        "x2": 2299.0,
+        "y2": 860.0,
+        "width": 2042.0,
+        "height": 4.0,
+        "center_x": 1278.0,
+        "center_y": 858.0
+      },
+      "staff_system": 1,
+      "line_number": 2
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 257.0,
+        "y1": 884.0,
+        "x2": 2299.0,
+        "y2": 888.0,
+        "width": 2042.0,
+        "height": 4.0,
+        "center_x": 1278.0,
+        "center_y": 886.0
+      },
+      "staff_system": 1,
+      "line_number": 3
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 257.0,
+        "y1": 911.0,
+        "x2": 2299.0,
+        "y2": 915.0,
+        "width": 2042.0,
+        "height": 4.0,
+        "center_x": 1278.0,
+        "center_y": 913.0
+      },
+      "staff_system": 1,
+      "line_number": 4
+    }
+  ]
+}
