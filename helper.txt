@@ -116,3 +116,36 @@ python scripts/detect_notation.py \
 
 
 tensorboard --logdir /homes/es314/runs
+
+
+
+encoding stuff:
+after runnning inference we have two files with bounding boxes, csv and json. then we apply 
+
+
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/link_obj.py --detection-file /homes/es314/omr-objdet-benchmark/results/detections/Accidentals-004_detections.json --output-dir /homes/es314/omr-objdet-benchmark/scripts/encoding
+
+the updated one with a full pipeline:
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/complete_pipeline.py --image /homes/es314/omr-objdet-benchmark/scripts/encoding/stave-only.png --model /homes/es314/runs/staffline_extreme/weights/best.pt --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json
+
+
+to visualise
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/visualisation.py --image /homes/es314/omr-objdet-benchmark/scripts/encoding/results/Accidentals-004.png --data /homes/es314/omr-objdet-benchmark/scripts/encoding/results/pitch_identification_linked_data.json
+
+
+
+and finally to run the json to midi converter:
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/to_midi/json_to_midi_converter.py --input /homes/es314/omr-objdet-benchmark/scripts/encoding/results/pitched_data/demisemiquavers_simple-085_pitched.json --output /homes/es314/omr-objdet-benchmark/scripts/encoding/results/pitched_data/demisemiquavers_simple-085_pitched.mid
+
+
+json to musicxml
+
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/to_midi/json_to_musicxml.py --input /homes/es314/omr-objdet-benchmark/scripts/encoding/results/pitched_data/stave-only_pitched.json --output /homes/es314/omr-objdet-benchmark/scripts/encoding/results/pitched_data/stave-only_pitched.musicxml --beamall
+
+
+website up and runnong code:
+cd  app/backend 
+run the backend first:  /homes/es314/.conda/envs/omr_benchmark/bin/python app.py
+
+~/omr-objdet-benchmark/scripts/app$ cd frontend/
+~/omr-objdet-benchmark/scripts/app/frontend$ npm run dev
