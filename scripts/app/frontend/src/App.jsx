@@ -1,21 +1,22 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './index.css';
+import MusicXMLViewer from './components/MusicXMLViewer';
 
 // Mock model data (as in your code)
 const MOCK_MODEL_DATA = {
-  "train7": {
-    "imgsz": 1280,
-    "epochs": 150,
-    "batch": 4,
-    "patience": 100,
-    "mosaic": 0.3,
-    "box": 10.0,
-    "lr0": 0.01,
-    "pretrained": true,
-    "optimizer": "auto",
-    "data": "staffline_enhanced_dataset",
-    "model": "yolov8x.pt"
-  },
+  // "train7": {
+  //   "imgsz": 1280,
+  //   "epochs": 150,
+  //   "batch": 4,
+  //   "patience": 100,
+  //   "mosaic": 0.3,
+  //   "box": 10.0,
+  //   "lr0": 0.01,
+  //   "pretrained": true,
+  //   "optimizer": "auto",
+  //   "data": "staffline_enhanced_dataset",
+  //   "model": "yolov8x.pt"
+  // },
   "train8": {
     "imgsz": 1024,
     "epochs": 120,
@@ -42,19 +43,19 @@ const MOCK_MODEL_DATA = {
     "data": "muscima_dataset",
     "model": "yolov8m.pt"
   },
-  "train13": {
-    "imgsz": 960,
-    "epochs": 200,
-    "batch": 32,
-    "patience": 75,
-    "mosaic": 0.6,
-    "box": 9.0,
-    "lr0": 0.01,
-    "pretrained": true,
-    "optimizer": "auto",
-    "data": "combined_dataset",
-    "model": "yolov8n.pt"
-  },
+  // "train13": {
+  //   "imgsz": 960,
+  //   "epochs": 200,
+  //   "batch": 32,
+  //   "patience": 75,
+  //   "mosaic": 0.6,
+  //   "box": 9.0,
+  //   "lr0": 0.01,
+  //   "pretrained": true,
+  //   "optimizer": "auto",
+  //   "data": "combined_dataset",
+  //   "model": "yolov8n.pt"
+  // },
   "staffline_extreme": {
     "imgsz": 1280,
     "epochs": 150,
@@ -200,10 +201,13 @@ const ModelDetails = ({ model, data }) => {
 const App = () => {
   // State
   const [originalImage, setOriginalImage] = useState(null);
-  const [processedImage, setProcessedImage] = useState(null);
+  const [linkedImage, setLinkedImage] = useState(null);
+  const [pitchedImage, setPitchedImage] = useState(null);
   const [originalZoom, setOriginalZoom] = useState(1);
-  const [processedZoom, setProcessedZoom] = useState(1);
+  const [linkedZoom, setLinkedZoom] = useState(1);
+  const [pitchedZoom, setPitchedZoom] = useState(1);
   const [detections, setDetections] = useState([]);
+  const [pitchData, setPitchData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   
@@ -216,8 +220,10 @@ const App = () => {
   
   // Other UI states
   const [showOriginal, setShowOriginal] = useState(true);
-  const [showProcessed, setShowProcessed] = useState(true);
+  const [showLinked, setShowLinked] = useState(true);
+  const [showPitched, setShowPitched] = useState(true);
   const [showDetections, setShowDetections] = useState(false);
+  const [showMusicXML, setShowMusicXML] = useState(true);
   const [currentFile, setCurrentFile] = useState(null);
   const [processingHistory, setProcessingHistory] = useState([]);
   const fileInputRef = useRef(null);
@@ -234,63 +240,189 @@ const App = () => {
       });
   }, []);
 
-  const processImage = async (file, model) => {
-    if (!file) return;
+  // const processImage = async (file, model) => {
+  //   if (!file) return;
 
-    setIsLoading(true);
-    setError(null);
+  //   setIsLoading(true);
+  //   setError(null);
 
-    const formData = new FormData();
-    formData.append('file', file);
-    formData.append('model', model);
+  //   const formData = new FormData();
+  //   formData.append('file', file);
+  //   formData.append('model', model);
 
-    try {
-      const response = await fetch('/api/run_omr_pipeline', {
-        method: 'POST',
-        body: formData
-      });
+  //   try {
+  //     const response = await fetch('/api/run_omr_pipeline', {
+  //       method: 'POST',
+  //       body: formData
+  //     });
 
-      const responseText = await response.text();
-      console.log('Response text length:', responseText.length);
+  //     const responseText = await response.text();
+  //     console.log('Response text length:', responseText.length);
       
+  //     try {
+  //       const data = JSON.parse(responseText);
+        
+  //       // Detailed debugging information
+  //       console.log('Response data keys:', Object.keys(data));
+  //       console.log('Original image:', data.original_image ? `Present (length: ${data.original_image.length})` : 'Missing');
+  //       console.log('Linked image:', data.linked_image ? `Present (length: ${data.linked_image.length})` : 'Missing');
+  //       console.log('Pitched image:', data.pitched_image ? `Present (length: ${data.pitched_image.length})` : 'Missing');
+  //       console.log('Processed image (legacy):', data.processed_image ? `Present (length: ${data.processed_image.length})` : 'Missing');
+  //       console.log('Pitch data present:', data.pitch_data ? 'Yes' : 'No');
+        
+  //       // For backward compatibility with the old API response format
+  //       const processedImage = data.processed_image;
+
+  //       setOriginalImage(data.original_image);
+        
+  //       if (!data.linked_image && processedImage) {
+  //         console.log('Using legacy processed_image as linked_image');
+  //         setLinkedImage(processedImage);
+  //       } else {
+  //         setLinkedImage(data.linked_image);
+  //       }
+        
+  //       setPitchedImage(data.pitched_image);
+        
+  //       // Extract detections from various possible sources
+  //       let extractedDetections = [];
+  //       if (data.detections && Array.isArray(data.detections)) {
+  //         console.log('Using detections from root level');
+  //         extractedDetections = data.detections;
+  //       } else if (data.pitch_data && data.pitch_data.detections) {
+  //         console.log('Using detections from pitch_data.detections');
+  //         extractedDetections = data.pitch_data.detections;
+  //       } else if (data.pitch_data && data.pitch_data.symbols) {
+  //         console.log('Using detections from pitch_data.symbols');
+  //         extractedDetections = data.pitch_data.symbols;
+  //       }
+                
+  //       setDetections(extractedDetections.length > 0 ? extractedDetections : []);
+  //       setPitchData(data.pitch_data || null);
+        
+  //       setProcessingHistory(prev => [
+  //         ...prev, 
+  //         {
+  //           model,
+  //           timestamp: new Date().toLocaleTimeString(),
+  //           detectionCount: extractedDetections.length
+  //         }
+  //       ]);
+
+  //       // Always make visualization containers visible even if images aren't available
+  //       setShowOriginal(true);
+  //       setShowLinked(true);
+  //       setShowPitched(true);
+        
+  //     } catch (parseError) {
+  //       console.error('JSON parse error:', parseError);
+  //       setError('Failed to parse response from server');
+  //     }
+  //   } catch (err) {
+  //     console.error('Network error:', err);
+  //     setError(err.message || 'An unexpected error occurred');
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
+  const processImage = async (file, model) => {
+      if (!file) return;
+    
+      setIsLoading(true);
+      setError(null);
+    
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('model', model);
+    
       try {
-        const data = JSON.parse(responseText);
-        console.log('Detections count:', data.detections ? data.detections.length : 0);
+        const response = await fetch('/api/run_omr_pipeline', {
+          method: 'POST',
+          body: formData
+        });
+    
+        const responseText = await response.text();
+        console.log('Response text length:', responseText.length);
         
-        setOriginalImage(data.original_image);
-        setProcessedImage(data.processed_image);
-        setDetections(Array.isArray(data.detections) ? data.detections : []);
-        
-        setProcessingHistory(prev => [
-          ...prev, 
-          {
-            model,
-            timestamp: new Date().toLocaleTimeString(),
-            detectionCount: data.detections ? data.detections.length : 0
+        try {
+          const data = JSON.parse(responseText);
+          
+          // Detailed debugging information
+          console.log('Response data keys:', Object.keys(data));
+          console.log('Original image:', data.original_image ? `Present (length: ${data.original_image.length})` : 'Missing');
+          console.log('Linked image:', data.linked_image ? `Present (length: ${data.linked_image.length})` : 'Missing');
+          console.log('Pitched image:', data.pitched_image ? `Present (length: ${data.pitched_image.length})` : 'Missing');
+          console.log('Processed image (legacy):', data.processed_image ? `Present (length: ${data.processed_image.length})` : 'Missing');
+          console.log('Pitch data present:', data.pitch_data ? 'Yes' : 'No');
+          console.log('Base name:', data.base_name || 'Missing');
+          
+          // For backward compatibility with the old API response format
+          const processedImage = data.processed_image;
+    
+          setOriginalImage(data.original_image);
+          
+          if (!data.linked_image && processedImage) {
+            console.log('Using legacy processed_image as linked_image');
+            setLinkedImage(processedImage);
+          } else {
+            setLinkedImage(data.linked_image);
           }
-        ]);
-
-        setShowProcessed(true);
-      } catch (parseError) {
-        console.error('JSON parse error:', parseError);
-        setError('Failed to parse response from server');
+          
+          setPitchedImage(data.pitched_image);
+          
+          // Extract detections from various possible sources
+          let extractedDetections = [];
+          if (data.detections && Array.isArray(data.detections)) {
+            console.log('Using detections from root level');
+            extractedDetections = data.detections;
+          } else if (data.pitch_data && data.pitch_data.detections) {
+            console.log('Using detections from pitch_data.detections');
+            extractedDetections = data.pitch_data.detections;
+          } else if (data.pitch_data && data.pitch_data.symbols) {
+            console.log('Using detections from pitch_data.symbols');
+            extractedDetections = data.pitch_data.symbols;
+          }
+                  
+          setDetections(extractedDetections.length > 0 ? extractedDetections : []);
+          setPitchData(data.pitch_data || null);
+          
+          // Save processing history including base_name
+          setProcessingHistory(prev => [
+            ...prev, 
+            {
+              model,
+              timestamp: new Date().toLocaleTimeString(),
+              detectionCount: extractedDetections.length,
+              baseName: data.base_name // Store the base_name from the response
+            }
+          ]);
+    
+          // Always make visualization containers visible even if images aren't available
+          setShowOriginal(true);
+          setShowLinked(true);
+          setShowPitched(true);
+          
+        } catch (parseError) {
+          console.error('JSON parse error:', parseError);
+          setError('Failed to parse response from server');
+        }
+      } catch (err) {
+        console.error('Network error:', err);
+        setError(err.message || 'An unexpected error occurred');
+      } finally {
+        setIsLoading(false);
       }
-    } catch (err) {
-      console.error('Network error:', err);
-      setError(err.message || 'An unexpected error occurred');
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
+    };
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
     if (!file) return;
 
     setCurrentFile(file);
     setOriginalImage(null);
-    setProcessedImage(null);
+    setLinkedImage(null);
+    setPitchedImage(null);
     setDetections([]);
+    setPitchData(null);
     setProcessingHistory([]);
     
     await processImage(file, selectedModel);
@@ -436,7 +568,7 @@ const App = () => {
       </div>
 
       {/* Results Section */}
-      {(originalImage || processedImage) && (
+      {(originalImage || linkedImage || pitchedImage) && (
         <div className="bg-white p-6 rounded-lg shadow-md mb-6">
           <h2 className="text-xl font-bold mb-3 text-indigo-800">Results</h2>
           
@@ -493,8 +625,8 @@ const App = () => {
             </div>
           )}
 
-          {/* Display Controls */}
-          <div className="flex gap-2 mb-4">
+        {/* Display Controls with Image Availability Indicators */}
+          <div className="flex flex-wrap gap-2 mb-4">
             <button 
               onClick={() => setShowOriginal(!showOriginal)}
               className={`px-3 py-1 rounded text-sm font-medium ${
@@ -504,29 +636,70 @@ const App = () => {
               }`}
             >
               {showOriginal ? "Hide" : "Show"} Original
+              {originalImage ? "" : " (Missing)"}
             </button>
             
             <button 
-              onClick={() => setShowProcessed(!showProcessed)}
+              onClick={() => setShowLinked(!showLinked)}
               className={`px-3 py-1 rounded text-sm font-medium ${
-                showProcessed 
+                showLinked 
                   ? 'bg-green-600 text-white' 
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
-              {showProcessed ? "Hide" : "Show"} Processed
+              {showLinked ? "Hide" : "Show"} Linked
+              {linkedImage ? "" : " (Missing)"}
+            </button>
+            
+            <button 
+              onClick={() => setShowPitched(!showPitched)}
+              className={`px-3 py-1 rounded text-sm font-medium ${
+                showPitched 
+                  ? 'bg-purple-600 text-white' 
+                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              }`}
+            >
+              {showPitched ? "Hide" : "Show"} Pitched
+              {pitchedImage ? "" : " (Missing)"}
             </button>
             
             <button 
               onClick={() => setShowDetections(!showDetections)}
               className={`px-3 py-1 rounded text-sm font-medium ${
                 showDetections 
-                  ? 'bg-purple-600 text-white' 
+                  ? 'bg-indigo-600 text-white' 
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}
             >
               {showDetections ? "Hide" : "Show"} Table
             </button>
+            
+            <button 
+              onClick={() => setShowMusicXML(!showMusicXML)}
+              className={`px-3 py-1 rounded text-sm font-medium ${
+                showMusicXML 
+                  ? 'bg-orange-600 text-white' 
+                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              }`}
+            >
+              {showMusicXML ? "Hide" : "Show"} MusicXML
+            </button>
+          </div>
+
+          {/* Debug Information Panel */}
+          <div className="mb-4 p-3 bg-gray-100 rounded-md">
+            <h3 className="text-sm font-semibold mb-2 text-gray-700">Image Diagnostics:</h3>
+            <div className="grid grid-cols-3 gap-2 text-xs">
+              <div className={`p-1 rounded ${originalImage ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                Original: {originalImage ? '✓ Available' : '✗ Missing'}
+              </div>
+              <div className={`p-1 rounded ${linkedImage ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                Linked: {linkedImage ? '✓ Available' : '✗ Missing'}
+              </div>
+              <div className={`p-1 rounded ${pitchedImage ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                Pitched: {pitchedImage ? '✓ Available' : '✗ Missing'}
+              </div>
+            </div>
           </div>
 
           {/* Symbol Statistics */}
@@ -547,18 +720,25 @@ const App = () => {
           )}
 
           {/* 
-            Force a side-by-side layout with no wrapping.
-            If the screen is narrow, horizontal scroll will appear.
+            Images Grid Layout - Now showing up to 3 images in a responsive grid
+            If all 3 images are visible, they'll be shown in a 3-column layout on large screens
+            If only 2 are visible, they'll be shown in a 2-column layout
+            On smaller screens they'll stack
           */}
-          <div className="flex flex-row flex-nowrap w-full overflow-x-auto mb-4">
+          <div className={`grid gap-4 mb-4 ${
+            (showOriginal && showLinked && showPitched) 
+              ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' 
+              : (showOriginal && (showLinked || showPitched)) 
+                ? 'grid-cols-1 md:grid-cols-2' 
+                : 'grid-cols-1'
+          }`}>
             {/* Original Image Section */}
             {showOriginal && originalImage && (
-              <div className="w-1/2 min-w-[600px] mr-2 border-2 border-gray-300 rounded-lg overflow-hidden shadow-md">
-                <div className="bg-gray-100 px-3 py-1 border-b border-gray-300">
-                  <h3 className="font-medium text-sm text-gray-700">Original Image</h3>
+              <div className="border-2 border-gray-300 rounded-lg overflow-hidden shadow-md">
+                <div className="bg-blue-100 px-3 py-1 border-b border-blue-300">
+                  <h3 className="font-medium text-sm text-blue-700">Original Image</h3>
                 </div>
-                {/* Use a fixed height so images are visible side by side */}
-                <div className="flex items-center justify-center h-[600px] bg-gray-50">
+                <div className="flex items-center justify-center h-[400px] bg-gray-50">
                   <img 
                     src={originalImage}
                     alt="Original" 
@@ -571,23 +751,23 @@ const App = () => {
                     }}
                   />
                 </div>
-                <div className="flex items-center justify-center p-2 space-x-2 bg-gray-100 border-t border-gray-300">
+                <div className="flex items-center justify-center p-2 space-x-2 bg-blue-100 border-t border-blue-300">
                   <button 
                     onClick={() => setOriginalZoom(prev => Math.max(prev - 0.25, 0.5))}
-                    className="px-2 py-1 text-xs bg-gray-200 text-gray-700 rounded hover:bg-gray-300"
+                    className="px-2 py-1 text-xs bg-blue-200 text-blue-700 rounded hover:bg-blue-300"
                   >
                     −
                   </button>
-                  <span className="text-xs">{Math.round(originalZoom * 100)}%</span>
+                  <span className="text-xs text-blue-700">{Math.round(originalZoom * 100)}%</span>
                   <button 
                     onClick={() => setOriginalZoom(prev => Math.min(prev + 0.25, 3))}
-                    className="px-2 py-1 text-xs bg-gray-200 text-gray-700 rounded hover:bg-gray-300"
+                    className="px-2 py-1 text-xs bg-blue-200 text-blue-700 rounded hover:bg-blue-300"
                   >
                     +
                   </button>
                   <button 
                     onClick={() => setOriginalZoom(1)}
-                    className="px-2 py-1 text-xs bg-gray-200 text-gray-700 rounded hover:bg-gray-300"
+                    className="px-2 py-1 text-xs bg-blue-200 text-blue-700 rounded hover:bg-blue-300"
                   >
                     Reset
                   </button>
@@ -595,42 +775,111 @@ const App = () => {
               </div>
             )}
 
-            {/* Processed Image Section */}
-            {showProcessed && processedImage && (
-              <div className="w-1/2 min-w-[600px] border-2 border-gray-300 rounded-lg overflow-hidden shadow-md">
-                <div className="bg-gray-100 px-3 py-1 border-b border-gray-300">
-                  <h3 className="font-medium text-sm text-gray-700">Processed Image</h3>
+            {/* Linked Image Section */}
+            {showLinked && (
+              <div className="border-2 border-gray-300 rounded-lg overflow-hidden shadow-md">
+                <div className="bg-green-100 px-3 py-1 border-b border-green-300 flex justify-between">
+                  <h3 className="font-medium text-sm text-green-700">Linked Visualization</h3>
+                  {!linkedImage && <span className="text-xs text-red-600">Image unavailable</span>}
                 </div>
-                <div className="flex items-center justify-center h-[600px] bg-gray-50">
-                  <img 
-                    src={processedImage}
-                    alt="Processed" 
-                    className="max-h-full max-w-full object-contain"
-                    style={{ transformOrigin: 'center', transform: `scale(${processedZoom})` }}
-                    onError={(e) => {
-                      console.error("Error loading processed image");
-                      e.target.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
-                      e.target.alt = "Failed to load image";
-                    }}
-                  />
+                <div className="flex items-center justify-center h-[400px] bg-gray-50">
+                  {linkedImage ? (
+                    <img 
+                      src={linkedImage}
+                      alt="Linked Visualization" 
+                      className="max-h-full max-w-full object-contain"
+                      style={{ transformOrigin: 'center', transform: `scale(${linkedZoom})` }}
+                      onError={(e) => {
+                        console.error("Error loading linked image");
+                        e.target.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
+                        e.target.alt = "Failed to load image";
+                      }}
+                    />
+                  ) : (
+                    <div className="flex flex-col items-center justify-center text-gray-500">
+                      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                      <p className="mt-2 text-sm">No linked visualization available</p>
+                    </div>
+                  )}
                 </div>
-                <div className="flex items-center justify-center p-2 space-x-2 bg-gray-100 border-t border-gray-300">
+                <div className="flex items-center justify-center p-2 space-x-2 bg-green-100 border-t border-green-300">
                   <button 
-                    onClick={() => setProcessedZoom(prev => Math.max(prev - 0.25, 0.5))}
-                    className="px-2 py-1 text-xs bg-gray-200 text-gray-700 rounded hover:bg-gray-300"
+                    onClick={() => setLinkedZoom(prev => Math.max(prev - 0.25, 0.5))}
+                    className={`px-2 py-1 text-xs ${linkedImage ? 'bg-green-200 text-green-700 hover:bg-green-300' : 'bg-gray-200 text-gray-500 cursor-not-allowed'} rounded`}
+                    disabled={!linkedImage}
                   >
                     −
                   </button>
-                  <span className="text-xs">{Math.round(processedZoom * 100)}%</span>
+                  <span className="text-xs text-green-700">{Math.round(linkedZoom * 100)}%</span>
                   <button 
-                    onClick={() => setProcessedZoom(prev => Math.min(prev + 0.25, 3))}
-                    className="px-2 py-1 text-xs bg-gray-200 text-gray-700 rounded hover:bg-gray-300"
+                    onClick={() => setLinkedZoom(prev => Math.min(prev + 0.25, 3))}
+                    className={`px-2 py-1 text-xs ${linkedImage ? 'bg-green-200 text-green-700 hover:bg-green-300' : 'bg-gray-200 text-gray-500 cursor-not-allowed'} rounded`}
+                    disabled={!linkedImage}
                   >
                     +
                   </button>
                   <button 
-                    onClick={() => setProcessedZoom(1)}
-                    className="px-2 py-1 text-xs bg-gray-200 text-gray-700 rounded hover:bg-gray-300"
+                    onClick={() => setLinkedZoom(1)}
+                    className={`px-2 py-1 text-xs ${linkedImage ? 'bg-green-200 text-green-700 hover:bg-green-300' : 'bg-gray-200 text-gray-500 cursor-not-allowed'} rounded`}
+                    disabled={!linkedImage}
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* Pitched Image Section */}
+            {showPitched && (
+              <div className="border-2 border-gray-300 rounded-lg overflow-hidden shadow-md">
+                <div className="bg-purple-100 px-3 py-1 border-b border-purple-300 flex justify-between">
+                  <h3 className="font-medium text-sm text-purple-700">Pitched Visualization</h3>
+                  {!pitchedImage && <span className="text-xs text-red-600">Image unavailable</span>}
+                </div>
+                <div className="flex items-center justify-center h-[400px] bg-gray-50">
+                  {pitchedImage ? (
+                    <img 
+                      src={pitchedImage}
+                      alt="Pitched Visualization" 
+                      className="max-h-full max-w-full object-contain"
+                      style={{ transformOrigin: 'center', transform: `scale(${pitchedZoom})` }}
+                      onError={(e) => {
+                        console.error("Error loading pitched image");
+                        e.target.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
+                        e.target.alt = "Failed to load image";
+                      }}
+                    />
+                  ) : (
+                    <div className="flex flex-col items-center justify-center text-gray-500">
+                      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                      <p className="mt-2 text-sm">No pitched visualization available</p>
+                    </div>
+                  )}
+                </div>
+                <div className="flex items-center justify-center p-2 space-x-2 bg-purple-100 border-t border-purple-300">
+                  <button 
+                    onClick={() => setPitchedZoom(prev => Math.max(prev - 0.25, 0.5))}
+                    className={`px-2 py-1 text-xs ${pitchedImage ? 'bg-purple-200 text-purple-700 hover:bg-purple-300' : 'bg-gray-200 text-gray-500 cursor-not-allowed'} rounded`}
+                    disabled={!pitchedImage}
+                  >
+                    −
+                  </button>
+                  <span className="text-xs text-purple-700">{Math.round(pitchedZoom * 100)}%</span>
+                  <button 
+                    onClick={() => setPitchedZoom(prev => Math.min(prev + 0.25, 3))}
+                    className={`px-2 py-1 text-xs ${pitchedImage ? 'bg-purple-200 text-purple-700 hover:bg-purple-300' : 'bg-gray-200 text-gray-500 cursor-not-allowed'} rounded`}
+                    disabled={!pitchedImage}
+                  >
+                    +
+                  </button>
+                  <button 
+                    onClick={() => setPitchedZoom(1)}
+                    className={`px-2 py-1 text-xs ${pitchedImage ? 'bg-purple-200 text-purple-700 hover:bg-purple-300' : 'bg-gray-200 text-gray-500 cursor-not-allowed'} rounded`}
+                    disabled={!pitchedImage}
                   >
                     Reset
                   </button>
@@ -641,7 +890,7 @@ const App = () => {
 
           {/* Detections Table */}
           {showDetections && detections.length > 0 && (
-            <div className="border border-gray-200 rounded-lg overflow-hidden shadow-md">
+            <div className="border border-gray-200 rounded-lg overflow-hidden shadow-md mb-4">
               <div className="bg-gray-100 px-3 py-1 border-b flex justify-between items-center">
                 <h3 className="font-medium text-sm text-gray-700">
                   Detected Symbols ({detections.length})
@@ -737,6 +986,31 @@ const App = () => {
               </div>
             </div>
           )}
+          
+          {/* MusicXML Viewer Section (updated) */}
+          {showMusicXML && (
+            <div className="mb-4">
+              <div className="bg-orange-100 px-3 py-2 border border-orange-300 rounded-t">
+                <h3 className="font-medium text-sm text-orange-700">MusicXML Notation Preview</h3>
+              </div>
+              <div className="border border-orange-300 border-t-0 rounded-b">
+                <MusicXMLViewer 
+                  pitchData={pitchData} 
+                  baseName={pitchData ? processingHistory[processingHistory.length - 1]?.baseName : null} 
+                />
+              </div>
+            </div>
+          )}
+          {/* {showMusicXML && pitchData && (
+            <div className="mb-4">
+              <div className="bg-orange-100 px-3 py-2 border border-orange-300 rounded-t">
+                <h3 className="font-medium text-sm text-orange-700">MusicXML Notation Preview</h3>
+              </div>
+              <div className="border border-orange-300 border-t-0 rounded-b">
+                <MusicXMLViewer pitchData={pitchData} />
+              </div>
+            </div>
+          )} */}
         </div>
       )}
       

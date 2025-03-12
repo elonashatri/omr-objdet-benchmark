@@ -12,6 +12,7 @@ parser.add_argument('-t', '--time', default='4/4', help='Time signature (default
 parser.add_argument('-b', '--beamall', action='store_true', help='Treat all notes in beam groups as 32nd notes')
 args = parser.parse_args()
 
+
 # Parse time signature
 time_sig_parts = args.time.split('/')
 if len(time_sig_parts) != 2:
@@ -22,6 +23,15 @@ beat_unit = int(time_sig_parts[1])
 # Load the JSON data
 with open(args.input, 'r') as file:
     data = json.load(file)
+    
+# At the beginning of the script
+if "symbols" in data:
+    symbols = data['symbols']
+elif "detections" in data:
+    symbols = data['detections']
+else:
+    raise KeyError("No 'symbols' or 'detections' key found in input JSON")
+
 
 # Create a function to prettify XML output
 def prettify(elem):
@@ -31,6 +41,7 @@ def prettify(elem):
 
 if args.verbose:
     print("Extracting musical symbols from JSON...")
+    
 
 # Extract all relevant musical symbols
 symbols = data['symbols']

@@ -1,0 +1,101 @@
+{
+  "staff_systems": [
+    {
+      "id": 0,
+      "lines": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "detections": [
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 181.0,
+        "y1": 121.0,
+        "x2": 2314.0,
+        "y2": 123.0,
+        "width": 2133.0,
+        "height": 2.0,
+        "center_x": 1247.5,
+        "center_y": 122.0
+      },
+      "staff_system": 0,
+      "line_number": 0
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 55.0,
+        "y1": 140.0,
+        "x2": 2314.0,
+        "y2": 142.0,
+        "width": 2259.0,
+        "height": 2.0,
+        "center_x": 1184.5,
+        "center_y": 141.0
+      },
+      "staff_system": 0,
+      "line_number": 1
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 65.0,
+        "y1": 159.0,
+        "x2": 2314.0,
+        "y2": 161.0,
+        "width": 2249.0,
+        "height": 2.0,
+        "center_x": 1189.5,
+        "center_y": 160.0
+      },
+      "staff_system": 0,
+      "line_number": 2
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 181.0,
+        "y1": 178.0,
+        "x2": 2314.0,
+        "y2": 180.0,
+        "width": 2133.0,
+        "height": 2.0,
+        "center_x": 1247.5,
+        "center_y": 179.0
+      },
+      "staff_system": 0,
+      "line_number": 3
+    },
+    {
+      "class_id": 0,
+      "class_name": "staff_line",
+      "confidence": 1.0,
+      "bbox": {
+        "x1": 181.0,
+        "y1": 197.0,
+        "x2": 2314.0,
+        "y2": 199.0,
+        "width": 2133.0,
+        "height": 2.0,
+        "center_x": 1247.5,
+        "center_y": 198.0
+      },
+      "staff_system": 0,
+      "line_number": 4
+    }
+  ]
+}
