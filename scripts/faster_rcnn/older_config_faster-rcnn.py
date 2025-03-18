@@ -71,7 +71,7 @@ def parse_args():
                         help='Maximum size of the image to be rescaled before feeding it to the backbone')
     
     # Training parameters
-    parser.add_argument('--num_epochs', type=int, default=25,
+    parser.add_argument('--num_epochs', type=int, default=120,
                         help='Number of epochs to train for')
     parser.add_argument('--batch_size', type=int, default=1,  # Updated to match TF config
                         help='Batch size for training')
@@ -313,6 +313,201 @@ def train_one_epoch(model, optimizer, data_loader, device, epoch, print_freq, cl
     }
     
     return metrics
+
+
+from torchvision.utils import draw_bounding_boxes
+import torchvision.transforms.functional as TF
+from torchvision.ops import box_iou
+from torchmetrics.detection.mean_ap import MeanAveragePrecision
+
+def evaluate_map(model, data_loader, device, writer=None, epoch=0):
+    """
+    Calculate mean Average Precision (mAP) metrics using torchmetrics.
+    
+    Args:
+        model: The model to evaluate
+        data_loader: DataLoader for validation data
+        device: Device to run evaluation on
+        writer: TensorBoard SummaryWriter (optional)
+        epoch: Current epoch number (for logging)
+    """
+    model.eval()
+    
+    # Initialize metric
+    metric = MeanAveragePrecision(
+        box_format='xyxy',  # Format of the boxes
+        iou_thresholds=[0.5, 0.75],  # IoU thresholds for evaluation
+        rec_thresholds=None,  # Use all recall thresholds (101 values from 0 to 1)
+        max_detection_thresholds=[1, 10, 100],  # Evaluate with different max detection thresholds
+        class_metrics=True,  # Calculate per-class metrics
+        # bbox_area_ranges is set by default to (None, 'small', 'medium', 'large')
+    )
+    
+    # Create progress bar
+    pbar = tqdm(data_loader, desc="Calculating mAP")
+    
+    # Process validation data
+    with torch.no_grad():
+        for i, data in enumerate(pbar):
+            try:
+                # Prepare images and targets
+                images = []
+                targets = []
+                
+                # Process the data based on the observed structure
+                for batch_idx in range(len(data[0])):
+                    # Get the elements for this batch item
+                    image = data[0][batch_idx]
+                    boxes = data[1][batch_idx]
+                    labels = data[2][batch_idx]
+                    image_id = data[3][batch_idx]
+                    
+                    # Skip if any element is a string
+                    if isinstance(image, str) or isinstance(boxes, str) or isinstance(labels, str):
+                        continue
+                    
+                    # Convert to tensors if needed and move to device
+                    image_tensor = image.to(device) if isinstance(image, torch.Tensor) else torch.tensor(image).to(device)
+                    images.append(image_tensor)
+                    
+                    # Create target dict - with simplified validation
+                    try:
+                        box_tensor = boxes.to(device) if isinstance(boxes, torch.Tensor) else torch.tensor(boxes).to(device)
+                        label_tensor = labels.to(device) if isinstance(labels, torch.Tensor) else torch.tensor(labels).to(device)
+                        
+                        # Create target dict
+                        target = {
+                            'boxes': box_tensor,
+                            'labels': label_tensor,
+                        }
+                        targets.append(target)
+                    except Exception as e:
+                        print(f"Error processing target for batch item {batch_idx}: {e}")
+                        continue
+                
+                # Skip if no valid images
+                if len(images) == 0 or len(targets) == 0:
+                    continue
+                
+                # Get predictions from model
+                predictions = model(images)
+                
+                # Format predictions and targets for torchmetrics
+                preds_formatted = []
+                targets_formatted = []
+                
+                for pred, target in zip(predictions, targets):
+                    # Format prediction
+                    pred_dict = {
+                        'boxes': pred['boxes'].cpu(),
+                        'scores': pred['scores'].cpu(),
+                        'labels': pred['labels'].cpu(),
+                    }
+                    preds_formatted.append(pred_dict)
+                    
+                    # Format target
+                    target_dict = {
+                        'boxes': target['boxes'].cpu(),
+                        'labels': target['labels'].cpu(),
+                    }
+                    targets_formatted.append(target_dict)
+                
+                # Update metric
+                metric.update(preds_formatted, targets_formatted)
+                
+                # Visualize a few examples if TensorBoard writer is provided
+                if writer is not None and i == 0 and epoch % 5 == 0:
+                    visualize_predictions(images[:3], predictions[:3], targets[:3], writer, epoch)
+                
+            except Exception as e:
+                print(f"Error in mAP calculation batch {i}: {e}")
+                continue
+    
+    # Compute final metric
+    result = metric.compute()
+    
+    # Log detailed results
+    print("\nMean Average Precision Results:")
+    print(f"mAP: {result['map'].item():.4f}")
+    print(f"mAP@0.5: {result['map_50'].item():.4f}")
+    print(f"mAP@0.75: {result['map_75'].item():.4f}")
+    print(f"mAP small: {result['map_small'].item():.4f}")
+    print(f"mAP medium: {result['map_medium'].item():.4f}")
+    print(f"mAP large: {result['map_large'].item():.4f}")
+    
+    # Log to TensorBoard if writer is provided
+    if writer is not None:
+        writer.add_scalar('metrics/mAP', result['map'].item(), epoch)
+        writer.add_scalar('metrics/mAP@0.5', result['map_50'].item(), epoch)
+        writer.add_scalar('metrics/mAP@0.75', result['map_75'].item(), epoch)
+        writer.add_scalar('metrics/mAP_small', result['map_small'].item(), epoch)
+        writer.add_scalar('metrics/mAP_medium', result['map_medium'].item(), epoch)
+        writer.add_scalar('metrics/mAP_large', result['map_large'].item(), epoch)
+    
+    return {
+        'mAP': result['map'].item(),
+        'mAP@0.5': result['map_50'].item(),
+        'mAP@0.75': result['map_75'].item(),
+        'mAP_small': result['map_small'].item(),
+        'mAP_medium': result['map_medium'].item(),
+        'mAP_large': result['map_large'].item(),
+    }
+
+def visualize_predictions(images, predictions, targets, writer, epoch):
+    """
+    Visualize model predictions and ground truth boxes in TensorBoard.
+    
+    Args:
+        images: List of image tensors
+        predictions: List of prediction dictionaries
+        targets: List of target dictionaries
+        writer: TensorBoard SummaryWriter
+        epoch: Current epoch number
+    """
+    for i, (image, pred, target) in enumerate(zip(images, predictions, targets)):
+        # Convert image tensor to uint8 for visualization
+        image_np = image.cpu().permute(1, 2, 0).numpy()
+        image_np = (image_np * 255).astype(np.uint8)
+        image_tensor = torch.from_numpy(image_np).permute(2, 0, 1)
+        
+        # Draw ground truth boxes (green)
+        gt_boxes = target['boxes'].cpu()
+        gt_labels = target['labels'].cpu()
+        gt_box_labels = [f"GT: {label.item()}" for label in gt_labels]
+        image_with_gt = draw_bounding_boxes(
+            image_tensor, 
+            gt_boxes, 
+            gt_box_labels, 
+            colors="green",
+            width=2
+        )
+        
+        # Draw predicted boxes (red)
+        pred_boxes = pred['boxes'].cpu()
+        pred_scores = pred['scores'].cpu()
+        pred_labels = pred['labels'].cpu()
+        
+        # Filter predictions with score > 0.5
+        keep = pred_scores > 0.5
+        pred_boxes = pred_boxes[keep]
+        pred_scores = pred_scores[keep]
+        pred_labels = pred_labels[keep]
+        
+        pred_box_labels = [f"Pred: {label.item()} ({score:.2f})" for label, score in zip(pred_labels, pred_scores)]
+        
+        image_with_preds = draw_bounding_boxes(
+            image_tensor, 
+            pred_boxes, 
+            pred_box_labels, 
+            colors="red",
+            width=2
+        )
+        
+        # Add to TensorBoard
+        writer.add_image(f"detection/gt_{i}", image_with_gt, epoch)
+        writer.add_image(f"detection/pred_{i}", image_with_preds, epoch)
+        
+        
 def evaluate(model, data_loader, device):
     model.eval()
     
@@ -1100,6 +1295,7 @@ def main():
     # Training loop
     print("Starting training")
 
+
     for epoch in range(start_epoch, args.num_epochs):
         # Train for one epoch
         epoch_start_time = time.time()
@@ -1130,8 +1326,20 @@ def main():
         # Evaluate on validation set (every eval_freq epochs)
         if epoch % args.eval_freq == 0 or epoch == args.num_epochs - 1:
             try:
-                # Run evaluate function
+                # Run evaluate function for losses
                 val_metrics = evaluate(model, val_loader, device)
+                
+                # Run mAP evaluation less frequently (every 5 validation cycles or final epoch)
+                if epoch % (args.eval_freq * 5) == 0 or epoch == args.num_epochs - 1:
+                    print("Calculating mAP metrics...")
+                    map_metrics = evaluate_map(model, val_loader, device, writer, epoch)
+                    # Combine metrics
+                    val_metrics.update(map_metrics)
+                    
+                    # Print mAP results
+                    print("Mean Average Precision Results:")
+                    for k, v in map_metrics.items():
+                        print(f"  {k}: {v:.4f}")
                 
                 # Log validation metrics to TensorBoard
                 log_metrics(writer, val_metrics, global_step, prefix="val")
@@ -1159,6 +1367,7 @@ def main():
                     print(f"  New best model! Val Loss: {best_val_loss:.4f}")
             except Exception as e:
                 print(f"Error during validation: {e}")
+                traceback.print_exc()  # Print the full stack trace for debugging
                 val_metrics = {'val_loss': float('nan')}
                 is_best = False
         else:
