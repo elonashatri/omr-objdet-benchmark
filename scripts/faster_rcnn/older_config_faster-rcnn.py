@@ -464,10 +464,20 @@ def visualize_predictions(images, predictions, targets, writer, epoch):
         writer: TensorBoard SummaryWriter
         epoch: Current epoch number
     """
+    # Standard ImageNet normalization parameters
+    mean = torch.tensor([0.485, 0.456, 0.406]).view(3, 1, 1)
+    std = torch.tensor([0.229, 0.224, 0.225]).view(3, 1, 1)
+    
     for i, (image, pred, target) in enumerate(zip(images, predictions, targets)):
-        # Convert image tensor to uint8 for visualization
-        image_np = image.cpu().permute(1, 2, 0).numpy()
-        image_np = (image_np * 255).astype(np.uint8)
+        # Denormalize the image tensor to restore natural colors
+        image_denorm = image.cpu().clone()
+        image_denorm = image_denorm * std + mean  # Reverse the normalization
+        
+        # Clamp to ensure values are in valid range
+        image_denorm = torch.clamp(image_denorm, 0, 1)
+        
+        # Convert to uint8 for visualization
+        image_np = (image_denorm.permute(1, 2, 0).numpy() * 255).astype(np.uint8)
         image_tensor = torch.from_numpy(image_np).permute(2, 0, 1)
         
         # Draw ground truth boxes (green)
@@ -506,7 +516,6 @@ def visualize_predictions(images, predictions, targets, writer, epoch):
         # Add to TensorBoard
         writer.add_image(f"detection/gt_{i}", image_with_gt, epoch)
         writer.add_image(f"detection/pred_{i}", image_with_preds, epoch)
-        
         
 def evaluate(model, data_loader, device):
     model.eval()
