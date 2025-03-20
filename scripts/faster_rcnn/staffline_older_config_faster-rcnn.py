@@ -54,14 +54,14 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Train Faster R-CNN for OMR/MUSCIMA')
     # Dataset parameters
     parser.add_argument('--data_dir', type=str, 
-                        default='/homes/es314/omr-objdet-benchmark/data/faster_rcnn_prepared_dataset',
+                        default='/homes/es314/omr-objdet-benchmark/data/staff_faster_rcnn_prepared_dataset',
                         help='Directory containing prepared dataset')
-    parser.add_argument('--output_dir', type=str, default='/import/c4dm-05/elona/faster-rcnn-models-march-2025',
+    parser.add_argument('--output_dir', type=str, default='./staffline_faster_rcnn_omr',
                         help='Directory to save model checkpoints')
     parser.add_argument('--test_images_dir', type=str, default='',
                         help='Directory containing test images for inference during training')
     # Add new argument for data subset
-    parser.add_argument('--data_subset', type=float, default=1.0,
+    parser.add_argument('--data_subset', type=float, default=0.5,
                       help='Fraction of data to use (e.g., 0.1 for 10%)')
     
     # Image parameters - updated to align with TF config
@@ -107,7 +107,7 @@ def parse_args():
                         help='Evaluation frequency in epochs')
     parser.add_argument('--save_freq', type=int, default=1,
                         help='Checkpoint saving frequency in epochs')
-    parser.add_argument('--log_dir', type=str, default='./logs',
+    parser.add_argument('--log_dir', type=str, default='./staffline-half-logs',
                         help='Directory for TensorBoard logs')
     parser.add_argument('--resume', type=str, default='',
                         help='Resume from checkpoint')
@@ -117,7 +117,7 @@ def parse_args():
                         help='Number of visualizations during evaluation')
     
     # Model parameters
-    parser.add_argument('--num_classes', type=int, default=217,  # Updated from TF config
+    parser.add_argument('--num_classes', type=int, default=218,  # Updated from TF config
                         help='Number of classes to detect')
     parser.add_argument('--backbone', type=str, default='resnet50',
                         choices=['resnet50', 'resnet101', 'inception_resnet_v2'],
@@ -578,8 +578,8 @@ def visualize_predictions(images, predictions, targets, writer, epoch, class_nam
     print("\nStarting high-quality visualization with adjusted boxes...")
     
     # Path to validation images directory
-    images_dir = '/homes/es314/omr-objdet-benchmark/data/faster_rcnn_prepared_dataset/val/images'
-    annotations_file = '/homes/es314/omr-objdet-benchmark/data/faster_rcnn_prepared_dataset/val/annotations.json'
+    images_dir = '/homes/es314/omr-objdet-benchmark/data/staff_faster_rcnn_prepared_dataset/val/images'
+    annotations_file = '/homes/es314/omr-objdet-benchmark/data/staff_faster_rcnn_prepared_dataset/val/annotations.json'
     
     # Define colors for different classes (RGB format for matplotlib)
     colors = [

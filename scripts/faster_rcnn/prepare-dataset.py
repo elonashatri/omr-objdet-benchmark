@@ -43,14 +43,14 @@ def parse_xml_annotation(xml_file):
         
         # Find all Node elements
         for node in root.findall('.//Node'):
-            # Skip staff lines (we may not want to detect these as objects)
+
             class_name = node.find('ClassName')
             if class_name is None or class_name.text is None:
                 continue
                 
             # Skip staff lines if needed
-            if class_name.text.startswith('kStaffLine'):
-                continue
+            # if class_name.text.startswith('kStaffLine'):
+            #     continue
                 
             # Get bounding box coordinates
             top = node.find('Top')

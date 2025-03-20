@@ -365,7 +365,7 @@ class Normalize:
 # Example usage
 if __name__ == "__main__":
     # Example usage of the dataset
-    dataset_path = "/homes/es314/omr-objdet-benchmark/data/prepared_dataset/train"
+    # dataset_path = "/homes/es314/omr-objdet-benchmark/data/staff_faster_rcnn_prepared_dataset/train"
     dataset = OMRDataset(
         root_dir=dataset_path,
         transforms=get_transform(train=True)

@@ -726,7 +726,34 @@ def process_pipeline_results(results_dir, original_image_path):
 #             "details": str(e),
 #             "traceback": traceback.format_exc()
 #         }), 500
-        
+       
+@app.route('/api/list_musicxml_files', methods=['GET'])
+def list_musicxml_files():
+    files_dir = "/homes/es314/musicxml_files"
+    files = []
+    if os.path.exists(files_dir):
+        for file in os.listdir(files_dir):
+            if file.endswith(".musicxml"):
+                file_path = os.path.join(files_dir, file)
+                files.append({
+                    "name": file,
+                    "path": file_path,
+                    "date": os.path.getmtime(file_path),
+                    "size": os.path.getsize(file_path)
+                })
+    
+    # Sort by date, newest first
+    files.sort(key=lambda x: x["date"], reverse=True)
+    return jsonify({"files": files})
+
+@app.route('/api/download_musicxml/<base_name>', methods=['GET'])
+def download_musicxml(base_name):
+    file_path = f"/homes/es314/musicxml_files/{base_name}_output.musicxml"
+    if os.path.exists(file_path):
+        return send_file(file_path, as_attachment=True, download_name=f"{base_name}.musicxml")
+    else:
+        return jsonify({"error": "File not found"}), 404
+ 
 @app.route('/convert_to_musicxml', methods=['POST'])
 def convert_to_musicxml():
     try:

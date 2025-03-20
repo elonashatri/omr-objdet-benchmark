@@ -115,7 +115,7 @@ python scripts/detect_notation.py \
 
 
 
-tensorboard --logdir /homes/es314/runs
+tensorboard --logdir /homes/es314/omr-objderuns
 
 
 
@@ -126,13 +126,13 @@ after runnning inference we have two files with bounding boxes, csv and json. th
 python /homes/es314/omr-objdet-benchmark/scripts/encoding/link_obj.py --detection-file /homes/es314/omr-objdet-benchmark/results/detections/Accidentals-004_detections.json --output-dir /homes/es314/omr-objdet-benchmark/scripts/encoding
 
 the updated one with a full pipeline:
-python /homes/es314/omr-objdet-benchmark/scripts/encoding/complete_pipeline.py --image /homes/es314/omr-objdet-benchmark/scripts/encoding/stave-only.png --model /homes/es314/runs/staffline_extreme/weights/best.pt --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/complete_pipeline.py --image /homes/es314/omr-objdet-benchmark/scripts/encoding/results/test1.png --model /homes/es314/omr-objdet-benchmark/runs/staffline_extreme/weights/best.pt --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json
 
 
 to visualise
-python /homes/es314/omr-objdet-benchmark/scripts/encoding/visualisation.py --image /homes/es314/omr-objdet-benchmark/scripts/encoding/results/Accidentals-004.png --data /homes/es314/omr-objdet-benchmark/scripts/encoding/results/pitch_identification_linked_data.json
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/visualisation.py --image /homes/es314/omr-objdet-benchmark/scripts/encoding/results/test1.png --data /homes/es314/omr-objdet-benchmark/scripts/encoding/results/test_1pitch_identification_linked_data.json
 
-
+/homes/es314/omr-objdet-benchmark/scripts/encoding/results/test1.png
 
 and finally to run the json to midi converter:
 python /homes/es314/omr-objdet-benchmark/scripts/encoding/to_midi/json_to_midi_converter.py --input /homes/es314/omr-objdet-benchmark/scripts/encoding/results/pitched_data/demisemiquavers_simple-085_pitched.json --output /homes/es314/omr-objdet-benchmark/scripts/encoding/results/pitched_data/demisemiquavers_simple-085_pitched.mid
