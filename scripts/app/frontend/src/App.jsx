@@ -4,19 +4,6 @@ import MusicXMLViewer from './components/MusicXMLViewer';
 
 // Mock model data (as in your code)
 const MOCK_MODEL_DATA = {
-  // "train7": {
-  //   "imgsz": 1280,
-  //   "epochs": 150,
-  //   "batch": 4,
-  //   "patience": 100,
-  //   "mosaic": 0.3,
-  //   "box": 10.0,
-  //   "lr0": 0.01,
-  //   "pretrained": true,
-  //   "optimizer": "auto",
-  //   "data": "staffline_enhanced_dataset",
-  //   "model": "yolov8x.pt"
-  // },
   "train8": {
     "imgsz": 1024,
     "epochs": 120,
@@ -27,7 +14,7 @@ const MOCK_MODEL_DATA = {
     "lr0": 0.005,
     "pretrained": true,
     "optimizer": "AdamW",
-    "data": "deepscores_dataset",
+    "data": "doremiv2",
     "model": "yolov8l.pt"
   },
   "train11": {
@@ -40,22 +27,74 @@ const MOCK_MODEL_DATA = {
     "lr0": 0.001,
     "pretrained": true,
     "optimizer": "SGD",
-    "data": "muscima_dataset",
+    "data": "doremiv2",
     "model": "yolov8m.pt"
   },
-  // "train13": {
-  //   "imgsz": 960,
-  //   "epochs": 200,
-  //   "batch": 32,
-  //   "patience": 75,
-  //   "mosaic": 0.6,
-  //   "box": 9.0,
-  //   "lr0": 0.01,
-  //   "pretrained": true,
-  //   "optimizer": "auto",
-  //   "data": "combined_dataset",
-  //   "model": "yolov8n.pt"
-  // },
+  "doremiv1": {
+    "imgsz": 1280,
+    "epochs": 100,
+    "batch": 16,
+    "patience": 50,
+    "mosaic": 0.4,
+    "box": 8.0,
+    "lr0": 0.001,
+    "pretrained": true,
+    "optimizer": "SGD",
+    "data": "doremiv1 v3",
+    "model": "yolov8m.pt"
+  },
+  "train-202-24classes-yolo-9654-data-splits": {
+    "imgsz": 1280,
+    "epochs": 100,
+    "batch": 16,
+    "patience": 50,
+    "mosaic": 0.4,
+    "box": 8.0,
+    "lr0": 0.001,
+    "pretrained": true,
+    "optimizer": "SGD",
+    "data": "doremiv2",
+    "model": "yolov8m.pt"
+  },
+  "train3-yolo-9654-data-splits": {
+    "imgsz": 1280,
+    "epochs": 100,
+    "batch": 16,
+    "patience": 50,
+    "mosaic": 0.4,
+    "box": 8.0,
+    "lr0": 0.001,
+    "pretrained": true,
+    "optimizer": "SGD",
+    "data": "doremiv2",
+    "model": "yolov8m.pt"
+  },  
+  "experiment-1-staffline-enhacment-april": {
+    "imgsz": 1280,
+    "epochs": 100,
+    "batch": 16,
+    "patience": 50,
+    "mosaic": 0.4,
+    "box": 8.0,
+    "lr0": 0.001,
+    "pretrained": true,
+    "optimizer": "SGD",
+    "data": "doremiv2",
+    "model": "yolov8m.pt"
+  },
+  "phase12": {
+    "imgsz": 1280,
+    "epochs": 130,
+    "batch": 12,
+    "patience": 70,
+    "mosaic": 0.45,
+    "box": 8.5,
+    "lr0": 0.002,
+    "pretrained": true,
+    "optimizer": "Adam",
+    "data": "combined_dataset",
+    "model": "yolov8l.pt"
+  },
   "staffline_extreme": {
     "imgsz": 1280,
     "epochs": 150,
@@ -68,6 +107,58 @@ const MOCK_MODEL_DATA = {
     "optimizer": "auto",
     "data": "staffline_enhanced_dataset",
     "model": "yolov8x.pt"
+  },
+  "faster-rcnn-full-no-staff": {
+    "imgsz": 1024,
+    "epochs": 100,
+    "batch": 8,
+    "patience": 50,
+    "mosaic": 0.0,
+    "box": 1.0,
+    "lr0": 0.005,
+    "pretrained": true,
+    "optimizer": "SGD",
+    "data": "full_dataset_no_staff",
+    "model": "faster-rcnn"
+  },
+  "faster-rcnn-full-with-staff": {
+    "imgsz": 1024,
+    "epochs": 100,
+    "batch": 8,
+    "patience": 50,
+    "mosaic": 0.0,
+    "box": 1.0,
+    "lr0": 0.005,
+    "pretrained": true,
+    "optimizer": "SGD",
+    "data": "full_dataset_with_staff",
+    "model": "faster-rcnn"
+  },
+  "faster-rcnn-half-older_config": {
+    "imgsz": 800,
+    "epochs": 80,
+    "batch": 4,
+    "patience": 40,
+    "mosaic": 0.0,
+    "box": 1.0,
+    "lr0": 0.001,
+    "pretrained": true,
+    "optimizer": "SGD",
+    "data": "half_dataset",
+    "model": "faster-rcnn"
+  },
+  "faster-rcnn-staff-half-older_config": {
+    "imgsz": 800,
+    "epochs": 80,
+    "batch": 4,
+    "patience": 40,
+    "mosaic": 0.0,
+    "box": 1.0,
+    "lr0": 0.001,
+    "pretrained": true,
+    "optimizer": "SGD",
+    "data": "staff_half_dataset",
+    "model": "faster-rcnn"
   }
 };
 

@@ -23,11 +23,19 @@ os.makedirs(RESULTS_FOLDER, exist_ok=True)
 
 # Available models with their paths
 AVAILABLE_MODELS = {
-    # 'train7': '/homes/es314/omr-objdet-benchmark/runs/detect/train7/weights/best.pt',
-    'train8': '/homes/es314/omr-objdet-benchmark/runs/detect/train8/weights/best.pt',
-    'train11': '/homes/es314/omr-objdet-benchmark/runs/detect/train11/weights/best.pt',
-    # 'train13': '/homes/es314/omr-objdet-benchmark/runs/detect/train13/weights/best.pt',
-    'staffline_extreme': '/homes/es314/omr-objdet-benchmark/runs/staffline_extreme/weights/best.pt'
+    'train8': '/import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/detect/train8/weights/best.pt',
+    'train11': '/import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/detect/train11/weights/best.pt',
+    'phase12': '/import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/phase12/weights/best.pt',
+    'staffline_extreme': '/import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/staffline_extreme/weights/best.pt',
+    'faster-rcnn-full-no-staff': '/import/c4dm-05/elona/faster-rcnn-models-march-2025/full-no-staff-output/best.pt',
+    'faster-rcnn-full-with-staff': '/import/c4dm-05/elona/faster-rcnn-models-march-2025/full-with-staff-output/best.pt',
+    'faster-rcnn-half-older_config': '/import/c4dm-05/elona/faster-rcnn-models-march-2025/half-older_config_faster_rcnn_omr_output/best.pt',
+    'faster-rcnn-staff-half-older_config': '/import/c4dm-05/elona/faster-rcnn-models-march-2025/staff-half-older_config_faster_rcnn_omr_output/best.pt',
+    'doremiv1': '/homes/es314/runs/detect/train2/weights/best.pt',
+    'train-202-24classes-yolo-9654-data-splits': '/import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/train-202-24classes-yolo-9654-data-splits/weights/best.pt',
+    'train3-yolo-9654-data-splits': '/import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/train3-yolo-9654-data-splits/weights/best.pt',
+    'experiment-1-staffline-enhacment-april': '/import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/experiment-1-staffline-enhacment-april/weights/best.pt'
+    
 }
 
 # Paths to scripts and configurations
@@ -96,17 +104,28 @@ def find_pitched_json(base_name):
     return None
 
 
+
+
 @app.route('/available_models', methods=['GET'])
 def get_available_models():
     """
     Endpoint to retrieve list of available models
     """
     models = [
-        # 'train7',
         'train8', 
         'train11', 
-        # 'train13', 
-        'staffline_extreme'
+        'phase12', 
+        'staffline_extreme',
+        'faster-rcnn-full-no-staff',
+        'faster-rcnn-full-with-staff',
+        'faster-rcnn-half-older_config',
+        'faster-rcnn-staff-half-older_config',
+        'doremiv1',
+        'train-202-24classes-yolo-9654-data-splits',
+        'train3-yolo-9654-data-splits',
+        'experiment-1-staffline-enhacment-april'
+    
+        
     ]
     return jsonify(models)
 
@@ -177,9 +196,63 @@ def process_image():
             "available_models": list(AVAILABLE_MODELS.keys())
         }), 400
     
+    # Select the appropriate class mapping file based on model type
+    model_path = AVAILABLE_MODELS[selected_model]
+    
+    # Determine if this is a Faster R-CNN model with staff lines
+    is_faster_rcnn_staff = any([
+        "/full-with-staff-output/" in model_path,
+        "/staff-half-older_config_faster_rcnn_omr_output/" in model_path
+    ])
+    
+    # Determine if this is a Faster R-CNN model without staff lines
+    is_faster_rcnn_no_staff = any([
+        "/full-no-staff-output/" in model_path,
+        "/half-older_config_faster_rcnn_omr_output/" in model_path
+    ])
+    
+    # Determine if this is a doremi v1 model
+    is_doremiv1 = any([
+        "/homes/es314/runs/detect/train2" in model_path
+    ])
+    
+    # Determine if this is a 202 class model
+    is_202class = any([
+        "/import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/experiment-1-staffline-enhacment-april" in model_path,
+        "/import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/train3-yolo-9654-data-splits" in model_path,
+    ])
+    
+    # Determine if this is a 202 minus classes with freq < 24 class model
+    is_202_24class = any([
+        "/import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/train-202-24classes-yolo-9654-data-splits" in model_path
+    ])
+    
+    
+    
+    # Choose the correct mapping file
+    if is_faster_rcnn_staff:
+        class_mapping_file = "/homes/es314/omr-objdet-benchmark/data/staff_faster_rcnn_prepared_dataset/mapping.txt"
+        print(f"Using Faster R-CNN staff mapping: {class_mapping_file}")
+    elif is_faster_rcnn_no_staff:
+        class_mapping_file = "/homes/es314/omr-objdet-benchmark/data/faster_rcnn_prepared_dataset/mapping.txt"
+        print(f"Using Faster R-CNN no-staff mapping: {class_mapping_file}")
+    elif is_doremiv1:
+        class_mapping_file = "/homes/es314/DOREMI_version_2/DOREMI_v3/doremiv1-94-class_map.json"
+        print(f"Using Yolo on DoReMi_v1: {class_mapping_file}")
+    elif is_202class:
+        class_mapping_file = "/homes/es314/omr-objdet-benchmark/data/class_mapping.json",
+        print(f"202class doremi v2: {class_mapping_file}")
+    elif is_202_24class:
+        class_mapping_file = "/homes/es314/omr-objdet-benchmark/data/202-24classes-yolo-9654-data-splits/filtered_class_mapping.json",
+        print(f"202-24class doremi v2: {class_mapping_file}")
+    else:
+        # Use the default YOLO mapping
+        class_mapping_file = CLASS_MAPPING_FILE
+        print(f"Using YOLO mapping: {class_mapping_file}")
+    
     # Verify that class mapping file exists
-    if not os.path.exists(CLASS_MAPPING_FILE):
-        return jsonify({"error": f"Class mapping file not found: {CLASS_MAPPING_FILE}"}), 500
+    if not os.path.exists(class_mapping_file):
+        return jsonify({"error": f"Class mapping file not found: {class_mapping_file}"}), 500
     
     # Generate unique ID and filename
     file_id = str(uuid.uuid4())
@@ -199,9 +272,6 @@ def process_image():
         output_dir = os.path.join(RESULTS_FOLDER, base_name)
         os.makedirs(output_dir, exist_ok=True)
         
-        # Get the path for the selected model
-        model_path = AVAILABLE_MODELS[selected_model]
-        
         # Check if model file exists
         if not os.path.exists(model_path):
             return jsonify({"error": f"Model file not found: {model_path}"}), 500
@@ -216,7 +286,7 @@ def process_image():
             PIPELINE_SCRIPT, 
             '--image', filepath,
             '--model', model_path,
-            '--class_mapping', CLASS_MAPPING_FILE,
+            '--class_mapping', class_mapping_file,  # Use the selected mapping file
             '--output_dir', output_dir,
             # '--debug'  # Always run in debug mode for better error reporting
         ]
@@ -264,7 +334,6 @@ def process_image():
                 os.remove(filepath)
         except Exception as e:
             print(f"Error removing temporary file: {str(e)}")
-            
             
 def process_pipeline_results(results_dir, original_image_path):
     """
