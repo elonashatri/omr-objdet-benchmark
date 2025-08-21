@@ -1096,11 +1096,11 @@ def process_music_score(detection_file, staff_lines_file, output_xml=None, outpu
 
 # Example usage
 if __name__ == "__main__":
-    detection_file = "/homes/es314/omr-objdet-benchmark/scripts/encoding/results/object_detections/v2-accidentals-004_detections.csv"
-    staff_lines_file = "/homes/es314/omr-objdet-benchmark/scripts/encoding/results/staff_lines/v2-accidentals-004_staff_lines.json"
+    detection_file = "/homes/es314/omr-objdet-benchmark/scripts/encoding/clean_full_pipeline/results/object_detections/beam_groups_8_semiquavers-001_detections.csv"
+    staff_lines_file = "//homes/es314/omr-objdet-benchmark/scripts/encoding/clean_full_pipeline/results/staff_lines/beam_groups_8_semiquavers-001_staff_lines.json"
     
-    output_xml = "v2-accidentals-004stave_only_score.musicxml"
-    output_image = "v2-accidentals-004stave_only_score_visualization.png"
+    output_xml = "beam_groups_8_semiquavers-001.musicxml"
+    output_image = "beam_groups_8_semiquavers-001_detections_score_visualization.png"
     
     musicxml = process_music_score(detection_file, staff_lines_file, output_xml, output_image)
     print(f"MusicXML generated and saved to {output_xml}")

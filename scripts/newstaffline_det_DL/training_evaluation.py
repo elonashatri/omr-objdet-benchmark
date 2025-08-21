@@ -163,19 +163,8 @@ def train_model(model, train_loader, val_loader, device,
     return history
 
 
+
 def evaluate_model(model, test_loader, device, criterion=None):
-    """
-    Evaluate the trained model.
-    
-    Args:
-        model (nn.Module): The model to evaluate
-        test_loader (DataLoader): Test data loader
-        device (torch.device): Device to use for evaluation
-        criterion: Loss function (optional)
-        
-    Returns:
-        dict: Evaluation metrics
-    """
     model.eval()
     
     # Initialize metrics
@@ -183,18 +172,34 @@ def evaluate_model(model, test_loader, device, criterion=None):
         'loss': 0.0,
         'dice': [],
         'precision': [],
-        'recall': []
+        'recall': [],
+        'iou': [],
+        'runtime': []  # Add runtime metric
     }
+    
+    total_samples = 0
+    start_time = time.time()
     
     with torch.no_grad():
         with tqdm(test_loader, desc="Testing") as t:
             for images, masks in t:
+                batch_size = images.size(0)
+                total_samples += batch_size
+                
                 # Move data to device
                 images = images.to(device)
                 masks = masks.to(device)
                 
+                # Measure inference time for this batch
+                batch_start = time.time()
+                
                 # Forward pass
                 outputs = model(images)
+                
+                batch_end = time.time()
+                batch_time = batch_end - batch_start
+                inference_time_per_image = batch_time / batch_size
+                metrics['runtime'].append(inference_time_per_image)
                 
                 # Calculate loss if criterion provided
                 if criterion:
@@ -202,7 +207,7 @@ def evaluate_model(model, test_loader, device, criterion=None):
                     metrics['loss'] += loss.item()
                 
                 # Calculate metrics
-                pred = torch.sigmoid(outputs) > 0.5
+                pred = torch.sigmoid(outputs) > 0.3
                 
                 # Compute metrics for each item in batch
                 for i in range(pred.size(0)):
@@ -219,9 +224,13 @@ def evaluate_model(model, test_loader, device, criterion=None):
                     recall = tp / (tp + fn + 1e-8)
                     dice = 2 * tp / (2 * tp + fp + fn + 1e-8)
                     
+                    # Calculate IoU (Intersection over Union)
+                    iou = tp / (tp + fp + fn + 1e-8)
+                    
                     metrics['precision'].append(precision)
                     metrics['recall'].append(recall)
                     metrics['dice'].append(dice)
+                    metrics['iou'].append(iou)  # Store IoU values
     
     # Average metrics
     if criterion:
@@ -229,17 +238,23 @@ def evaluate_model(model, test_loader, device, criterion=None):
     metrics['avg_precision'] = np.mean(metrics['precision'])
     metrics['avg_recall'] = np.mean(metrics['recall'])
     metrics['avg_dice'] = np.mean(metrics['dice'])
+    metrics['avg_iou'] = np.mean(metrics['iou'])  # Calculate average IoU
+    metrics['avg_runtime_per_image'] = np.mean(metrics['runtime'])
+    metrics['total_evaluation_time'] = time.time() - start_time
+    metrics['fps'] = total_samples / metrics['total_evaluation_time']
     
     # Print results
     print(f"Test Results:")
     if criterion:
         print(f"Loss: {metrics['loss']:.4f}")
     print(f"Dice Score: {metrics['avg_dice']:.4f}")
+    print(f"IoU Score: {metrics['avg_iou']:.4f}")  # Print IoU score
     print(f"Precision: {metrics['avg_precision']:.4f}")
     print(f"Recall: {metrics['avg_recall']:.4f}")
+    print(f"Average runtime per image: {metrics['avg_runtime_per_image']*1000:.2f} ms")
+    print(f"Frames per second: {metrics['fps']:.2f}")
     
     return metrics
-
 
 def train_staff_line_model(img_dir, mask_dir=None, xml_dir=None, model_dir="models", 
                           log_dir="logs", batch_size=8, num_epochs=50, lr=0.001, 
@@ -380,39 +395,23 @@ def train_staff_line_model(img_dir, mask_dir=None, xml_dir=None, model_dir="mode
 
 
 def evaluate_staff_line_model(model_path, img_dir, mask_dir=None, xml_dir=None, 
-                             batch_size=8, device_id=0, num_workers=4,
-                             target_size=(512, 512), subset_fraction=1.0):
-    """
-    Evaluate a trained staff line detection model.
-    
-    Args:
-        model_path (str): Path to model weights
-        img_dir (str): Directory with test images
-        mask_dir (str, optional): Directory with ground truth masks
-        xml_dir (str, optional): Directory with XML annotations
-        batch_size (int): Batch size for evaluation
-        device_id (int): GPU ID
-        num_workers (int): Number of data loading workers
-        target_size (tuple): Target size for resizing images (height, width)
-        subset_fraction (float): Fraction of dataset to use (0.0-1.0)
-        
-    Returns:
-        dict: Evaluation metrics
-    """
+                            batch_size=8, device_id=0, num_workers=4,
+                            target_size=(512, 512), subset_fraction=1.0):
     # Set device
     device = torch.device(f'cuda:{device_id}' if torch.cuda.is_available() else 'cpu')
     print(f"Using device: {device}")
     
-    # Get test dataloader
-    test_loader, _ = get_dataloader(
+    # Get test dataloader - use validation set for evaluation
+    _, test_loader = get_dataloader(
         img_dir, mask_dir, xml_dir, 
         batch_size=batch_size,
-        train_val_split=0.0,  # Use all data for testing
+        train_val_split=0.8,  # This will put 20% in validation set which we'll use for testing
         num_workers=num_workers,
         augment=False,
         target_size=target_size,
         subset_fraction=subset_fraction
     )
+    
     
     # Initialize model
     model = StaffLineDetectionNet(n_channels=1, n_classes=1)

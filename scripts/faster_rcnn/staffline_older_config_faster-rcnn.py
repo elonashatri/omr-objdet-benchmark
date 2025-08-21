@@ -73,7 +73,7 @@ def parse_args():
                         help='Maximum size of the image to be rescaled before feeding it to the backbone')
     
     # Training parameters
-    parser.add_argument('--num_epochs', type=int, default=120,
+    parser.add_argument('--num_epochs', type=int, default=400,
                         help='Number of epochs to train for')
     parser.add_argument('--batch_size', type=int, default=1,  # Updated to match TF config
                         help='Batch size for training')

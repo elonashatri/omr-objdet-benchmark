@@ -272,3 +272,13 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+    
+    
+    
+# python /homes/es314/omr-objdet-benchmark/scripts/newstaffline_det_DL/pipeline.py \
+#   --image_dir /homes/es314/omr-objdet-benchmark/scripts/newstaffline_det_DL/staffline_det_DL/test_data/images \
+#   --xml_dir /homes/es314/omr-objdet-benchmark/scripts/newstaffline_det_DL/staffline_det_DL/test_data/annotations \
+#   --output_dir /homes/es314/omr-objdet-benchmark/scripts/newstaffline_det_DL/staff_line_output \
+#   --weights /homes/es314/omr-objdet-benchmark/scripts/newstaffline_det_DL/staff_line_output/models/best_model.pth \
+#   --skip_preprocess \
+#   --skip_train

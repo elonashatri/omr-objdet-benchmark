@@ -99,7 +99,7 @@ def refine_staffline_detections(image_path, detections, staffline_class_id, staf
             # Create detection dictionary
             refined_stafflines.append({
                 'class': staffline_class_id,
-                'confidence': 0.95,  # High confidence for refined detections
+                'confidence': 0.25,  # High confidence for refined detections
                 'x': center_x,
                 'y': center_y,
                 'width': norm_width,
@@ -133,14 +133,34 @@ def process_model_predictions(model_path, image_dir, output_path, class_mapping,
     # Invert class mapping (name -> id)
     name_to_idx = {name: idx for idx, name in class_map.items()}
     
-    # Get staffline class ID
+    # # Get staffline class ID
+    # staffline_class_id = None
+    # for name, idx in name_to_idx.items():
+    #     if staffline_class_name.lower() in name.lower():
+    #         staffline_class_id = int(idx) - 1  # Convert to 0-indexed for YOLO
+    #         print(f"Found staffline class: {name} (ID: {staffline_class_id})")
+    #         break
+        # Determine if class_map is name → id or id → name
+    example_key = list(class_map.keys())[0]
+    if isinstance(example_key, str):
+        # name → id format
+        name_to_idx = {name: idx for name, idx in class_map.items()}
+    else:
+        # id → name format, flip it
+        name_to_idx = {name: idx for idx, name in class_map.items()}
+
+    # Find staffline class ID
     staffline_class_id = None
     for name, idx in name_to_idx.items():
-        if staffline_class_name.lower() in name.lower():
+        if isinstance(name, str) and staffline_class_name.lower() in name.lower():
             staffline_class_id = int(idx) - 1  # Convert to 0-indexed for YOLO
-            print(f"Found staffline class: {name} (ID: {staffline_class_id})")
+            print(f"Found staffline class: {name} (YOLO ID: {staffline_class_id})")
             break
-    
+
+    if staffline_class_id is None:
+        print(f"Warning: Staffline class '{staffline_class_name}' not found in class mapping.")
+        return
+
     if staffline_class_id is None:
         print(f"Warning: Could not find staffline class '{staffline_class_name}' in class mapping")
         return
@@ -236,7 +256,8 @@ def process_model_predictions(model_path, image_dir, output_path, class_mapping,
             # Draw rectangle
             if cls == staffline_class_id:
                 # Use green for stafflines
-                color = (0, 255, 0)
+                color = (0, 0, 255)
+
             else:
                 # Use blue for other detections
                 color = (255, 0, 0)
@@ -269,7 +290,7 @@ def main():
     parser.add_argument("--output", type=str, required=True, help="Output directory for results")
     parser.add_argument("--class-mapping", type=str, required=True, help="Path to class mapping JSON file")
     parser.add_argument("--staffline-class", type=str, default="kStaffLine", help="Name of staffline class")
-    parser.add_argument("--conf", type=float, default=0.25, help="Confidence threshold for detections")
+    parser.add_argument("--conf", type=float, default=0.16, help="Confidence threshold for detections")
     
     args = parser.parse_args()
     
@@ -285,3 +306,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+    

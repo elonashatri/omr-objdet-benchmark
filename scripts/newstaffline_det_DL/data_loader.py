@@ -374,15 +374,19 @@ def get_dataloader(img_dir, mask_dir=None, xml_dir=None, batch_size=8,
         val_dataset.img_filenames = val_files
     
     # Create data loaders
-    train_loader = DataLoader(
-        train_dataset, 
-        batch_size=batch_size, 
-        shuffle=True, 
-        num_workers=num_workers,
-        pin_memory=True
+    train_loader = None
+    if len(train_files) > 0:
+        train_loader = DataLoader(
+            train_dataset, 
+            batch_size=batch_size, 
+            shuffle=True, 
+            num_workers=num_workers,
+            pin_memory=True
     )
     
-    val_loader = DataLoader(
+    val_loader = None
+    if len(val_files) > 0:
+        val_loader = DataLoader(
         val_dataset, 
         batch_size=batch_size, 
         shuffle=False, 
