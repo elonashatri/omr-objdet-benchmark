@@ -1,0 +1,469 @@
+module load miniconda/4.7.12
+module load cuda/12.1  # Using CUDA 12.1 for compatibility with recent PyTorch
+conda activate omr_benchmark
+
+
+
+# Load miniconda module
+module load miniconda/4.7.12
+
+# Create a new environment for OMR experiments
+conda create -n omr_benchmark python=3.10 -y
+
+
+training faster r-cnn
+
+nohup python /homes/es314/omr-objdet-benchmark/scripts/faster_rccn_training.py \
+    --data_dir data/images \
+    --annotation_dir data/annotations \
+    --class_mapping data/class_mapping.json \
+    --output_dir results/faster_rcnn \
+    --pretrained \
+    --batch_size 1 \
+    --epochs 30 \
+    --optimizer adamw \
+    --lr 0.0001 \
+    --clip_grad_norm 1.0 \
+    --val_ratio 0.2 \
+    --gpu_id 1
+
+
+
+python scripts/yolo_training.py \
+    --data_dir data/images \
+    --annotation_dir data/annotations \
+    --class_mapping data/class_mapping.json \
+    --analyze_only
+
+
+
+
+python scripts/detect_notation.py \
+    --model /homes/es314/omr-objdet-benchmark/results/yolov8/yolo_train/weights/best.pt \
+    --image /homes/es314/omr-objdet-benchmark/data/test/splash_20231016T185758.png \
+    --class_mapping data/class_mapping.json \
+    --output_dir results/detections \
+    --conf 0.25 \
+    --max_detections 300
+
+
+
+
+    # DETR 
+
+    nohup python scripts/detr_training.py \
+    --data_dir data/images \
+    --train_annotation_dir data/annotations \
+    --val_annotation_dir data/val_annotations \
+    --class_mapping data/class_mapping.json \
+    --output_dir results/detr \
+    --batch_size 4 \
+    --epochs 100 \
+    --lr 1e-4 \
+    --world_size 1 > detr-training.txt
+
+dont forget to use the updated class_mapping to validate all the april models, this is because vwe chaneg the data mid training, and it now asks for this mapping
+/homes/es314/omr-objdet-benchmark/data/class_mapping.json/homes/es314/omr-objdet-benchmark/data/class_mapping.json
+
+first run minimal_yolo_convereter then simple_yolo_train
+
+these are done with 217 classes
+----------------------------------------------------------------------------
+normal training for yolo with the whole dataset with split: Train: 6757, Val: 1448, Test: 1449
+Run 03/04/2025
+----------------------------------------------------------------------------
+python /homes/es314/omr-objdet-benchmark/scripts/minimal_yolo_converter.py \
+  --data_dir /homes/es314/omr-objdet-benchmark/data/images \
+  --annotation_dir /homes/es314/omr-objdet-benchmark/data/annotations \
+  --output_dir /homes/es314/omr-objdet-benchmark/data/yolo-9654-data-splits \
+  --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json
+
+runs are being saved here:
+/homes/es314/runs/detect/train3
+
+
+nohup python /homes/es314/omr-objdet-benchmark/scripts/simple_yolo_train_8vx.py \
+    --yaml /homes/es314/omr-objdet-benchmark/data/yolo-9654-data-splits/dataset.yaml \
+    --model yolov8x.pt \
+    --epochs 500 \
+    --batch 4 \
+    --device 1 > april-25-training_simple_yolo_train_8vx.txt
+---------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------
+preparing data with special notice for stafflines: 
+03/04/2025
+---------------------------------------------------------------------------------------------------------
+We start with preprocessing
+This script prepares the dataset by enhancing stafflines before training:
+Applies adaptive thresholding to better isolate stafflines
+Makes stafflines slightly more prominent
+Creates a new dataset with enhanced images but unchanged labels
+
+python preprocessing.py --yaml /homes/es314/omr-objdet-benchmark/data/yolo-9654-data-splits/dataset.yaml --output /homes/es314/omr-objdet-benchmark/april-staffline-yolo
+---------------------------------------------------------------------------------------------------------
+
+then we do the training
+This is an optimized YOLOv8 training script that:
+
+Disables general augmentations that would hurt music notation (rotations, flips, etc.)
+Uses rectangular training mode to better handle the extreme aspect ratios of stafflines
+Includes a custom MusicNotationAlbumentations class with specialized augmentations:
+
+Slight line thickness variation to handle different engraving styles
+Subtle noise to simulate real-world scores
+Minimal horizontal stretching to account for different staff widths
+Paper texture/aging effects to improve robustness
+
+nohup python /homes/es314/omr-objdet-benchmark/april-staffline-yolo/enhanced-stafflines-training.py --yaml /homes/es314/omr-objdet-benchmark/april-staffline-yolo/dataset.yaml --model yolov8x.pt --epochs 500 --custom-aug --img-size 1600 --batch 4 --name experiment-1-staffline-enhacment-april --device 2 > /homes/es314/omr-objdet-benchmark/april-staffline-yolo/staffline-enhancment-experiment-1-april-25-training_simple_yolo_train_8vx.txt
+---------------------------------------------------------------------------------------------------------
+then we do postprocessing
+This script improves staffline detection after model inference:
+
+Uses image processing to detect linear features
+Groups stafflines into 5-line staves
+Refines the model's detections by leveraging musical knowledge
+Generates visualizations for verification
+
+python postprocessing.py --model path/to/best.pt --images path/to/test_images --output path/to/results --class-mapping path/to/class_mapping.json --staffline-class kStaffLine
+
+python /homes/es314/omr-objdet-benchmark/april-staffline-yolo/postprocessing.py \
+    --model /homes/es314/runs/detect/experiment-1-staffline-enhacment-april/weights/best.pt \
+    --images /homes/es314/omr-objdet-benchmark/april-staffline-yolo/few_test_img \
+    --output /homes/es314/omr-objdet-benchmark/april-staffline-yolo/output_postprocessed \
+    --class-mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json \
+    --staffline-class kStaffLine
+---------------------------------------------------------------------------------------------------------
+we should also run one with the updated classes 202 as the above ones are with 217 classes 
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+these experiments are done with the updated 202 classes and then ignoring classes that appear less than 25 times. 
+Removed 99 classes with fewer than 24 instances:
+  - (: 3 instances
+  - (maisendehors): 1 instances
+  - (nonlegato): 3 instances
+  - ): 3 instances
+  - Fortepp: 1 instances
+  - Sforzandofff: 13 instances
+  - T11: 7 instances
+  - T12: 6 instances
+  - T13: 7 instances
+  - T14: 6 instances
+  - T16: 9 instances
+  - T17: 15 instances
+  - T18: 6 instances
+  - T20: 5 instances
+  - T22: 3 instances
+  - T24: 2 instances
+  - T25: 2 instances
+  - T26: 2 instances
+  - T28: 5 instances
+  - T29: 1 instances
+  - T30: 9 instances
+  - T8: 6 instances
+  - accidentalKomaSharp: 5 instances
+  - accidentalParensLeft: 17 instances
+  - accidentalParensRight: 17 instances
+  - assai: 10 instances
+  - benten.: 4 instances
+  - cant.: 11 instances
+  - cantabile: 1 instances
+  - comesopra: 5 instances
+  - cresc.: 2 instances
+  - detachez: 4 instances
+  - dolcemaespress.: 1 instances
+  - dolciss.: 5 instances
+  - dynamicPPPP: 12 instances
+  - dynamicPPPPPP: 1 instances
+  - dynamicRinforzando2: 6 instances
+  - emoltocant.: 2 instances
+  - emoltocantabile: 2 instances
+  - emoltopesante(sempre): 1 instances
+  - espr.: 5 instances
+  - espr.gehalten: 1 instances
+  - espress.: 17 instances
+  - espress.molto: 2 instances
+  - ffPiano: 1 instances
+  - ffZ: 4 instances
+  - fffZ: 6 instances
+  - flag128thDown: 2 instances
+  - flag256thDown: 1 instances
+  - flag64thDown: 1 instances
+  - flag64thUp: 1 instances
+  - immer: 1 instances
+  - langgezogen: 2 instances
+  - langsam: 1 instances
+  - maespress.: 1 instances
+  - maestoso: 2 instances
+  - mamarcato: 1 instances
+  - manontanto: 2 instances
+  - marc.: 14 instances
+  - marcatiss.: 3 instances
+  - marcatissimo: 1 instances
+  - meno: 14 instances
+  - mensuralNoteheadMinimaWhite: 14 instances
+  - mitimmigerEmpfindung: 1 instances
+  - molto: 4 instances
+  - moltoespress.: 10 instances
+  - moltopesante: 2 instances
+  - moltopesantemanontroppo: 1 instances
+  - morendo: 3 instances
+  - non: 1 instances
+  - noteheadDiamondBlack: 15 instances
+  - noteheadDoubleWholeSquare: 14 instances
+  - noteheadXHalf: 1 instances
+  - ohneAusdruck: 3 instances
+  - ohneEmpfindung: 1 instances
+  - ornamentPrecompInvertedMordentUpperPrefix: 2 instances
+  - ornamentPrecompSlideTrillDAnglebert: 6 instances
+  - ornamentPrecompTrillLowerSuffix: 1 instances
+  - ornamentTurnInverted: 4 instances
+  - pesante: 5 instances
+  - poco: 3 instances
+  - pocomeno: 1 instances
+  - pocopiu: 4 instances
+  - possib.: 1 instances
+  - rest256th: 5 instances
+  - rest64th: 11 instances
+  - sehrzartaberausdrucksvoll: 1 instances
+  - semprepoco: 1 instances
+  - sempresim.: 7 instances
+  - sempresimile: 5 instances
+  - semprestacc.: 4 instances
+  - simile: 10 instances
+  - stacc.: 2 instances
+  - sub.detache: 1 instances
+  - sub.estacc.: 1 instances
+  - subito: 14 instances
+  - subitomaespress.: 3 instances
+  - timeSig1: 7 instances
+  - trem.: 2 instances
+---------------------------------------------------------------------------------------------------------
+run the updated minimal yolo converter
+
+python /homes/es314/omr-objdet-benchmark/scripts/minimal_yolo_converter_freq24.py \
+  --data_dir /homes/es314/omr-objdet-benchmark/data/images \
+  --annotation_dir /homes/es314/omr-objdet-benchmark/data/annotations \
+  --output_dir /homes/es314/omr-objdet-benchmark/data/202-24classes-yolo-9654-data-splits \
+  --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json
+
+
+-----------------------
+training
+
+nohup python /homes/es314/omr-objdet-benchmark/scripts/simple_yolo_train_8vx.py \
+    --yaml /homes/es314/omr-objdet-benchmark/data/202-24classes-yolo-9654-data-splits/dataset.yaml \
+    --model yolov8x.pt \
+    --epochs 500 \
+    --batch 4 \
+    --device 2 \
+    --name april-202-24classes \
+    --output_dir /import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs \
+    --device 1 > /import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/april-202-24classes-training_simple_yolo_train_8vx.txt
+
+--------------------------------------------------------------------------------------------
+inference and postprocessing
+python /homes/es314/omr-objdet-benchmark/april-staffline-yolo/postprocessing.py \
+    --model /homes/es314/runs/detect/train/weights/best.pt \
+    --images /homes/es314/omr-objdet-benchmark/april-staffline-yolo/few_test_img \
+    --output /homes/es314/omr-objdet-benchmark/april-staffline-yolo/output_postprocessed \
+    --class-mapping /homes/es314/omr-objdet-benchmark/data/202-24classes-yolo-9654-data-splits/filtered_class_mapping.json \
+    --staffline-class kStaffLine
+
+to coninure training for the same model:
+
+nohup python /homes/es314/omr-objdet-benchmark/scripts/simple_yolo_train_8vx.py \
+    --yaml /homes/es314/omr-objdet-benchmark/data/202-24classes-yolo-9654-data-splits/dataset.yaml \
+    --model /import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/train-202-24classes-yolo-9654-data-splits/weights/81-last.pt \
+    --epochs 500 \
+    --batch 4 \
+    --name april-202-24classes \
+    --device 2 > /import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/pt2-continued-81epoch-april-202-24classes-training_simple_yolo_train_8vx.txt
+
+
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+to continue training:
+for /import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/experiment-1-staffline-enhacment-april
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Let's retrain on doremi v1 all classes 94 classes
+
+
+python /homes/es314/omr-objdet-benchmark/scripts/old_doremi_minimal_yolo_converter.py \
+  --data_dir /homes/es314/DOREMI_version_2/DOREMI_v3/images \
+  --annotation_dir /homes/es314/DOREMI_version_2/DOREMI_v3/parsed \
+  --output_dir /homes/es314/omr-objdet-benchmark/DOREMI_v3 \
+  --class_mapping /homes/es314/DOREMI_version_2/DOREMI_v3/doremiv1-94-class_map.json
+
+
+
+python /homes/es314/omr-objdet-benchmark/april-staffline-yolo/postprocessing.py \
+    --model /homes/es314/runs/detect/train2/weights/best.pt \
+    --images /homes/es314/omr-objdet-benchmark/april-staffline-yolo/few_test_img \
+    --output /homes/es314/runs/detect/train2/output_postprocessed \
+    --class-mapping /homes/es314/DOREMI_version_2/DOREMI_v3/doremiv1-94-class_map.json
+
+
+
+nohup python /homes/es314/omr-objdet-benchmark/scripts/simple_yolo_train_8vx.py --yaml /homes/es314/omr-objdet-benchmark/DOREMI_v3/dataset.yaml --model yolov8x.pt --epochs 200 --batch 4 --name DOREMIV3-94-classes --device 1 > doremiv1-v3-94-class_simple_yolo_train_8vx.txt
+
+
+
+inference:
+/homes/es314/omr-objdet-benchmark/scripts/detect_notation.py
+
+python scripts/detect_notation.py \
+    --model //homes/es314/runs/staffline_extreme/weights/best.pt \
+    --image /homes/es314/omr-objdet-benchmark/results/detections/Accidentals-004.png \
+    --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json \
+    --output_dir results/detections \
+    --conf 0.25 \
+    --max_detections 300
+
+
+    staffline focus:
+    
+    nohup python /homes/es314/omr-objdet-benchmark/scripts/staffline-recognition/yolo-converter.py \
+    --yaml results/yolo_fixed/dataset.yaml \
+    --model yolov8x.pt \
+    --epochs 200 \
+    --batch 4 \
+    --device 2 \
+    --staffline_class_id 2 > staffline-focus.txt
+
+
+
+    inference on staffline focused model
+    /homes/es314/omr-objdet-benchmark/runs/train/phase12/weights/best.pt
+
+    python scripts/detect_notation.py \
+    --model /homes/es314/omr-objdet-benchmark/runs/train/phase12/weights/best.pt \
+    --image /homes/es314/omr-objdet-benchmark/2-solo-Christmas_Greeting-003.png \
+    --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json \
+    --output_dir results/detections \
+    --conf 0.25 \
+    --max_detections 300
+
+
+
+
+tensorboard --logdir /homes/es314/omr-objderuns
+
+
+
+encoding stuff:
+after runnning inference we have two files with bounding boxes, csv and json. then we apply 
+
+
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/link_obj.py --detection-file /homes/es314/omr-objdet-benchmark/results/detections/Accidentals-004_detections.json --output-dir /homes/es314/omr-objdet-benchmark/scripts/encoding
+
+the updated one with a full pipeline:
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/complete_pipeline.py --image /homes/es314/omr-objdet-benchmark/scripts/encoding/bartokmvt5-062.png --model /import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/staffline_extreme/weights/best.pt --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json
+
+
+
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/complete_pipeline.py --image /homes/es314/omr-objdet-benchmark/scripts/encoding/Piano_Sonate_No.1_Op.2_No.1_in_F_Minor-006.png --model /import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/staffline_extreme/weights/best.pt --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json
+
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/complete_pipeline.py --image /homes/es314/omr-objdet-benchmark/scripts/encoding/Piano_Sonate_No.1_Op.2_No.1_in_F_Minor-006.png --model /import/c4dm-05/elona/faster-rcnn-models-march-2025/full-no-staff-output/best.pt --output_dir /homes/es314/omr-objdet-benchmark/scripts/encoding/results/faster_rcnn_results --class_mapping /homes/es314/omr-objdet-benchmark/data/faster_rcnn_prepared_dataset/mapping.txt
+
+
+
+to visualise
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/visualisation.py --image /homes/es314/omr-objdet-benchmark/scripts/encoding/results/test1.png --data /homes/es314/omr-objdet-benchmark/scripts/encoding/results/test_1pitch_identification_linked_data.json
+
+/homes/es314/omr-objdet-benchmark/scripts/encoding/results/test1.png
+
+and finally to run the json to midi converter:
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/to_midi/json_to_midi_converter.py --input /homes/es314/omr-objdet-benchmark/scripts/encoding/results/pitched_data/demisemiquavers_simple-085_pitched.json --output /homes/es314/omr-objdet-benchmark/scripts/encoding/results/pitched_data/demisemiquavers_simple-085_pitched.mid
+
+
+json to musicxml
+
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/to_midi/json_to_musicxml.py --input /homes/es314/omr-objdet-benchmark/scripts/encoding/results/pitched_data/stave-only_pitched.json --output /homes/es314/omr-objdet-benchmark/scripts/encoding/results/pitched_data/stave-only_pitched.musicxml --beamall
+
+
+website up and runnong code:
+cd  app/backend 
+run the backend first:  /homes/es314/.conda/envs/omr_benchmark/bin/python app.py
+
+~/omr-objdet-benchmark/scripts/app$ cd frontend/
+~/omr-objdet-benchmark/scripts/app/frontend$ npm run dev
+
+
+
+
+
+
+
+
+
+
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/april-complete-pipeline.py --image /homes/es314/omr-objdet-benchmark/scripts/encoding/testing_images/Abismo_de_Rosas__Canhoto_Amrico_Jacomino-002.png --model /import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/staffline_extreme/weights/best.pt --output_dir /homes/es314/omr-objdet-benchmark/scripts/encoding/results/faster_rcnn_results --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/april-complete-pipeline.py --image /homes/es314/omr-objdet-benchmark/scripts/encoding/v2-accidentals-004.png 
+--model /import/c4dm-05/elona/faster-rcnn-models-march-2025/yolo8runs/staffline_extreme/weights/best.pt 
+--output_dir /homes/es314/omr-objdet-benchmark/scripts/encoding/results/faster_rcnn_results 
+--class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json
+
+
+
+to run the new pipeline:
+
+python /homes/es314/omr-objdet-benchmark/scripts/encoding/clean_full_pipeline/complete_pipeline.py \
+  --image /homes/es314/omr-objdet-benchmark/scripts/encoding/clean_full_pipeline/examples/Abismo_de_Rosas__Canhoto_Amrico_Jacomino-002.png \
+  --model /homes/es314/omr-objdet-benchmark/scripts/encoding/clean_full_pipeline/onnx_models/Faster_R-CNN_inception-lr-0.003-classes-72-steps-80000-2475x3504-01-10-2020-003-train/Faster_R-CNN_inception-lr-0.003-classes-72-steps-80000-2475x3504-01-10-2020-003-train.onnx \
+  --class_mapping /homes/es314/omr-objdet-benchmark/data/class_mapping.json \
+  --output_dir /homes/es314/omr-objdet-benchmark/scripts/encoding/clean_full_pipeline/results
+
+
+
+
+test the model on muscima++
+
+
+/import/c4dm-05/elona/MusicObjectDetector-TF/MusicObjectDetector/data/Stavewise_Annotations
+/import/c4dm-05/elona/MusicObjectDetector-TF/MusicObjectDetector/data/muscima_pp_cropped_images_with_stafflines
+
+
+
+
+runniing inference in onnx models
+
+# python /homes/es314/omr-objdet-benchmark/scripts/encoding/clean_full_pipeline/onnx-pytorch-inference.py \
+#     --model /homes/es314/omr-objdet-benchmark/scripts/encoding/clean_full_pipeline/onnx_models/Faster_R-CNN_resnet50-lr-0.003-classes-72-steps-100000-2475x3504-03-10-2020-004-train/Faster_R-CNN_resnet50-lr-0.003-classes-72-steps-100000-2475x3504-03-10-2020-004-train.onnx  \
+#     --image /homes/es314/omr-objdet-benchmark/scripts/encoding/clean_full_pipeline/examples/12-Etudes-001.png  \
+#     --class_mapping /homes/es314/omr-objdet-benchmark/scripts/encoding/clean_full_pipeline/onnx_models/Faster_R-CNN_inception-lr-0.003-classes-72-steps-80000-2475x3504-01-10-2020-003-train/mapping_72.txt  \
+#     --output_dir onnx_test_results \
+#     --conf 0.4 \
+#     --max_detections 1000
+#     --iou_threshold 0.5
